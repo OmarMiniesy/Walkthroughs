@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6fce6adc62978857",
+            "id": "67ec2bb033efcae1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/XSS/Lab 16.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/XSS/Lab 16.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/XSS/Lab 16.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/XSS/Lab 16.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,44 +146,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fce6adc62978857",
+  "active": "67ec2bb033efcae1",
   "lastOpenFiles": [
+    "Portswigger/XSS/Lab 30.md",
+    "Portswigger/XSS/screenshots/token.png",
+    "Portswigger/XSS/screenshots/csp.png",
+    "Portswigger/XSS/Lab 25.md",
+    "README.md",
+    "Portswigger/XSS/Lab 24.md",
+    "Portswigger/XSS/Lab 23.md",
+    "Portswigger/XSS/Lab 22.md",
+    "Portswigger/XSS/Lab 21.md",
+    "Portswigger/XSS/Lab 20.md",
+    "Portswigger/XSS/Lab 19.md",
+    "Portswigger/XSS/Lab 18.md",
+    "Portswigger/XSS/Lab 17.md",
+    "Portswigger/XSS/Lab 16.md",
     "Portswigger/XSS/Lab 15.md",
     "Portswigger/XSS/Lab 14.md",
     "Portswigger/XSS/Lab 13.md",
     "Portswigger/XSS/Lab 12.md",
-    "Portswigger/XSS/Lab 11.md",
     "Portswigger/XSS/Lab 10.md",
-    "Portswigger/XSS/Lab 9.md",
-    "Portswigger/XSS/Lab 8.md",
-    "Portswigger/XSS/Lab 7.md",
     "Portswigger/XSS/Lab 6.md",
     "Portswigger/XSS/Lab 5.md",
     "Portswigger/XSS/Lab 4.md",
     "Portswigger/XSS/Lab 3.md",
     "Portswigger/XSS/Lab 2.md",
     "Portswigger/XSS/Lab 1.md",
-    "Portswigger/SQL Injection/Lab 16.md",
-    "Portswigger/SQL Injection/Lab 15.md",
-    "Portswigger/SQL Injection/Lab 14.md",
-    "Portswigger/SQL Injection/Lab 13.md",
-    "Portswigger/SQL Injection/Lab 12.md",
-    "Portswigger/SQL Injection/Lab 11.md",
-    "Portswigger/SQL Injection/Lab 10.md",
-    "Portswigger/SQL Injection/Lab 9.md",
-    "Portswigger/SQL Injection/Lab 8.md",
-    "Portswigger/SQL Injection/Lab 7.md",
-    "Portswigger/SQL Injection/Lab 6.md",
-    "Portswigger/XSS/screenshots/source1new.png",
-    "Portswigger/XSS/screenshots/source1.png",
-    "Portswigger/XSS/screenshots/newsource.png",
-    "Portswigger/XSS/screenshots/source.png",
-    "Portswigger/XSS/screenshots/places.png",
-    "Portswigger/XSS/screenshots/responses.png",
-    "Portswigger/XSS/screenshots/attrib.png",
-    "Portswigger/XSS/screenshots/200resp.png",
-    "Portswigger/XSS/screenshots/searchParam.png",
-    "Portswigger/XSS/screenshots/invalid.png",
+    "Portswigger/XSS/screenshots/backticks.png",
+    "Portswigger/XSS/screenshots/finalcode.png",
+    "Portswigger/XSS/screenshots/newcode.png",
+    "Portswigger/XSS/screenshots/code.png",
+    "Portswigger/XSS/screenshots/resp.png",
+    "Portswigger/XSS/Lab 9.md",
+    "Portswigger/XSS/screenshots/final.png",
+    "Portswigger/XSS/screenshots/newercode.png",
+    "Portswigger/XSS/screenshots/newreq.png",
+    "Portswigger/XSS/Lab 11.md",
     "Portswigger/XSS",
     "screenshots",
     "Portswigger/SQL Injection/screenshots",
