@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "4defcbd144371fff",
+    "type": "split",
+    "children": [
+      {
+        "id": "2403a0c192552a20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fce6adc62978857",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/XSS/Lab 16.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9f0c86bc944db7f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "932421f41c00f966",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "936c5cb4780564e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3514d83775110353",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a97a9f3cf64e043b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "83bcb63fb5d555a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "d015e945a42e4036",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e43f895fb2a7129",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Portswigger/XSS/Lab 16.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c0c02019fc9b667b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Portswigger/XSS/Lab 16.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4b0daf4e31b5e03a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9effe1a76f7f45e6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Portswigger/XSS/Lab 16.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6fce6adc62978857",
+  "lastOpenFiles": [
+    "Portswigger/XSS/Lab 15.md",
+    "Portswigger/XSS/Lab 14.md",
+    "Portswigger/XSS/Lab 13.md",
+    "Portswigger/XSS/Lab 12.md",
+    "Portswigger/XSS/Lab 11.md",
+    "Portswigger/XSS/Lab 10.md",
+    "Portswigger/XSS/Lab 9.md",
+    "Portswigger/XSS/Lab 8.md",
+    "Portswigger/XSS/Lab 7.md",
+    "Portswigger/XSS/Lab 6.md",
+    "Portswigger/XSS/Lab 5.md",
+    "Portswigger/XSS/Lab 4.md",
+    "Portswigger/XSS/Lab 3.md",
+    "Portswigger/XSS/Lab 2.md",
+    "Portswigger/XSS/Lab 1.md",
+    "Portswigger/SQL Injection/Lab 16.md",
+    "Portswigger/SQL Injection/Lab 15.md",
+    "Portswigger/SQL Injection/Lab 14.md",
+    "Portswigger/SQL Injection/Lab 13.md",
+    "Portswigger/SQL Injection/Lab 12.md",
+    "Portswigger/SQL Injection/Lab 11.md",
+    "Portswigger/SQL Injection/Lab 10.md",
+    "Portswigger/SQL Injection/Lab 9.md",
+    "Portswigger/SQL Injection/Lab 8.md",
+    "Portswigger/SQL Injection/Lab 7.md",
+    "Portswigger/SQL Injection/Lab 6.md",
+    "Portswigger/XSS/screenshots/source1new.png",
+    "Portswigger/XSS/screenshots/source1.png",
+    "Portswigger/XSS/screenshots/newsource.png",
+    "Portswigger/XSS/screenshots/source.png",
+    "Portswigger/XSS/screenshots/places.png",
+    "Portswigger/XSS/screenshots/responses.png",
+    "Portswigger/XSS/screenshots/attrib.png",
+    "Portswigger/XSS/screenshots/200resp.png",
+    "Portswigger/XSS/screenshots/searchParam.png",
+    "Portswigger/XSS/screenshots/invalid.png",
+    "Portswigger/XSS",
+    "screenshots",
+    "Portswigger/SQL Injection/screenshots",
+    "Portswigger/SQL Injection/New folder",
+    "Portswigger/SQL Injection",
+    "Portswigger"
+  ]
+}
