@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 14725458
       }
+    },
+    {
+      "query": "path:Portswigger/Authentication",
+      "color": {
+        "a": 1,
+        "rgb": 5396192
+      }
     }
   ],
   "collapse-display": true,
@@ -32,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.13873223932666112,
+  "scale": 0.2836194394488208,
   "close": true
 }

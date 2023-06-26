@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "2403a0c192552a20",
+        "id": "b7a7ba1653620650",
         "type": "tabs",
         "children": [
           {
-            "id": "67ec2bb033efcae1",
+            "id": "fc24e799286def89",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Portswigger/Authentication/Lab 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed0251132e29f3f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Authentication/Lab 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Portswigger/Authentication/Lab 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Portswigger/Authentication/Lab 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Portswigger/Authentication/Lab 3.md"
               }
             }
           }
@@ -146,13 +159,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67ec2bb033efcae1",
+  "active": "ed0251132e29f3f9",
   "lastOpenFiles": [
-    "Portswigger/XSS/Lab 30.md",
-    "Portswigger/XSS/screenshots/token.png",
-    "Portswigger/XSS/screenshots/csp.png",
-    "Portswigger/XSS/Lab 25.md",
+    "Portswigger/Authentication/Lab 2.md",
+    "Portswigger/Authentication/Lab 3.md",
+    "Portswigger/Authentication/screenshots/lab2-correct-pass.png",
+    "Portswigger/Authentication/Lab 1.md",
+    "Portswigger/Authentication/screenshots/lab2-sniper-pass.png",
+    "Portswigger/Authentication/screenshots/lab2-user-response.png",
+    "Portswigger/Authentication/screenshots/lab2-settings.png",
+    "Portswigger/Authentication/screenshots/lab2-payload-user.png",
+    "Pasted image 20230626233228.png",
+    "Portswigger/Authentication/screenshots/lab2-error.png",
+    "Portswigger/Authentication/screenshots/lab1-complete.png",
+    "Portswigger/Authentication/screenshots/lab1-correct-pass.png",
+    "Portswigger/Authentication/screenshots/lab1-pass-payload.png",
+    "screenshots/lab1-response.pn.md",
+    "screenshots",
     "README.md",
+    "Portswigger/Authentication/screenshots",
+    "Untitled",
+    "Portswigger/Authentication",
+    "Portswigger/XSS/Lab 30.md",
+    "Portswigger/XSS/Lab 25.md",
     "Portswigger/XSS/Lab 24.md",
     "Portswigger/XSS/Lab 23.md",
     "Portswigger/XSS/Lab 22.md",
@@ -172,19 +201,7 @@
     "Portswigger/XSS/Lab 4.md",
     "Portswigger/XSS/Lab 3.md",
     "Portswigger/XSS/Lab 2.md",
-    "Portswigger/XSS/Lab 1.md",
-    "Portswigger/XSS/screenshots/backticks.png",
-    "Portswigger/XSS/screenshots/finalcode.png",
-    "Portswigger/XSS/screenshots/newcode.png",
-    "Portswigger/XSS/screenshots/code.png",
-    "Portswigger/XSS/screenshots/resp.png",
-    "Portswigger/XSS/Lab 9.md",
-    "Portswigger/XSS/screenshots/final.png",
-    "Portswigger/XSS/screenshots/newercode.png",
-    "Portswigger/XSS/screenshots/newreq.png",
-    "Portswigger/XSS/Lab 11.md",
     "Portswigger/XSS",
-    "screenshots",
     "Portswigger/SQL Injection/screenshots",
     "Portswigger/SQL Injection/New folder",
     "Portswigger/SQL Injection",
