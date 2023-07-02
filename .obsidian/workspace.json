@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "79a065eb799c8782",
+        "id": "1cec49e35b71b7be",
         "type": "tabs",
         "children": [
           {
-            "id": "dd0c6bea25d72cfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Authentication/Lab 13.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "67e4d1098154d5e4",
+            "id": "21d331a2523e1c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "![lab5-passwords](./screenshots/lab5-password-payload.pn)",
+                "query": "2222818",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 435.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -159,26 +146,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67e4d1098154d5e4",
+  "active": "21d331a2523e1c8f",
   "lastOpenFiles": [
-    "Portswigger/Authentication/screenshots/Pasted image 20230702235328.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702235213.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702235116.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702235002.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702234906.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702234638.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702234531.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702234330.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702234246.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702234116.png",
-    "Portswigger/Authentication/Lab 1.md",
+    "Portswigger/Authentication/screenshots/Pasted image 20230702222818.png",
+    "Portswigger/Authentication/screenshots/Pasted image 20230702024245.png",
+    "Portswigger/Authentication/screenshots/Pasted image 20230702004050.png",
     "Portswigger/Authentication/Lab 14.md",
     "Portswigger/Authentication/Lab 13.md",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702223130.png",
     "Portswigger/Authentication/Lab 12.md",
-    "Portswigger/Authentication/Lab 9.md",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702214223.png",
     "Portswigger/Authentication/Lab 11.md",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702180524.png",
     "Portswigger/Authentication/Lab 10.md",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702024533.png",
+    "Portswigger/Authentication/Lab 9.md",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702005104.png",
+    "Portswigger/Authentication/screenshots/Pasted image 20230702005104 1.png",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702235328.png",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702235213.png",
+    "Portswigger/Authentication/screenshots/Pasted-image-20230702235116.png",
+    "Portswigger/Authentication/Lab 1.md",
     "Portswigger/Authentication/Lab 7.md",
     "Portswigger/Authentication/Lab 8.md",
     "Portswigger/Authentication/Lab 2.md",

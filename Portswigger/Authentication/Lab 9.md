@@ -41,39 +41,39 @@
 
 2. Click on Add to create a new rule, and then go to Scope and choose Include all URLs.
 
-![[Pasted image 20230702004207.png]]
+![img](./screenshots/Pasted-image-20230702004207.png)
 
 3. Then go to Details and press on Add and choose Run a Macro.
 
-![[Pasted image 20230702004424.png]]
+![](./screenshots/Pasted-image-20230702004424.png)
 
 4. Add the 3 requests responsible for creating a csrf token.
 
-![[Pasted image 20230702004516.png]]
+![](./screenshots/Pasted-image-20230702004516.png)
 
 5. Then press ok on all tabs to complete creating this macro rule.
 
 > This rule now should work before every intruder request.
 > Send the last `POST` request responsible for sending the `mfa-code` to INTRUDER, and choose a sniper attack and set the placeholders at the `mfa-code` value.
 
-![[Pasted image 20230702004714.png]]
+![](./screenshots/Pasted-image-20230702004714.png)
 
 > Go to payloads and choose a number list from 0 to 9999 and set the step 1, and set the min and max digits to 4, and fractions digits to 0 to obtain 4 digit numbers from 0 to 9999
 
-![[Pasted image 20230702004811.png]]
+![](./screenshots/Pasted-image-20230702004811.png)
 
 > Furthermore, make sure that are a maximum of 1 concurrent requests through the resource pool tab to ensure proper request generation and csrf token creation.
 
-![[Pasted image 20230702005104.png]]
+![](Pasted-image-20230702005104.png)
 
 > Start the attack and wait for the 302 response.
 
-![[Pasted image 20230702013901.png]]
+![](Pasted-image-20230702013901.png)
 
 
 > To login using that specific payload, we right click on that response and view it in browser.
 
-![[Pasted image 20230702013951.png]]
+![](Pasted-image-20230702013951.png)
 
 > Open BURPSUITE Proxy intercept, and allow proxy in the browser, then paste this url and follow redirections through the intercept tab.
 

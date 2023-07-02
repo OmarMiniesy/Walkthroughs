@@ -18,7 +18,7 @@
 
 > And then there is a `GET` request with the path `/my-account` containing that same cookie to load the correct user.
 
-![[Pasted image 20230702023940.png]]
+![](Pasted-image-20230702023940.png)
 
 > Taking the persistent cookie.
 ```
@@ -66,35 +66,35 @@ base64(username:MD5(password))
 
 > Sending the final `GET` request to Intruder for a sniper attack with the payload at the cookie.
 
-![[Pasted image 20230702025939.png]]
+![](Pasted-image-20230702025939.png)
 
 > We need to add the list of passwords as a list and paste them into the payload.
 
-![[Pasted image 20230702025031.png]]
+![](Pasted-image-20230702025031.png)
 
 > Then to complete our processing, we go to the payload processing tab. We work on our payload from inside out.
 
 1. `MD5` hash the password.
 
-![[Pasted image 20230702024436.png]]
+![](Pasted-image-20230702024436.png)
 
 2. Add the `carlos:` prefix.
 
-![[Pasted image 20230702024533.png]]
+![](Pasted-image-20230702024533.png)
 
 3. Base64 encode the whole payload.
 
-![[Pasted image 20230702024617.png]]
+![](Pasted-image-20230702024617.png)
 
 > This creates the cookie.
 > Finally, we go to the settings tab and add a grep match rule to identify the `Update Email` text.
 > If it matches, then we have successfully logged in.
 
-![[Pasted image 20230702024855.png]]
+![](Pasted-image-20230702024855.png)
 
 > Starting the attack, check for the response with the grep match rule.
 
-![[Pasted image 20230702030051.png]]
+![](Pasted-image-20230702030051.png)
 > The fifth password was able to correctly create the cookie for the account with username `carlos`, and has logged us in.
 > Showing the response in browser and clicking on my-account finished the lab.
 
