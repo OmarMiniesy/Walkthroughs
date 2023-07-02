@@ -57,7 +57,7 @@ rA16s0b3PCRhyQB4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM 
 > Let the indices be from 1 to 20.
 > Let the characters be from a-z and 0-9
 
-> As [[LAB 12]], conduct the attack and watch for the different response sizes or status codes. See the size corresponding to errors and use those to obtain results. Use status code 500 representing errors to obtain results.
+> As [[Portswigger/SQL Injection/Lab 12]], conduct the attack and watch for the different response sizes or status codes. See the size corresponding to errors and use those to obtain results. Use status code 500 representing errors to obtain results.
 
 1 - 7
 2 - s
