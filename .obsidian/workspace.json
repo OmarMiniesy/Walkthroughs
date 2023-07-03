@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "1cec49e35b71b7be",
+        "id": "f213fb49c6655ff5",
         "type": "tabs",
         "children": [
           {
-            "id": "21d331a2523e1c8f",
+            "id": "06b3f9319a5b1683",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Authentication/Lab 14.md",
+                "file": "Portswigger/Directory Traversal/Lab 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ccd9cad38ff2a369",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Directory Traversal/Lab 5.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b51f016451cb399",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Directory Traversal/Lab 6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 435.5
+    "width": 200
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Authentication/Lab 14.md",
+                "file": "Portswigger/Directory Traversal/Lab 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Authentication/Lab 14.md",
+                "file": "Portswigger/Directory Traversal/Lab 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/Authentication/Lab 14.md"
+                "file": "Portswigger/Directory Traversal/Lab 6.md"
               }
             }
           }
@@ -146,25 +171,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21d331a2523e1c8f",
+  "active": "1b51f016451cb399",
   "lastOpenFiles": [
+    "Portswigger/Directory Traversal/Lab 4.md",
+    "Portswigger/Directory Traversal/Lab 6.md",
+    "Portswigger/Directory Traversal/Lab 5.md",
+    "Portswigger/Directory Traversal/screenshots/lab5-get-req.png",
+    "Portswigger/Directory Traversal/Lab 3.md",
+    "Portswigger/Directory Traversal/Lab 2.md",
+    "Portswigger/Directory Traversal/Lab 1.md",
+    "Portswigger/Directory Traversal/screenshots/lab1-newtab.png",
+    "Portswigger/Directory Traversal/screenshots/lab1-img-src.png",
+    "Portswigger/Directory Traversal/screenshots/show-all.png",
+    "Portswigger/Directory Traversal/screenshots/etc-passwd.png",
+    "Portswigger/Directory Traversal/screenshots/err-400.png",
+    "Portswigger/Directory Traversal/screenshots/get-req.png",
+    "Portswigger/Authentication/Lab 14.md",
+    "Portswigger/Directory Traversal/screenshots",
+    "Portswigger/Directory Traversal",
     "Portswigger/Authentication/screenshots/Pasted image 20230702222818.png",
     "Portswigger/Authentication/screenshots/Pasted image 20230702024245.png",
     "Portswigger/Authentication/screenshots/Pasted image 20230702004050.png",
-    "Portswigger/Authentication/Lab 14.md",
     "Portswigger/Authentication/Lab 13.md",
     "Portswigger/Authentication/Lab 12.md",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702214223.png",
     "Portswigger/Authentication/Lab 11.md",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702180524.png",
     "Portswigger/Authentication/Lab 10.md",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702024533.png",
     "Portswigger/Authentication/Lab 9.md",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702005104.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702005104 1.png",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702235328.png",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702235213.png",
-    "Portswigger/Authentication/screenshots/Pasted-image-20230702235116.png",
     "Portswigger/Authentication/Lab 1.md",
     "Portswigger/Authentication/Lab 7.md",
     "Portswigger/Authentication/Lab 8.md",
@@ -173,21 +205,15 @@
     "Portswigger/Authentication/Lab 4.md",
     "Portswigger/Authentication/Lab 5.md",
     "screenshots/lab5-password-payload.pn.md",
-    "screenshots",
+    "Portswigger/Directory Traversal/screenshots",
     "Portswigger/Authentication/Lab 3.md",
     "screenshots/lab1-response.pn.md",
     "README.md",
     "Portswigger/Authentication/screenshots",
-    "Untitled",
     "Portswigger/Authentication",
     "Portswigger/XSS/Lab 30.md",
     "Portswigger/XSS/Lab 25.md",
     "Portswigger/XSS/Lab 24.md",
-    "Portswigger/XSS/Lab 23.md",
-    "Portswigger/XSS/Lab 22.md",
-    "Portswigger/XSS/Lab 21.md",
-    "Portswigger/XSS/Lab 20.md",
-    "Portswigger/XSS/Lab 19.md",
     "Portswigger/XSS",
     "Portswigger/SQL Injection/screenshots",
     "Portswigger/SQL Injection/New folder",
