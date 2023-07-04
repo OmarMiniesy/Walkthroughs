@@ -4,40 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "f213fb49c6655ff5",
+        "id": "a37f5bfd44f60830",
         "type": "tabs",
         "children": [
           {
-            "id": "06b3f9319a5b1683",
+            "id": "e13e517f082645af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Directory Traversal/Lab 2.md",
+                "file": "Portswigger/Command Injection/Lab 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ccd9cad38ff2a369",
+            "id": "239887a1638fa867",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Directory Traversal/Lab 5.md",
+                "file": "Portswigger/Command Injection/Lab 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1b51f016451cb399",
+            "id": "fec76396a3e91e75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Directory Traversal/Lab 6.md",
+                "file": "Portswigger/Command Injection/Lab 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Directory Traversal/Lab 6.md",
+                "file": "Portswigger/Command Injection/Lab 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Directory Traversal/Lab 6.md",
+                "file": "Portswigger/Command Injection/Lab 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/Directory Traversal/Lab 6.md"
+                "file": "Portswigger/Command Injection/Lab 3.md"
               }
             }
           }
@@ -171,27 +171,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b51f016451cb399",
+  "active": "fec76396a3e91e75",
   "lastOpenFiles": [
-    "Portswigger/Directory Traversal/Lab 4.md",
-    "Portswigger/Directory Traversal/Lab 6.md",
-    "Portswigger/Directory Traversal/Lab 5.md",
-    "Portswigger/Directory Traversal/screenshots/lab5-get-req.png",
-    "Portswigger/Directory Traversal/Lab 3.md",
+    "Portswigger/Command Injection/screenshots/image-get.png",
+    "Portswigger/Command Injection/Lab 2.md",
+    "Portswigger/Command Injection/Lab 3.md",
+    "Portswigger/Command Injection/screenshots/200-ok.png",
+    "README.md",
+    "Portswigger/Command Injection/screenshots/time-delay.png",
+    "Portswigger/Command Injection/screenshots/500-err.png",
+    "Portswigger/Command Injection/screenshots/post-req.png",
+    "Portswigger/Command Injection/screenshots/feedback.png",
+    "Portswigger/Command Injection/Lab 1.md",
+    "Portswigger/Command Injection/screenshots/script-res.png",
+    "Portswigger/Command Injection/screenshots/whoami.png",
+    "Portswigger/Command Injection/screenshots/whoami&.png",
+    "Portswigger/Command Injection/screenshots/script.png",
+    "Portswigger/Command Injection/screenshots/wrong.png",
     "Portswigger/Directory Traversal/Lab 2.md",
+    "Portswigger/Directory Traversal/Lab 6.md",
+    "Portswigger/Directory Traversal/Lab 4.md",
+    "Portswigger/Directory Traversal/Lab 3.md",
     "Portswigger/Directory Traversal/Lab 1.md",
-    "Portswigger/Directory Traversal/screenshots/lab1-newtab.png",
-    "Portswigger/Directory Traversal/screenshots/lab1-img-src.png",
-    "Portswigger/Directory Traversal/screenshots/show-all.png",
-    "Portswigger/Directory Traversal/screenshots/etc-passwd.png",
-    "Portswigger/Directory Traversal/screenshots/err-400.png",
-    "Portswigger/Directory Traversal/screenshots/get-req.png",
+    "Portswigger/Command Injection/screenshots",
+    "Portswigger/Command Injection",
+    "Portswigger/Directory Traversal/Lab 5.md",
     "Portswigger/Authentication/Lab 14.md",
     "Portswigger/Directory Traversal/screenshots",
     "Portswigger/Directory Traversal",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702222818.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702024245.png",
-    "Portswigger/Authentication/screenshots/Pasted image 20230702004050.png",
     "Portswigger/Authentication/Lab 13.md",
     "Portswigger/Authentication/Lab 12.md",
     "Portswigger/Authentication/Lab 11.md",
@@ -207,17 +214,10 @@
     "screenshots/lab5-password-payload.pn.md",
     "Portswigger/Directory Traversal/screenshots",
     "Portswigger/Authentication/Lab 3.md",
-    "screenshots/lab1-response.pn.md",
-    "README.md",
     "Portswigger/Authentication/screenshots",
     "Portswigger/Authentication",
-    "Portswigger/XSS/Lab 30.md",
-    "Portswigger/XSS/Lab 25.md",
-    "Portswigger/XSS/Lab 24.md",
     "Portswigger/XSS",
     "Portswigger/SQL Injection/screenshots",
-    "Portswigger/SQL Injection/New folder",
-    "Portswigger/SQL Injection",
-    "Portswigger"
+    "Portswigger/SQL Injection/New folder"
   ]
 }

@@ -10,3 +10,6 @@ Use [Obsidian](https://obsidian.md/) for an improved experience.
 
 * SQL: Labs 17 and 18 require Burp Pro.
 * XSS: Labs 26,27,28,29 require Burp Pro.
+* COMMAND INJECTION: Labs 4 and 5 require Burp Pro.
+
+---
