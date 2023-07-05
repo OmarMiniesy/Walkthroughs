@@ -8,43 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e13e517f082645af",
+            "id": "1c0be9d3bd4474db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Command Injection/Lab 1.md",
+                "file": "Portswigger/Business Logic Vulnerabilities/Lab 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "239887a1638fa867",
+            "id": "9f99882af495b301",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Command Injection/Lab 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fec76396a3e91e75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Command Injection/Lab 3.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2222818",
+                "query": "2FA ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Command Injection/Lab 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Command Injection/Lab 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Portswigger/Command Injection/Lab 3.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -171,23 +151,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fec76396a3e91e75",
+  "active": "9f99882af495b301",
   "lastOpenFiles": [
-    "Portswigger/Command Injection/screenshots/image-get.png",
-    "Portswigger/Command Injection/Lab 2.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 3.md",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-cart-3.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-6-tree.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-cart-2.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-30.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-cart-1.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-6.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/post-cart.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-final.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/lab3-40.png",
+    "Portswigger/Business Logic Vulnerabilities/screenshots/tree.png",
+    "Portswigger/Business Logic Vulnerabilities/Lab 1.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 2.md",
+    "Portswigger/XSS/Lab 23.md",
+    "Portswigger/Authentication/Lab 8.md",
+    "Portswigger/Business Logic Vulnerabilities/screenshots",
+    "Portswigger/Business Logic Vulnerabilities/New folder",
     "Portswigger/Command Injection/Lab 3.md",
-    "Portswigger/Command Injection/screenshots/200-ok.png",
+    "Portswigger/Command Injection/Lab 2.md",
+    "Portswigger/Business Logic Vulnerabilities",
+    "Portswigger/Directory Traversal/Untitled",
     "README.md",
-    "Portswigger/Command Injection/screenshots/time-delay.png",
-    "Portswigger/Command Injection/screenshots/500-err.png",
-    "Portswigger/Command Injection/screenshots/post-req.png",
-    "Portswigger/Command Injection/screenshots/feedback.png",
     "Portswigger/Command Injection/Lab 1.md",
-    "Portswigger/Command Injection/screenshots/script-res.png",
-    "Portswigger/Command Injection/screenshots/whoami.png",
-    "Portswigger/Command Injection/screenshots/whoami&.png",
-    "Portswigger/Command Injection/screenshots/script.png",
-    "Portswigger/Command Injection/screenshots/wrong.png",
     "Portswigger/Directory Traversal/Lab 2.md",
     "Portswigger/Directory Traversal/Lab 6.md",
     "Portswigger/Directory Traversal/Lab 4.md",
@@ -206,18 +194,9 @@
     "Portswigger/Authentication/Lab 9.md",
     "Portswigger/Authentication/Lab 1.md",
     "Portswigger/Authentication/Lab 7.md",
-    "Portswigger/Authentication/Lab 8.md",
     "Portswigger/Authentication/Lab 2.md",
     "Portswigger/Authentication/Lab 6.md",
-    "Portswigger/Authentication/Lab 4.md",
-    "Portswigger/Authentication/Lab 5.md",
-    "screenshots/lab5-password-payload.pn.md",
     "Portswigger/Directory Traversal/screenshots",
-    "Portswigger/Authentication/Lab 3.md",
-    "Portswigger/Authentication/screenshots",
-    "Portswigger/Authentication",
-    "Portswigger/XSS",
-    "Portswigger/SQL Injection/screenshots",
-    "Portswigger/SQL Injection/New folder"
+    "Portswigger/Authentication/screenshots"
   ]
 }
