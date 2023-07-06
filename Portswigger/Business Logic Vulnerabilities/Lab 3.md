@@ -34,10 +34,7 @@
 > Heading over to the `my cart` page.
 
 ![lab3-cart](./screenshots/lab3-cart.png)
-
 > Placing my order gets an error, that the total price cannot be less than 0.
-
-![lab3-nlt0](./screenshots/lab3-nlt0.png)
 
 > We have `100$` in store credit, so we need the total price to be less than 100 but more than 0.
 > Trying to change the quantity parameter to another number and sending the request doesn't change the cart, but it adds the number in the cart to the number in the quantity parameter.
