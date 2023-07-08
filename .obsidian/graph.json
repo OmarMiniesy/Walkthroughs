@@ -48,6 +48,13 @@
         "a": 1,
         "rgb": 11621088
       }
+    },
+    {
+      "query": "path:\"Portswigger/Access Control\"",
+      "color": {
+        "a": 1,
+        "rgb": 15429888
+      }
     }
   ],
   "collapse-display": true,

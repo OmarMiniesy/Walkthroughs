@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "507f3d1f1b452ab2",
+        "id": "02eee262a0205d17",
         "type": "tabs",
         "children": [
           {
-            "id": "3a9b680aec6d48a0",
+            "id": "24b391068ea4acea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Portswigger/Business Logic Vulnerabilities/Lab 14.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,21 +138,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a9b680aec6d48a0",
+  "active": "936c5cb4780564e1",
   "lastOpenFiles": [
-    "Portswigger/Business Logic Vulnerabilities/screenshots/adminpan.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-newget-1.png",
-    "Pasted image 20230708114630.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-home.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-5.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-4.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-err.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-enc.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-del.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-dec.png",
-    "Portswigger/Business Logic Vulnerabilities/screenshots/lab14-3.png",
-    "Portswigger/Business Logic Vulnerabilities/Lab 13.md",
+    "Portswigger/Access Control/Lab 5.md",
+    "Portswigger/Access Control/Lab 6.md",
+    "Portswigger/Access Control/screenshots/lab5-req.png",
+    "Portswigger/Access Control/screenshots/lab5-delete.png",
+    "Portswigger/Access Control/Lab 4.md",
+    "Portswigger/Access Control/screenshots/lab5-browser.png",
+    "Portswigger/Access Control/screenshots/lab5-pass.png",
+    "Portswigger/Access Control/screenshots/lab5-home.png",
+    "Portswigger/Access Control/screenshots/lab5-denied.png",
+    "Portswigger/Authentication/screenshots/lab9-settings.png",
+    "Portswigger/Access Control/Lab 3.md",
+    "Portswigger/Access Control/screenshots/lab4-admin-pan.png",
+    "Portswigger/Access Control/screenshots/lab4-repeater.png",
+    "Portswigger/Access Control/screenshots/lab4-post.png",
+    "Portswigger/Access Control/Lab 2.md",
+    "Portswigger/Access Control/Lab 1.md",
+    "Portswigger/Access Control/screenshots",
     "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
+    "Portswigger/Access Control",
+    "Portswigger/Business Logic Vulnerabilities/Lab 13.md",
     "Portswigger/Business Logic Vulnerabilities/Lab 12.md",
     "Portswigger/Authentication/Lab 9.md",
     "Portswigger/Authentication/Lab 7.md",
@@ -179,11 +178,6 @@
     "Portswigger/Business Logic Vulnerabilities/Lab 1.md",
     "Portswigger/Business Logic Vulnerabilities/Lab 11.md",
     "Portswigger/Business Logic Vulnerabilities/Lab 7.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 8.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 9.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 10.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 3.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 6.md",
     "Portswigger/Business Logic Vulnerabilities/screenshots",
     "Portswigger/Business Logic Vulnerabilities/New folder",
     "Portswigger/Business Logic Vulnerabilities",
@@ -191,8 +185,6 @@
     "Portswigger/Command Injection/screenshots",
     "Portswigger/Command Injection",
     "Portswigger/Directory Traversal/screenshots",
-    "Portswigger/Directory Traversal",
-    "Portswigger/Directory Traversal/screenshots",
-    "Portswigger/Authentication/screenshots"
+    "Portswigger/Directory Traversal"
   ]
 }
