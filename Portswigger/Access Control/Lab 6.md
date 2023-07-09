@@ -35,21 +35,21 @@ BrmX9U1m6L4Tq6IqHsAsXrAS9plG11D1
 
 > If we place this cookie into the `POST` request that promotes users to admins to make it as if the user `wiener` was using this feature and send the request.
 
-![][lab6-unauth.png]
+![](./screenshots/lab6-unauth.png)
 
 > It doesn't work.
 > Maybe there are restrictions based on certain HTTP verbs.
 > Trying the `GET` method by right clicking and changing the request method.
 
-![][lab6-meth.png]
+![](./screenshots/lab6-meth.png)
 
-![][lab6-change.png]
+![](./screenshots/lab6-change.png)
 
 > Sending this request works normally. What this means is that the rules created to prevent access control vulnerabilities was set up against the `POST` method. Changing the request to `GET` overrided these controls.
 
 > Changing the username to wiener to complete the lab.
 
-![][lab6-com.png]
+![](./screenshots/lab6-com.png)
 
 > The admin panel is present.
 

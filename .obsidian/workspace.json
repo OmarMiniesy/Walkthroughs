@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "775670311508f1d0",
+            "id": "9e85ade62df6281e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Access Control/Lab 10.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4accef5666edd72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Access Control/Lab 8.md",
+                "file": "Portswigger/Access Control/Lab 13.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Access Control/Lab 8.md",
+                "file": "Portswigger/Access Control/Lab 13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Access Control/Lab 8.md",
+                "file": "Portswigger/Access Control/Lab 13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/Access Control/Lab 8.md"
+                "file": "Portswigger/Access Control/Lab 13.md"
               }
             }
           }
@@ -159,29 +146,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a4accef5666edd72",
+  "active": "9e85ade62df6281e",
   "lastOpenFiles": [
+    "Portswigger/Access Control/screenshots/lab13-exp.png",
+    "Portswigger/Access Control/screenshots/lab13-wiener.png",
+    "Portswigger/Access Control/screenshots/lab13-req.png",
+    "Portswigger/Access Control/Lab 12.md",
+    "Portswigger/Access Control/Lab 13.md",
     "Portswigger/Access Control/Lab 11.md",
+    "Portswigger/Access Control/screenshots/lab12-req.png",
+    "Portswigger/Access Control/screenshots/lab12-session.png",
+    "Portswigger/Access Control/Lab 10.md",
+    "Portswigger/Access Control/screenshots/lab12-post-1.png",
+    "Portswigger/Access Control/screenshots/lab12-post.png",
+    "Portswigger/Access Control/screenshots/lab12-confirm.png",
+    "Portswigger/Access Control/Lab 6.md",
+    "Portswigger/Access Control/Lab 5.md",
+    "Portswigger/Access Control/Lab 7.md",
+    "Portswigger/Access Control/Lab 8.md",
+    "Portswigger/Access Control/Lab 9.md",
+    "Portswigger/Access Control/Lab 4.md",
     "Portswigger/Access Control/screenshots/lab11-carlos.png",
     "Portswigger/Access Control/screenshots/lab11-1.png",
     "Portswigger/Access Control/screenshots/lab11-get.png",
-    "Portswigger/Access Control/screenshots/lab11-chat.png",
-    "Portswigger/Access Control/Lab 10.md",
-    "Portswigger/Access Control/Lab 9.md",
-    "Portswigger/Access Control/Lab 5.md",
-    "Portswigger/Access Control/Lab 6.md",
-    "Portswigger/Access Control/Lab 7.md",
-    "Portswigger/Access Control/Lab 8.md",
-    "Portswigger/Access Control/screenshots/lab10-admin.png",
-    "Portswigger/Access Control/screenshots/lab10-adminpass.png",
-    "Portswigger/Access Control/screenshots/lab10-get.png",
     "README.md",
-    "Portswigger/Access Control/screenshots/lab9-submit.png",
-    "Portswigger/Access Control/screenshots/lab9-login.png",
-    "Portswigger/Access Control/screenshots/lab9-redirect.png",
     "Portswigger/Access Control/Lab 1.md",
     "Portswigger/Access Control/Lab 2.md",
-    "Portswigger/Access Control/Lab 4.md",
     "Portswigger/Access Control/Lab 3.md",
     "Portswigger/Access Control/screenshots",
     "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
@@ -196,8 +186,6 @@
     "Portswigger/Authentication/Lab 12.md",
     "Portswigger/Authentication/Lab 11.md",
     "Portswigger/Authentication/Lab 10.md",
-    "Portswigger/Authentication/Lab 8.md",
-    "Portswigger/Authentication/Lab 6.md",
     "Portswigger/Business Logic Vulnerabilities/screenshots",
     "Portswigger/Business Logic Vulnerabilities/New folder",
     "Portswigger/Business Logic Vulnerabilities",
