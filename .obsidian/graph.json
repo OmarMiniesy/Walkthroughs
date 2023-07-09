@@ -55,6 +55,13 @@
         "a": 1,
         "rgb": 15429888
       }
+    },
+    {
+      "query": "path:\"Portswigger/Information Disclosure\"",
+      "color": {
+        "a": 1,
+        "rgb": 2573601
+      }
     }
   ],
   "collapse-display": true,
@@ -67,6 +74,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.18422884880312201,
+  "scale": 0.09848280266864437,
   "close": true
 }
