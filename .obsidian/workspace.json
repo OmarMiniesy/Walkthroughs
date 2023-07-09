@@ -8,14 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "24b391068ea4acea",
+            "id": "775670311508f1d0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Access Control/Lab 10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a4accef5666edd72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Access Control/Lab 8.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Portswigger/Access Control/Lab 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Portswigger/Access Control/Lab 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Portswigger/Access Control/Lab 8.md"
+              }
             }
           }
         ]
@@ -138,24 +159,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "936c5cb4780564e1",
+  "active": "a4accef5666edd72",
   "lastOpenFiles": [
+    "Portswigger/Access Control/Lab 11.md",
+    "Portswigger/Access Control/screenshots/lab11-carlos.png",
+    "Portswigger/Access Control/screenshots/lab11-1.png",
+    "Portswigger/Access Control/screenshots/lab11-get.png",
+    "Portswigger/Access Control/screenshots/lab11-chat.png",
+    "Portswigger/Access Control/Lab 10.md",
+    "Portswigger/Access Control/Lab 9.md",
     "Portswigger/Access Control/Lab 5.md",
     "Portswigger/Access Control/Lab 6.md",
-    "Portswigger/Access Control/screenshots/lab5-req.png",
-    "Portswigger/Access Control/screenshots/lab5-delete.png",
-    "Portswigger/Access Control/Lab 4.md",
-    "Portswigger/Access Control/screenshots/lab5-browser.png",
-    "Portswigger/Access Control/screenshots/lab5-pass.png",
-    "Portswigger/Access Control/screenshots/lab5-home.png",
-    "Portswigger/Access Control/screenshots/lab5-denied.png",
-    "Portswigger/Authentication/screenshots/lab9-settings.png",
-    "Portswigger/Access Control/Lab 3.md",
-    "Portswigger/Access Control/screenshots/lab4-admin-pan.png",
-    "Portswigger/Access Control/screenshots/lab4-repeater.png",
-    "Portswigger/Access Control/screenshots/lab4-post.png",
-    "Portswigger/Access Control/Lab 2.md",
+    "Portswigger/Access Control/Lab 7.md",
+    "Portswigger/Access Control/Lab 8.md",
+    "Portswigger/Access Control/screenshots/lab10-admin.png",
+    "Portswigger/Access Control/screenshots/lab10-adminpass.png",
+    "Portswigger/Access Control/screenshots/lab10-get.png",
+    "README.md",
+    "Portswigger/Access Control/screenshots/lab9-submit.png",
+    "Portswigger/Access Control/screenshots/lab9-login.png",
+    "Portswigger/Access Control/screenshots/lab9-redirect.png",
     "Portswigger/Access Control/Lab 1.md",
+    "Portswigger/Access Control/Lab 2.md",
+    "Portswigger/Access Control/Lab 4.md",
+    "Portswigger/Access Control/Lab 3.md",
     "Portswigger/Access Control/screenshots",
     "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
     "Portswigger/Access Control",
@@ -171,13 +198,6 @@
     "Portswigger/Authentication/Lab 10.md",
     "Portswigger/Authentication/Lab 8.md",
     "Portswigger/Authentication/Lab 6.md",
-    "Portswigger/Authentication/Lab 5.md",
-    "Portswigger/Authentication/Lab 3.md",
-    "Portswigger/Authentication/Lab 2.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 2.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 1.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 11.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 7.md",
     "Portswigger/Business Logic Vulnerabilities/screenshots",
     "Portswigger/Business Logic Vulnerabilities/New folder",
     "Portswigger/Business Logic Vulnerabilities",
