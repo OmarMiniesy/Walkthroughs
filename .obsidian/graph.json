@@ -62,6 +62,20 @@
         "a": 1,
         "rgb": 2573601
       }
+    },
+    {
+      "query": "path:\"Portswigger/File Upload Vulnerabilities\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "path:Portswigger/SSRF",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
     }
   ],
   "collapse-display": true,
@@ -74,6 +88,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.09848280266864437,
+  "scale": 0.18092446123303887,
   "close": true
 }
