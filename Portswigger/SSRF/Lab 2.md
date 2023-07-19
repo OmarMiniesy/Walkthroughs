@@ -9,7 +9,6 @@
 
 > There is a `POST` request sent.
 
-
 ![](./screenshots/lab1-req.png)
 
 > We see there is a parameter at the bottom that contains a link.
