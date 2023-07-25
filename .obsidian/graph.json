@@ -76,6 +76,13 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "path:\"Portswigger/XXE Injection\"",
+      "color": {
+        "a": 1,
+        "rgb": 4732692
+      }
     }
   ],
   "collapse-display": true,
@@ -88,6 +95,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.12061630748869259,
+  "scale": 0.08838991787130736,
   "close": true
 }
