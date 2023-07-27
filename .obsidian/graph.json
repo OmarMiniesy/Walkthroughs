@@ -90,6 +90,13 @@
         "a": 1,
         "rgb": 11657298
       }
+    },
+    {
+      "query": "path:picoCTF",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
     }
   ],
   "collapse-display": true,
@@ -102,6 +109,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.09204747004433193,
+  "scale": 0.06565520177909626,
   "close": true
 }

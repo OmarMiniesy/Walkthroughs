@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cd3948f585d26842",
+        "id": "141f37925bb7e99a",
         "type": "tabs",
         "children": [
           {
-            "id": "124fc4a611e75cd7",
+            "id": "2cbbd7eb59b22ceb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/CSRF/Lab 6.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/CSRF/Lab 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/CSRF/Lab 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Portswigger/CSRF/Lab 6.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,34 +138,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "124fc4a611e75cd7",
+  "active": "2cbbd7eb59b22ceb",
   "lastOpenFiles": [
-    "Portswigger/CSRF/Lab 5.md",
+    "picoCTF/Cookies.md",
+    "picoCTF/screenshots/26.png",
+    "picoCTF/screenshots/25.png",
+    "picoCTF/screenshots/24.png",
+    "picoCTF/screenshots/23.png",
+    "picoCTF/screenshots/22.png",
+    "picoCTF/screenshots/21.png",
+    "picoCTF/GET aHEAD.md",
+    "picoCTF/screenshots/get-3.png",
+    "picoCTF/screenshots/get-2.png",
+    "picoCTF/screenshots/get-1.png",
+    "picoCTF/screenshots",
+    "picoCTF/New folder",
+    "Portswigger/XXE Injection/Lab 9.md",
+    "Untitled",
+    "picoCTF",
+    "Portswigger/XXE Injection/Lab 8.md",
+    "Portswigger/XXE Injection/Lab 7.md",
+    "Portswigger/XXE Injection/Lab 6.md",
+    "Portswigger/XXE Injection/Lab 2.md",
+    "Portswigger/XXE Injection/Lab 1.md",
     "Portswigger/CSRF/Lab 6.md",
+    "Portswigger/CSRF/Lab 5.md",
     "Portswigger/CSRF/screenshots/lab6-5.png",
-    "Portswigger/CSRF/screenshots/lab6-4.png",
-    "Portswigger/CSRF/screenshots/lab6-3.png",
-    "Portswigger/CSRF/screenshots/lab6-2.png",
-    "Portswigger/CSRF/screenshots/lab6-1.png",
     "Portswigger/CSRF/Lab 4.md",
     "Portswigger/CSRF/Lab 1.md",
-    "Portswigger/CSRF/screenshots/lab5-9.png",
-    "Portswigger/CSRF/screenshots/lab5-8.png",
-    "Portswigger/CSRF/screenshots/lab5-7.png",
-    "Portswigger/CSRF/screenshots/lab5-6.png",
-    "Portswigger/CSRF/screenshots/lab5.png",
     "Portswigger/CSRF/Lab 2.md",
     "Portswigger/CSRF/Lab 3.md",
     "Portswigger/CSRF/screenshots",
     "Portswigger/CSRF",
     "Portswigger/Access Control/Lab 4.md",
-    "Portswigger/XXE Injection/Lab 8.md",
-    "Portswigger/XXE Injection/Lab 9.md",
-    "Portswigger/XXE Injection/Lab 6.md",
-    "Portswigger/XXE Injection/Lab 7.md",
-    "Portswigger/XXE Injection/Lab 1.md",
     "XML.md",
-    "Portswigger/XXE Injection/Lab 2.md",
     "README.md",
     "Portswigger/XXE Injection/screenshots",
     "Portswigger/XXE Injection",
@@ -184,14 +182,8 @@
     "Portswigger/SSRF/Lab 1.md",
     "Portswigger/SSRF/Untitled",
     "Portswigger/SSRF/screenshots",
-    "Portswigger/SSRF",
     "Portswigger/File Upload Vulnerabilities/Lab 7.md",
     "Portswigger/File Upload Vulnerabilities/Lab 6.md",
-    "Portswigger/SQL Injection/Lab 5.md",
-    "Portswigger/SQL Injection/Lab 4.md",
-    "Portswigger/SQL Injection/Lab 1.md",
-    "Portswigger/File Upload Vulnerabilities/screenshots",
-    "Portswigger/File Upload Vulnerabilities",
-    "Portswigger/Information Disclosure/screenshots"
+    "Portswigger/SQL Injection/Lab 5.md"
   ]
 }
