@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2cbbd7eb59b22ceb",
+            "id": "6994aa8804ebb72c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/CSRF/Lab 6.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Portswigger/CSRF/Lab 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Portswigger/CSRF/Lab 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Portswigger/CSRF/Lab 6.md"
+              }
             }
           }
         ]
@@ -138,19 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2cbbd7eb59b22ceb",
+  "active": "6994aa8804ebb72c",
   "lastOpenFiles": [
-    "picoCTF/Cookies.md",
-    "picoCTF/screenshots/26.png",
-    "picoCTF/screenshots/25.png",
-    "picoCTF/screenshots/24.png",
-    "picoCTF/screenshots/23.png",
-    "picoCTF/screenshots/22.png",
-    "picoCTF/screenshots/21.png",
+    "picoCTF/Insp3ct0r.md",
+    "picoCTF/Some Assembly Required 1.md",
+    "picoCTF/screenshots/51.png",
+    "picoCTF/Scavenger Hunt.md",
+    "picoCTF/screenshots/48.png",
+    "picoCTF/screenshots/47.png",
+    "picoCTF/screenshots/46.png",
+    "picoCTF/screenshots/45.png",
+    "picoCTF/screenshots/44.png",
+    "picoCTF/screenshots/43.png",
+    "picoCTF/screenshots/42.png",
+    "picoCTF/screenshots/41.png",
+    "picoCTF/screenshots/35.png",
     "picoCTF/GET aHEAD.md",
-    "picoCTF/screenshots/get-3.png",
-    "picoCTF/screenshots/get-2.png",
-    "picoCTF/screenshots/get-1.png",
+    "picoCTF/Cookies.md",
     "picoCTF/screenshots",
     "picoCTF/New folder",
     "Portswigger/XXE Injection/Lab 9.md",
@@ -163,7 +175,6 @@
     "Portswigger/XXE Injection/Lab 1.md",
     "Portswigger/CSRF/Lab 6.md",
     "Portswigger/CSRF/Lab 5.md",
-    "Portswigger/CSRF/screenshots/lab6-5.png",
     "Portswigger/CSRF/Lab 4.md",
     "Portswigger/CSRF/Lab 1.md",
     "Portswigger/CSRF/Lab 2.md",
@@ -181,9 +192,6 @@
     "Portswigger/SSRF/Lab 2.md",
     "Portswigger/SSRF/Lab 1.md",
     "Portswigger/SSRF/Untitled",
-    "Portswigger/SSRF/screenshots",
-    "Portswigger/File Upload Vulnerabilities/Lab 7.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 6.md",
-    "Portswigger/SQL Injection/Lab 5.md"
+    "Portswigger/SSRF/screenshots"
   ]
 }
