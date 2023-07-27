@@ -83,6 +83,13 @@
         "a": 1,
         "rgb": 4732692
       }
+    },
+    {
+      "query": "path:Portswigger/CSRF",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
   "collapse-display": true,
@@ -95,6 +102,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08838991787130736,
+  "scale": 0.09204747004433193,
   "close": true
 }
