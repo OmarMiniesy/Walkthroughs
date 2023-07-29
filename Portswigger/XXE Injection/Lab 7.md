@@ -10,11 +10,11 @@
 
 > Viewing any item and then pressing on `check stock` while having BURPSUITE PROXY HTTP history on.
 
-![](check-stock.png)
+![](./screenshots/check-stock.png)
 
 > Viewing the `POST` request sent via HTTP history.
 
-![](lab7-1.png)
+![](./screenshots/lab7-1.png)
 
 > Similar to [[Portswigger/XXE Injection/Lab 6|Lab 6]], it is a blind injection, and we can only use parameterized entities.
 > To try and invoke error messages, we try to find a local DTD and redefine an element to cause the error message without using an external entity.
@@ -46,6 +46,6 @@
 
 > Adding this payload into the `POST` request and sending it gives the error message.
 
-![](lab7-2.png)
+![](./screenshots/lab7-2.png)
 
 ---

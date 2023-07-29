@@ -5,7 +5,6 @@
 
 
 > Given credentials `wiener:peter`.
-> Given credentials `carlos:montoya`.
 
 > Logging in with the given credentials.
 
