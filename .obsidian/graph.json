@@ -104,6 +104,13 @@
         "a": 1,
         "rgb": 10838206
       }
+    },
+    {
+      "query": "path:Portswigger/Clickjacking",
+      "color": {
+        "a": 1,
+        "rgb": 16514612
+      }
     }
   ],
   "collapse-display": true,
@@ -116,6 +123,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08317427835927566,
+  "scale": 0.14656696566986574,
   "close": false
 }

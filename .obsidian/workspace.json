@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "82903b3572980bb0",
+        "id": "ae894a6aeb5b6e5e",
         "type": "tabs",
         "children": [
           {
-            "id": "e35bcb993c2fd1bb",
+            "id": "37f6792636592b7d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Clickjacking/Lab 5.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/CORS/Lab 3.md",
+                "file": "Portswigger/Clickjacking/Lab 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/CORS/Lab 3.md",
+                "file": "Portswigger/Clickjacking/Lab 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/CORS/Lab 3.md"
+                "file": "Portswigger/Clickjacking/Lab 5.md"
               }
             }
           },
@@ -152,22 +156,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "936c5cb4780564e1",
+  "active": "37f6792636592b7d",
   "lastOpenFiles": [
-    "Portswigger/CORS/screenshots/lab3-11.png",
-    "Portswigger/CORS/screenshots/lab3-10.png",
-    "Portswigger/CORS/Lab 1.md",
+    "Portswigger/Clickjacking/screenshots/lab5-2.png",
+    "Portswigger/Clickjacking/Lab 4.md",
+    "Portswigger/Clickjacking/Lab 5.md",
+    "Portswigger/Clickjacking/screenshots/lab5-1.png",
+    "Portswigger/Clickjacking/Lab 1.md",
+    "Portswigger/Clickjacking/screenshots/lab4-4.png",
+    "Portswigger/Clickjacking/Lab 3.md",
+    "Portswigger/Clickjacking/screenshots/lab4-3.png",
+    "Portswigger/Clickjacking/screenshots/lab4-2.png",
+    "Portswigger/Clickjacking/screenshots/lab4-1.png",
+    "Portswigger/Clickjacking/Lab 2.md",
+    "Portswigger/Clickjacking/screenshots/lab3-1.png",
+    "Portswigger/Clickjacking/screenshots/lab2-4.png",
+    "Portswigger/Clickjacking/screenshots/lab2-3.png",
+    "Portswigger/Clickjacking/screenshots/lab2-2.png",
+    "Portswigger/Clickjacking/screenshots/lab2-1.png",
+    "Portswigger/CSRF/Lab 3.md",
+    "Portswigger/CSRF/Lab 7.md",
+    "Portswigger/CSRF/Lab 6.md",
+    "Portswigger/CSRF/Lab 5.md",
+    "Portswigger/CSRF/Lab 4.md",
+    "Portswigger/CSRF/Lab 2.md",
     "Portswigger/CORS/Lab 3.md",
     "Portswigger/CORS/Lab 2.md",
-    "Portswigger/CORS/screenshots/lab3-9.png",
-    "Portswigger/CORS/screenshots/lab3-8.png",
-    "Portswigger/CORS/screenshots/lab3-7.png",
-    "Portswigger/CORS/screenshots/lab3-6.png",
-    "Portswigger/CORS/screenshots/lab3-5.png",
-    "Portswigger/CORS/screenshots/lab3-4.png",
-    "Portswigger/CORS/screenshots/lab3-3.png",
-    "Portswigger/CORS/screenshots/lab3-2.png",
-    "Portswigger/CORS/screenshots/lab3-1.png",
+    "Portswigger/CORS/Lab 1.md",
+    "Portswigger/Clickjacking/screenshots",
+    "Portswigger/Clickjacking",
     "README.md",
     "picoCTF/dont-use-client-side.md",
     "Portswigger/CORS/screenshots",
@@ -181,24 +198,11 @@
     "Portswigger/CSRF/Lab 10.md",
     "Portswigger/Access Control/Lab 5.md",
     "Portswigger/Access Control/Lab 3.md",
-    "Portswigger/Access Control/Lab 2.md",
-    "Portswigger/Access Control/Lab 1.md",
-    "Portswigger/CSRF/Lab 1.md",
-    "Portswigger/CSRF/Lab 2.md",
-    "Portswigger/CSRF/Lab 4.md",
-    "Portswigger/CSRF/Lab 5.md",
-    "Portswigger/CSRF/Lab 6.md",
-    "Portswigger/CSRF/Lab 7.md",
-    "Portswigger/CSRF/Lab 8.md",
-    "Portswigger/XXE Injection/Lab 9.md",
-    "Portswigger/XXE Injection/Lab 8.md",
     "picoCTF/screenshots",
     "picoCTF/New folder",
     "picoCTF",
     "Portswigger/CSRF/screenshots",
     "Portswigger/CSRF",
-    "Portswigger/XXE Injection/screenshots",
-    "Portswigger/XXE Injection",
-    "Portswigger/SSRF/Untitled"
+    "Portswigger/XXE Injection/screenshots"
   ]
 }
