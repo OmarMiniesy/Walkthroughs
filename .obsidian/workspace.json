@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "51cfbc892e4317d6",
+        "id": "82903b3572980bb0",
         "type": "tabs",
         "children": [
           {
-            "id": "5ebb80a45645932b",
+            "id": "e35bcb993c2fd1bb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/CSRF/Lab 12.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/CSRF/Lab 12.md",
+                "file": "Portswigger/CORS/Lab 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/CSRF/Lab 12.md",
+                "file": "Portswigger/CORS/Lab 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +121,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/CSRF/Lab 12.md"
+                "file": "Portswigger/CORS/Lab 3.md"
               }
             }
+          },
+          {
+            "id": "73d854d171b3f703",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -138,6 +143,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -146,13 +152,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ebb80a45645932b",
+  "active": "936c5cb4780564e1",
   "lastOpenFiles": [
-    "Portswigger/CSRF/screenshots/lab12-3.png",
-    "Portswigger/CSRF/screenshots/lab12-2.png",
-    "Portswigger/CSRF/screenshots/lab12-1.png",
-    "Portswigger/CSRF/Lab 11.md",
+    "Portswigger/CORS/screenshots/lab3-11.png",
+    "Portswigger/CORS/screenshots/lab3-10.png",
+    "Portswigger/CORS/Lab 1.md",
+    "Portswigger/CORS/Lab 3.md",
+    "Portswigger/CORS/Lab 2.md",
+    "Portswigger/CORS/screenshots/lab3-9.png",
+    "Portswigger/CORS/screenshots/lab3-8.png",
+    "Portswigger/CORS/screenshots/lab3-7.png",
+    "Portswigger/CORS/screenshots/lab3-6.png",
+    "Portswigger/CORS/screenshots/lab3-5.png",
+    "Portswigger/CORS/screenshots/lab3-4.png",
+    "Portswigger/CORS/screenshots/lab3-3.png",
+    "Portswigger/CORS/screenshots/lab3-2.png",
+    "Portswigger/CORS/screenshots/lab3-1.png",
+    "README.md",
+    "picoCTF/dont-use-client-side.md",
+    "Portswigger/CORS/screenshots",
+    "Portswigger/CORS",
+    "picoCTF/It is my Birthday.md",
+    "picoCTF/logon.md",
+    "picoCTF/where are the robots.md",
+    "picoCTF/More Cookies.md",
     "Portswigger/CSRF/Lab 12.md",
+    "Portswigger/CSRF/Lab 11.md",
     "Portswigger/CSRF/Lab 10.md",
     "Portswigger/Access Control/Lab 5.md",
     "Portswigger/Access Control/Lab 3.md",
@@ -165,34 +190,15 @@
     "Portswigger/CSRF/Lab 6.md",
     "Portswigger/CSRF/Lab 7.md",
     "Portswigger/CSRF/Lab 8.md",
-    "Portswigger/CSRF/screenshots/lab11-2.png",
-    "Portswigger/CSRF/screenshots/lab11-1.png",
-    "Portswigger/CSRF/screenshots/lab10-5.png",
-    "Portswigger/CSRF/screenshots/lab10-4.png",
-    "Portswigger/CSRF/screenshots/lab10-3.png",
-    "Portswigger/CSRF/screenshots/lab10-2.png",
-    "Portswigger/CSRF/screenshots/lab10-1.png",
-    "README.md",
-    "Portswigger/CSRF/screenshots/lab8-8.png",
     "Portswigger/XXE Injection/Lab 9.md",
     "Portswigger/XXE Injection/Lab 8.md",
-    "Portswigger/XXE Injection/Lab 7.md",
-    "Portswigger/XXE Injection/Lab 6.md",
-    "Portswigger/XXE Injection/Lab 2.md",
-    "Portswigger/XXE Injection/Lab 1.md",
-    "Portswigger/CSRF/Lab 3.md",
-    "picoCTF/Insp3ct0r.md",
-    "picoCTF/Some Assembly Required 1.md",
-    "picoCTF/Scavenger Hunt.md",
     "picoCTF/screenshots",
     "picoCTF/New folder",
-    "Untitled",
     "picoCTF",
     "Portswigger/CSRF/screenshots",
     "Portswigger/CSRF",
     "Portswigger/XXE Injection/screenshots",
     "Portswigger/XXE Injection",
-    "Portswigger/SSRF/Untitled",
-    "Portswigger/SSRF/screenshots"
+    "Portswigger/SSRF/Untitled"
   ]
 }
