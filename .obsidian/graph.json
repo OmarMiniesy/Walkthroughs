@@ -111,6 +111,13 @@
         "a": 1,
         "rgb": 16514612
       }
+    },
+    {
+      "query": "path:tryhackme",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
     }
   ],
   "collapse-display": true,
@@ -124,5 +131,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.14656696566986574,
-  "close": false
+  "close": true
 }
