@@ -118,6 +118,13 @@
         "a": 1,
         "rgb": 16711680
       }
+    },
+    {
+      "query": "path:Portswigger/WebSockets",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
     }
   ],
   "collapse-display": true,

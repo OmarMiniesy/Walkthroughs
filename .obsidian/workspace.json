@@ -8,18 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "acbf0928e7a61a66",
+            "id": "e3812a5dc216504b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/RootMe.md",
+                "file": "tryhackme/Overpass.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8bb1d8f65c3c4e1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/WebSockets/Lab 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23a0301b811e3e96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Access Control/Lab 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tryhackme/RootMe.md",
+                "file": "Portswigger/Access Control/Lab 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tryhackme/RootMe.md",
+                "file": "Portswigger/Access Control/Lab 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tryhackme/RootMe.md"
+                "file": "Portswigger/Access Control/Lab 1.md"
               }
             }
           },
@@ -156,21 +181,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acbf0928e7a61a66",
+  "active": "23a0301b811e3e96",
   "lastOpenFiles": [
-    "tryhackme/screenshots/root.png",
-    "tryhackme/screenshots/python.png",
+    "Portswigger/WebSockets/Lab 2.md",
+    "Portswigger/WebSockets/screenshots/lab2-5.png",
+    "Portswigger/WebSockets/screenshots/lab2-4.png",
+    "Portswigger/WebSockets/screenshots/lab2-3.png",
+    "Portswigger/WebSockets/screenshots/lab2-2.png",
+    "Portswigger/WebSockets/screenshots/lab2-1.png",
+    "Portswigger/WebSockets/Lab 1.md",
+    "Portswigger/WebSockets/screenshots/lab1-8.png",
+    "Portswigger/WebSockets/screenshots/lab1-7.png",
+    "Portswigger/WebSockets/screenshots/lab1-6.png",
+    "Portswigger/WebSockets/screenshots/lab1-5.png",
+    "Portswigger/WebSockets/screenshots/lab1-4.png",
+    "Portswigger/XXE Injection/Lab 2.md",
+    "Portswigger/XXE Injection/Lab 6.md",
+    "tryhackme/Overpass.md",
+    "Portswigger/WebSockets/screenshots",
+    "Portswigger/WebSockets",
     "tryhackme/Basic Pentesting.md",
     "tryhackme/RootMe.md",
-    "tryhackme/screenshots/suid1.png",
-    "tryhackme/screenshots/suid.png",
-    "tryhackme/screenshots/nc.png",
-    "tryhackme/screenshots/err1.png",
-    "tryhackme/screenshots/uploads1.png",
-    "tryhackme/screenshots/burp-1.png",
-    "tryhackme/screenshots/uploads.png",
-    "tryhackme/screenshots/burp.png",
-    "tryhackme/screenshots/err.png",
     "Portswigger/Clickjacking/Lab 5.md",
     "README.md",
     "tryhackme/screenshots",
@@ -195,14 +226,7 @@
     "Portswigger/CORS",
     "picoCTF/It is my Birthday.md",
     "picoCTF/logon.md",
-    "picoCTF/where are the robots.md",
-    "picoCTF/More Cookies.md",
-    "Portswigger/CSRF/Lab 12.md",
-    "Portswigger/CSRF/Lab 11.md",
-    "Portswigger/CSRF/Lab 10.md",
     "picoCTF/screenshots",
-    "picoCTF/New folder",
-    "picoCTF",
-    "Portswigger/CSRF/screenshots"
+    "picoCTF/New folder"
   ]
 }
