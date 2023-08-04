@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "870eecd8a28c51f9",
+        "id": "268a91084e5f280b",
         "type": "tabs",
         "children": [
           {
-            "id": "894ce132f59b246c",
+            "id": "baa230a8ca0427ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Overpass.md",
+                "file": "tryhackme/OhSINT.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tryhackme/Overpass.md",
+                "file": "tryhackme/OhSINT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tryhackme/Overpass.md",
+                "file": "tryhackme/OhSINT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tryhackme/Overpass.md"
+                "file": "tryhackme/OhSINT.md"
               }
             }
           },
@@ -156,24 +156,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "894ce132f59b246c",
+  "active": "baa230a8ca0427ec",
   "lastOpenFiles": [
+    "tryhackme/screenshots/pass.png",
+    "tryhackme/screenshots/blog.png",
+    "tryhackme/screenshots/git.png",
+    "tryhackme/screenshots/wigle1.png",
+    "tryhackme/screenshots/wigle.png",
+    "Pasted image 20230804203909.png",
+    "tryhackme/screenshots/twitter.png",
+    "tryhackme/screenshots/pic.png",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 2.md",
+    "tryhackme/OhSINT.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 1.md",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab1-1.png",
+    "Portswigger/WebSockets/Lab 1.md",
+    "tryhackme/Overpass.md",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots",
+    "Portswigger/DOM-Based Vulnerabilities",
     "tryhackme/screenshots/shell.png",
     "tryhackme/screenshots/nano-1.png",
-    "tryhackme/screenshots/ifconfig.png",
-    "tryhackme/screenshots/nano.png",
     "README.md",
-    "tryhackme/Overpass.md",
-    "Portswigger/WebSockets/Lab 1.md",
     "Portswigger/Access Control/Lab 1.md",
     "Portswigger/WebSockets/Lab 2.md",
-    "Portswigger/WebSockets/screenshots/lab2-5.png",
-    "Portswigger/WebSockets/screenshots/lab2-4.png",
-    "Portswigger/WebSockets/screenshots/lab2-3.png",
-    "Portswigger/WebSockets/screenshots/lab2-2.png",
-    "Portswigger/WebSockets/screenshots/lab2-1.png",
-    "Portswigger/WebSockets/screenshots/lab1-8.png",
-    "Portswigger/WebSockets/screenshots/lab1-7.png",
     "Portswigger/XXE Injection/Lab 2.md",
     "Portswigger/XXE Injection/Lab 6.md",
     "Portswigger/WebSockets/screenshots",
@@ -195,14 +200,9 @@
     "Portswigger/CSRF/Lab 2.md",
     "Portswigger/CORS/Lab 3.md",
     "Portswigger/CORS/Lab 2.md",
-    "Portswigger/CORS/Lab 1.md",
     "Portswigger/Clickjacking/screenshots",
     "Portswigger/Clickjacking",
-    "picoCTF/dont-use-client-side.md",
     "Portswigger/CORS/screenshots",
-    "Portswigger/CORS",
-    "picoCTF/It is my Birthday.md",
-    "picoCTF/screenshots",
-    "picoCTF/New folder"
+    "Portswigger/CORS"
   ]
 }
