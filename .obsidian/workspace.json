@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "998aa3c49a9e80d0",
+        "id": "870eecd8a28c51f9",
         "type": "tabs",
         "children": [
           {
-            "id": "e3812a5dc216504b",
+            "id": "894ce132f59b246c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8bb1d8f65c3c4e1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/WebSockets/Lab 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23a0301b811e3e96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Access Control/Lab 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Access Control/Lab 1.md",
+                "file": "tryhackme/Overpass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Access Control/Lab 1.md",
+                "file": "tryhackme/Overpass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/Access Control/Lab 1.md"
+                "file": "tryhackme/Overpass.md"
               }
             }
           },
@@ -181,29 +156,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23a0301b811e3e96",
+  "active": "894ce132f59b246c",
   "lastOpenFiles": [
+    "tryhackme/screenshots/shell.png",
+    "tryhackme/screenshots/nano-1.png",
+    "tryhackme/screenshots/ifconfig.png",
+    "tryhackme/screenshots/nano.png",
+    "README.md",
+    "tryhackme/Overpass.md",
+    "Portswigger/WebSockets/Lab 1.md",
+    "Portswigger/Access Control/Lab 1.md",
     "Portswigger/WebSockets/Lab 2.md",
     "Portswigger/WebSockets/screenshots/lab2-5.png",
     "Portswigger/WebSockets/screenshots/lab2-4.png",
     "Portswigger/WebSockets/screenshots/lab2-3.png",
     "Portswigger/WebSockets/screenshots/lab2-2.png",
     "Portswigger/WebSockets/screenshots/lab2-1.png",
-    "Portswigger/WebSockets/Lab 1.md",
     "Portswigger/WebSockets/screenshots/lab1-8.png",
     "Portswigger/WebSockets/screenshots/lab1-7.png",
-    "Portswigger/WebSockets/screenshots/lab1-6.png",
-    "Portswigger/WebSockets/screenshots/lab1-5.png",
-    "Portswigger/WebSockets/screenshots/lab1-4.png",
     "Portswigger/XXE Injection/Lab 2.md",
     "Portswigger/XXE Injection/Lab 6.md",
-    "tryhackme/Overpass.md",
     "Portswigger/WebSockets/screenshots",
     "Portswigger/WebSockets",
     "tryhackme/Basic Pentesting.md",
     "tryhackme/RootMe.md",
     "Portswigger/Clickjacking/Lab 5.md",
-    "README.md",
     "tryhackme/screenshots",
     "tryhackme",
     "Portswigger/Clickjacking/Lab 4.md",
@@ -225,7 +202,6 @@
     "Portswigger/CORS/screenshots",
     "Portswigger/CORS",
     "picoCTF/It is my Birthday.md",
-    "picoCTF/logon.md",
     "picoCTF/screenshots",
     "picoCTF/New folder"
   ]

