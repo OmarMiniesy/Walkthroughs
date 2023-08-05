@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "268a91084e5f280b",
+        "id": "9a6381f9ce158947",
         "type": "tabs",
         "children": [
           {
-            "id": "baa230a8ca0427ec",
+            "id": "c94a08e8e052fa99",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tryhackme/OhSINT.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 212.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tryhackme/OhSINT.md",
+                "file": "Portswigger/DOM-Based Vulnerabilities/Lab 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tryhackme/OhSINT.md",
+                "file": "Portswigger/DOM-Based Vulnerabilities/Lab 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tryhackme/OhSINT.md"
+                "file": "Portswigger/DOM-Based Vulnerabilities/Lab 5.md"
               }
             }
           },
@@ -156,50 +152,50 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "baa230a8ca0427ec",
+  "active": "936c5cb4780564e1",
   "lastOpenFiles": [
+    "Portswigger/DOM-Based Vulnerabilities/Lab 7.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 5.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 6.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 4.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 3.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 2.md",
+    "Portswigger/DOM-Based Vulnerabilities/Lab 1.md",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab3-1.png",
+    "Portswigger/SSRF/Lab 2.md",
+    "Portswigger/Information Disclosure/Lab 2.md",
+    "Portswigger/Clickjacking/Lab 2.md",
+    "Portswigger/Access Control/Lab 5.md",
+    "Portswigger/Access Control/Lab 2.md",
+    "Portswigger/SQL Injection/Lab 3.md",
+    "Portswigger/SQL Injection/Lab 2.md",
+    "Portswigger/SQL Injection/Lab 1.md",
+    "Portswigger/XSS/Lab 22.md",
+    "Portswigger/XSS/Lab 18.md",
+    "Portswigger/XSS/Lab 30.md",
+    "Portswigger/XSS/Lab 25.md",
+    "Portswigger/XSS/Lab 24.md",
+    "Portswigger/XSS/Lab 9.md",
+    "Portswigger/XSS/Lab 8.md",
+    "Portswigger/XSS/Lab 7.md",
+    "Portswigger/XSS/Lab 6.md",
+    "Portswigger/XSS/Lab 5.md",
+    "Portswigger/XSS/Lab 4.md",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab1-2.png",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab5-3.png",
+    "Pasted image 20230805153613.png",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab5-2.png",
+    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab5-1.png",
     "tryhackme/screenshots/pass.png",
     "tryhackme/screenshots/blog.png",
     "tryhackme/screenshots/git.png",
     "tryhackme/screenshots/wigle1.png",
-    "tryhackme/screenshots/wigle.png",
-    "Pasted image 20230804203909.png",
-    "tryhackme/screenshots/twitter.png",
-    "tryhackme/screenshots/pic.png",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 2.md",
-    "tryhackme/OhSINT.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 1.md",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab1-1.png",
-    "Portswigger/WebSockets/Lab 1.md",
-    "tryhackme/Overpass.md",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
-    "tryhackme/screenshots/shell.png",
-    "tryhackme/screenshots/nano-1.png",
-    "README.md",
-    "Portswigger/Access Control/Lab 1.md",
-    "Portswigger/WebSockets/Lab 2.md",
-    "Portswigger/XXE Injection/Lab 2.md",
-    "Portswigger/XXE Injection/Lab 6.md",
     "Portswigger/WebSockets/screenshots",
     "Portswigger/WebSockets",
-    "tryhackme/Basic Pentesting.md",
-    "tryhackme/RootMe.md",
-    "Portswigger/Clickjacking/Lab 5.md",
     "tryhackme/screenshots",
     "tryhackme",
-    "Portswigger/Clickjacking/Lab 4.md",
-    "Portswigger/Clickjacking/Lab 1.md",
-    "Portswigger/Clickjacking/Lab 3.md",
-    "Portswigger/Clickjacking/Lab 2.md",
-    "Portswigger/CSRF/Lab 3.md",
-    "Portswigger/CSRF/Lab 7.md",
-    "Portswigger/CSRF/Lab 6.md",
-    "Portswigger/CSRF/Lab 5.md",
-    "Portswigger/CSRF/Lab 4.md",
-    "Portswigger/CSRF/Lab 2.md",
-    "Portswigger/CORS/Lab 3.md",
-    "Portswigger/CORS/Lab 2.md",
     "Portswigger/Clickjacking/screenshots",
     "Portswigger/Clickjacking",
     "Portswigger/CORS/screenshots",

@@ -1,7 +1,7 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
@@ -125,6 +125,13 @@
         "a": 1,
         "rgb": 5395168
       }
+    },
+    {
+      "query": "path:\"Portswigger/DOM-Based Vulnerabilities\"",
+      "color": {
+        "a": 1,
+        "rgb": 5395026
+      }
     }
   ],
   "collapse-display": true,
@@ -137,6 +144,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.14656696566986574,
+  "scale": 0.1465669656698658,
   "close": true
 }
