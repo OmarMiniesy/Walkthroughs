@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c94a08e8e052fa99",
+            "id": "ff9e1ecefc8a318a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "tryhackme/Simple CTF.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/DOM-Based Vulnerabilities/Lab 5.md",
+                "file": "tryhackme/Simple CTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/DOM-Based Vulnerabilities/Lab 5.md",
+                "file": "tryhackme/Simple CTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Portswigger/DOM-Based Vulnerabilities/Lab 5.md"
+                "file": "tryhackme/Simple CTF.md"
               }
             }
           },
@@ -152,44 +156,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "936c5cb4780564e1",
+  "active": "ff9e1ecefc8a318a",
   "lastOpenFiles": [
-    "Portswigger/DOM-Based Vulnerabilities/Lab 7.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 5.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 6.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 4.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 3.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 2.md",
-    "Portswigger/DOM-Based Vulnerabilities/Lab 1.md",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab3-1.png",
-    "Portswigger/SSRF/Lab 2.md",
-    "Portswigger/Information Disclosure/Lab 2.md",
-    "Portswigger/Clickjacking/Lab 2.md",
-    "Portswigger/Access Control/Lab 5.md",
-    "Portswigger/Access Control/Lab 2.md",
+    "tryhackme/screenshots/gtfo.png",
+    "tryhackme/Agent Sudo.md",
+    "tryhackme/Basic Pentesting.md",
+    "tryhackme/OhSINT.md",
+    "tryhackme/Overpass.md",
+    "tryhackme/RootMe.md",
+    "tryhackme/Simple CTF.md",
+    "tryhackme/screenshots/hashcat-1.png",
+    "tryhackme/screenshots/hashcat.png",
+    "tryhackme/screenshots/hash.png",
+    "tryhackme/screenshots/exploit-1.png",
+    "tryhackme/screenshots/pass-1.png",
+    "tryhackme/screenshots/exploit.png",
+    "tryhackme/screenshots/cms.png",
+    "tryhackme/screenshots/simple.png",
+    "Portswigger/Directory Traversal/Lab 4.md",
+    "tryhackme/screenshots/root-1.png",
+    "tryhackme/screenshots/sudo-l.png",
+    "Portswigger/SQL Injection/Lab 10.md",
+    "Portswigger/SQL Injection/Lab 9.md",
+    "Portswigger/SQL Injection/Lab 8.md",
+    "Portswigger/SQL Injection/Lab 7.md",
+    "Portswigger/SQL Injection/Lab 6.md",
+    "Portswigger/SQL Injection/Lab 5.md",
+    "Portswigger/SQL Injection/Lab 4.md",
     "Portswigger/SQL Injection/Lab 3.md",
     "Portswigger/SQL Injection/Lab 2.md",
     "Portswigger/SQL Injection/Lab 1.md",
-    "Portswigger/XSS/Lab 22.md",
-    "Portswigger/XSS/Lab 18.md",
-    "Portswigger/XSS/Lab 30.md",
-    "Portswigger/XSS/Lab 25.md",
-    "Portswigger/XSS/Lab 24.md",
+    "Portswigger/XSS/Lab 10.md",
     "Portswigger/XSS/Lab 9.md",
     "Portswigger/XSS/Lab 8.md",
     "Portswigger/XSS/Lab 7.md",
     "Portswigger/XSS/Lab 6.md",
     "Portswigger/XSS/Lab 5.md",
     "Portswigger/XSS/Lab 4.md",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab1-2.png",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab5-3.png",
-    "Pasted image 20230805153613.png",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab5-2.png",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots/lab5-1.png",
-    "tryhackme/screenshots/pass.png",
-    "tryhackme/screenshots/blog.png",
-    "tryhackme/screenshots/git.png",
-    "tryhackme/screenshots/wigle1.png",
+    "Portswigger/XSS/Lab 3.md",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
     "Portswigger/WebSockets/screenshots",
