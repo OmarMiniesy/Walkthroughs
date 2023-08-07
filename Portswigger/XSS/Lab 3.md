@@ -14,12 +14,22 @@
 > This function then writes to the DOM an img element, and its source attribute's contains a path.
 > The end of the path contains the search item minso.
 
-> Will try to break out of the `img src` element attribute, and add a new element or tag with the XSS payload.
-```
-mins"> <svg onload=alert(1)>
-```
-> So what happens is that the qoute and angle bracket close off the src img, and we add a new element with the onload attribute that calls the payload.
+> There is a source, which is the URl `searchTerms` query parameter that we can change, and then there is the sink, which is `document.write`.
+> Since the source and sink have a direct connection, then there is a taint flow, and we can exploit a DOM based vulnerability.
 
-![payload](./screenshots/payload.png)
+> Since the sink simply adds a new HTML element, we can try to break out of the `img` element's `src` attribute, and add our XSS payload.
+```
+"> <img src=1 onerror=alert()>
+```
+> Entering this payload in the URL in the `search` query parameter and hitting enter, we see the alert pop-up.
+
+![](./screenshots/lab3-1.png)
+
+> We also see how this payload changed the DOM:
+
+![](./screenshots/lab3-2.png)
+
+> We closed off the `src` attribute with the qoute, we closed off the `img` element with `>`, and then we added a payload that triggers an alert.
+
 
 ---

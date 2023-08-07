@@ -5,6 +5,8 @@
 
 > Go to login page.
 
+![](./screenshots/lab2-1.png)
+
 > Check that username field is vulnerable to SQL injection using `'`. Returns a server error, therefore it is vulnerable. 
 
 > Login using administrator username and removing the password item from the query. Add any password in the password field.

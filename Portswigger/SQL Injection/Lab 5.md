@@ -3,11 +3,13 @@
 
 ---
 
+> Since the `Accessories` query parameter is vulnerable to SQLi, we inject all our payloads there.
+
 > Get the number of columns using the `order by` technique. Keep increasing order by index until an error is produced.
 ```
-...category=Accessories' ORDER BY 4
+Accessories' ORDER BY 4
 ```
-> Number of columns is 3
+> Number of columns is 3 since we got the error at 4.
 
 > To check which column of the three has type string use this payload with 3 NULLs for the 3 columns.
 ```
@@ -25,7 +27,6 @@
 ```
 ' UNION SELECT NULL, 'EoNI2q', NULL --
 ```
-
 
 > An extra row is output with the wanted data.
 

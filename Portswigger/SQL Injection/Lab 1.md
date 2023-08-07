@@ -4,10 +4,18 @@
 ---
 
 
-> Check the different categories and realize that there is a new category parameter in the URL.
+> Check the different categories and realize that there is a new `category` parameter in the URL.
 
-> Try adding `'--` only after the value of the category: gets unreleased items only for that specific category and not all items in the shop. Vulnerable to SQL Injection.
+![](./screenshots/lab1-1.png)
 
+![](./screenshots/lab1-2.png)
+
+> If we add the `'--` payload after the `category=accessories` query parameter, we see more items.
+
+![](./screenshots/lab1-3.png)
+
+> Therefore, it is vulnerable to SQL injection.
+> Now, we can try using a more complicated attack to list all items.
 > Try using OR Boolean attack
 ```
 ' OR 1=1-- 

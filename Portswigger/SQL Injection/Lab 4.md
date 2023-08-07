@@ -4,18 +4,27 @@
 ---
 
 > Open different categories and see that there is a category parameter.
-> As stated, vulnerable to union injection.
 
-> Try the exploit
+![](./screenshots/lab1-1.png)
+
+> We know that it is vulnerable to UNION based injection, but we need to figure out the number of columns that are in the original query, to do that, we use the adding `NULL` technique.
+
+> Try the exploit by adding it to the query parameter `category` that is vulnerable to SQLi.
 ```
-' UNION SELECT NULL --
+Accessories' UNION SELECT NULL --
 ```
+
+![](./screenshots/lab4-1.png)
+
 > Doenst work, so keep adding `NULL,` until it clicks.
-
 > Works at 3 `NULL` added, so there are 3 columns in the query.
-> Proof it works as the output wasnt just an error, but we saw other data outputted as well.
 
-> Can try the `order by` technique. Once an error is produced then the number before that is the number of columns.
-> As expected it is as 3, since the item has an id, name and price column.
+```
+Accessories' UNION SELECT NULL, NULL, NULL--
+```
+
+![](./screenshots/lab4-2.png)
+
+> We see an extra row of null values, meaning that our UNION attack works, as the other query we appended to the original one returns NULL data.
 
 ---

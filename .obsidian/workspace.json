@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9a6381f9ce158947",
+        "id": "76c42e5acab66100",
         "type": "tabs",
         "children": [
           {
-            "id": "ff9e1ecefc8a318a",
+            "id": "61435207a6b9755a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tryhackme/Simple CTF.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tryhackme/Simple CTF.md",
+                "file": "Portswigger/SQL Injection/Lab 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tryhackme/Simple CTF.md",
+                "file": "Portswigger/SQL Injection/Lab 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tryhackme/Simple CTF.md"
+                "file": "Portswigger/SQL Injection/Lab 7.md"
               }
             }
           },
@@ -156,44 +152,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ff9e1ecefc8a318a",
+  "active": "936c5cb4780564e1",
   "lastOpenFiles": [
-    "tryhackme/screenshots/gtfo.png",
+    "Portswigger/SQL Injection/Lab 6.md",
+    "Portswigger/SQL Injection/Lab 5.md",
+    "Portswigger/SQL Injection/Lab 4.md",
+    "Portswigger/SQL Injection/screenshots/lab4-2.png",
+    "Portswigger/SQL Injection/screenshots/lab4-1.png",
+    "Portswigger/SQL Injection/Lab 1.md",
+    "Portswigger/SQL Injection/Lab 2.md",
+    "Portswigger/SQL Injection/Lab 3.md",
+    "Portswigger/SQL Injection/screenshots/lab2-1.png",
+    "Portswigger/SQL Injection/screenshots/lab1-3.png",
+    "Portswigger/SQL Injection/screenshots/lab1-2.png",
+    "Portswigger/SQL Injection/screenshots/lab1-1.png",
+    "Portswigger/XSS/Lab 5.md",
+    "Portswigger/XSS/screenshots/lab5-5.png",
+    "Portswigger/XSS/screenshots/lab5-4.png",
+    "Portswigger/XSS/screenshots/lab5-3.png",
+    "Portswigger/XSS/screenshots/lab5-2.png",
+    "Portswigger/XSS/Lab 4.md",
+    "Portswigger/XSS/Lab 3.md",
+    "Portswigger/XSS/Lab 2.md",
+    "Portswigger/XSS/Lab 1.md",
+    "tryhackme/Simple CTF.md",
     "tryhackme/Agent Sudo.md",
     "tryhackme/Basic Pentesting.md",
     "tryhackme/OhSINT.md",
     "tryhackme/Overpass.md",
     "tryhackme/RootMe.md",
-    "tryhackme/Simple CTF.md",
-    "tryhackme/screenshots/hashcat-1.png",
-    "tryhackme/screenshots/hashcat.png",
-    "tryhackme/screenshots/hash.png",
-    "tryhackme/screenshots/exploit-1.png",
-    "tryhackme/screenshots/pass-1.png",
-    "tryhackme/screenshots/exploit.png",
-    "tryhackme/screenshots/cms.png",
-    "tryhackme/screenshots/simple.png",
     "Portswigger/Directory Traversal/Lab 4.md",
-    "tryhackme/screenshots/root-1.png",
-    "tryhackme/screenshots/sudo-l.png",
     "Portswigger/SQL Injection/Lab 10.md",
     "Portswigger/SQL Injection/Lab 9.md",
     "Portswigger/SQL Injection/Lab 8.md",
     "Portswigger/SQL Injection/Lab 7.md",
-    "Portswigger/SQL Injection/Lab 6.md",
-    "Portswigger/SQL Injection/Lab 5.md",
-    "Portswigger/SQL Injection/Lab 4.md",
-    "Portswigger/SQL Injection/Lab 3.md",
-    "Portswigger/SQL Injection/Lab 2.md",
-    "Portswigger/SQL Injection/Lab 1.md",
     "Portswigger/XSS/Lab 10.md",
     "Portswigger/XSS/Lab 9.md",
     "Portswigger/XSS/Lab 8.md",
-    "Portswigger/XSS/Lab 7.md",
-    "Portswigger/XSS/Lab 6.md",
-    "Portswigger/XSS/Lab 5.md",
-    "Portswigger/XSS/Lab 4.md",
-    "Portswigger/XSS/Lab 3.md",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
     "Portswigger/WebSockets/screenshots",

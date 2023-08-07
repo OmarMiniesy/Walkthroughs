@@ -8,10 +8,13 @@
 
 ![xss](./screenshots/mins.png)
 
-> Try injecting the XSS payload
+> Try adding this payload into the search bar.
+> See also that it is placed as a query parameter in the URL.
 ```
-<script>alert()</script>
+<script>alert(1)</script>
 ```
-> And the website responds with a pop-up window, informing me that it is vulnerable to reflected XSS.
+> And the website responds with a pop-up window, informing us that it is vulnerable to reflected XSS.
+
+![](./screenshots/lab1-1.png)
 
 ---
