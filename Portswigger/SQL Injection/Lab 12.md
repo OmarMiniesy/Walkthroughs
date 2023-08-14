@@ -31,7 +31,7 @@ HNgNNAq7tdrY9x17' AND 1=2 --'
 ```
 HNgNNAq7tdrY9x17' AND (SELECT 'x' FROM users LIMIT 1)='x' --'
 ```
->What this does is that it returns the value x for every row in the table users. If the table doesn't exist, or has no rows, then the expression will evaluate to false. We use the LIMIT 1 to check only for 1 row.
+> What this does is that it returns the value x for every row in the table users. If the table doesn't exist, or has no rows, then the expression will evaluate to false. We use the LIMIT 1 to check only for 1 row.
 > If the welcome back message is produced, then this table exists as there is at least 1 row in it.
 
 > As the welcome back text is produced, then we know that this table exists. We now need to enumerate for the administrator.
@@ -56,11 +56,11 @@ HNgNNAq7tdrY9x17' AND (SELECT username FROM users WHERE username='administrator'
 > We then set the payload to be simply decimals from 1 to a large number.
 
 ![payload](./screenshots/payload.png)
-> Then we start the attack and observe the different results. We can use the length of the request and see that for a request with the welcome back message produced it is of size 11530, but for one without the message it is 11469.
-
+> Then we start the attack and observe the different results. 
 
 ![lengthResponse](./screenshots/lengthresponse.png)
 
+> We can use the length of the request and see that for a request with the welcome back message produced it is of size 11530, but for one without the message it is 11469.
 > Check the first instance of 11469, and see that it is indeed the size of our password as we used the `>` operator.
 
 > Now that we know our password has a length of 20, we can now enumerate the letters of that password. We can do this query on each position in the password and for each alphanumeric character until we get all the responses with the welcome back message.

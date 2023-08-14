@@ -3,7 +3,7 @@
 
 ---
 
-> Similar to [[Lab 18]] in the source code, i tried the same payload
+> Similar to [[Portswigger/XSS/Lab 18]] in the source code, i tried the same payload
 ```
 </script> <script> alert() </script>
 ```

@@ -3,13 +3,22 @@
 
 ---
 
-> First get the number of columns in the output query using the normal test.
-```
-' UNION SELECT NULL, NULL --
-```
-> But this didn't work, and I expected only 2 or 3 columns evident by the data title, ID, and probably description.
+> First need to identify the type of database. Trying the normal `'--` payload doesn't work.
 
-> Since this is on MySQL and Microsoft, the comments in the end need an extra space, but trailing spaces are removed, so a dummy character is placed afterwards.
+![](./screenshots/lab9-1.png)
+
+
+> Trying the other comment technique with a space after the double dash.
+```
+'-- -
+```
+> Since trailing spaces are removed, we need to add a dummy character in the end to keep the space.
+
+![](./screenshots/lab9-2.png)
+
+> Now we know that it is a MySQL database.
+
+> We get the number of columns in the output query using the normal test.
 ```
 ' UNION SELECT NULL, NULL -- -
 ```
@@ -29,6 +38,5 @@
 > And the version is output as expected in a new row.
 
 ![DatabaseVersion](./screenshots/version.png)
-
 
 ---

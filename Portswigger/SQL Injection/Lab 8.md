@@ -3,7 +3,8 @@
 
 ---
 
-> Category parameter is vulnerable to sql injection. First thing to do is get the number of columns. This is an oracle database, so must add `FROM DUAL` at the end of the query. If the FROM part wasn't added, the payloads wouldnt work, confirming it as an oracle database.
+> Category parameter is vulnerable to sql injection. 
+> First thing to do is get the number of columns. This is an oracle database, so must add `FROM DUAL` at the end of the query.
 ```
 ' UNION SELECT NULL, NULL FROM DUAL--
 ```
@@ -13,12 +14,17 @@
 ```
 ' UNION SELECT 'a', NULl FROM DUAL--
 ```
-> The first column works, so just use it.
+
+![](./screenshots/lab8-1.png)
+
+> We see that it doesn't produce an error and outputs the letter `a` confirming that this column is of type text.
+> We can use the first column to display the database version.
 
 > Change the first column to display the banner of the oracle database as requested, and change the table to `v$version`.
 ```
 ' UNION SELECT BANNER, NULL FROM v$version--
 ```
-> outputs the banner of the database as needed.
+
+> Pressing enter, we see the output of the page also shows the database banner and version.
 
 ---
