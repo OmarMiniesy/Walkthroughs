@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cdf795cef3be6bbc",
+        "id": "ffac6761196987cb",
         "type": "tabs",
         "children": [
           {
-            "id": "eb8c0e2f36e143fa",
+            "id": "18baf5fe1e7682c8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/SQL Injection/Lab 18.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/SQL Injection/Lab 18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/SQL Injection/Lab 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Portswigger/SQL Injection/Lab 18.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,10 +148,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb8c0e2f36e143fa",
+  "active": "18baf5fe1e7682c8",
   "lastOpenFiles": [
-    "Portswigger/SQL Injection/Lab 17.md",
+    "overthewire/natas/natas12.md",
+    "overthewire/natas/natas11.md",
+    "overthewire/natas/screenshots/decoder.png",
+    "overthewire/natas/screenshots/decode.png",
+    "overthewire/natas/screenshots/code-1.png",
+    "overthewire/natas/screenshots/code.png",
+    "overthewire/natas/screenshots",
+    "overthewire/natas/New folder",
+    "overthewire/natas",
+    "overthewire",
+    "README.md",
+    "Portswigger/Command Injection/Lab 4.md",
+    "Portswigger/Command Injection/Lab 3.md",
+    "Portswigger/Authentication/Lab 11.md",
+    "Portswigger/Authentication/Lab 10.md",
+    "Portswigger/Authentication/Lab 9.md",
+    "Portswigger/Authentication/Lab 8.md",
+    "Portswigger/Authentication/Lab 7.md",
+    "Portswigger/Authentication/Lab 6.md",
+    "Portswigger/Authentication/Lab 5.md",
+    "Portswigger/Authentication/Lab 4.md",
+    "Portswigger/Authentication/Lab 3.md",
+    "Portswigger/Authentication/Lab 2.md",
+    "Portswigger/Authentication/Lab 1.md",
     "Portswigger/SQL Injection/Lab 18.md",
+    "Portswigger/SQL Injection/Lab 17.md",
     "Portswigger/SQL Injection/screenshots/lab18-1.png",
     "Portswigger/SQL Injection/screenshots/lab17-2.png",
     "Pasted image 20230814194944.png",
@@ -168,40 +184,17 @@
     "Portswigger/SQL Injection/Lab 3.md",
     "Portswigger/SQL Injection/Lab 1.md",
     "Portswigger/SQL Injection/Lab 2.md",
-    "README.md",
     "Portswigger/SQL Injection/Lab 15.md",
     "Portswigger/SQL Injection/Lab 14.md",
     "Portswigger/SQL Injection/Lab 13.md",
     "Portswigger/SQL Injection/Lab 12.md",
-    "Portswigger/SQL Injection/Lab 11.md",
-    "Portswigger/SQL Injection/Lab 10.md",
-    "Portswigger/SQL Injection/Lab 9.md",
     "Portswigger/SQL Injection/screenshots/lab9-2.png",
     "Portswigger/SQL Injection/screenshots/lab9-1.png",
-    "Portswigger/SQL Injection/Lab 8.md",
-    "Portswigger/SQL Injection/screenshots/lab8-1.png",
-    "Portswigger/SQL Injection/Lab 7.md",
-    "Portswigger/SQL Injection/Lab 6.md",
-    "Portswigger/SQL Injection/Lab 5.md",
-    "Portswigger/SQL Injection/Lab 4.md",
-    "tryhackme/Simple CTF.md",
-    "tryhackme/LazyAdmin.md",
-    "tryhackme/Bounty Hacker.md",
-    "tryhackme/Overpass.md",
-    "tryhackme/screenshots/search.png",
-    "tryhackme/screenshots/cms-1.png",
-    "tryhackme/RootMe.md",
-    "tryhackme/OhSINT.md",
-    "tryhackme/screenshots/gtfo-1.png",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
     "Portswigger/WebSockets/screenshots",
     "Portswigger/WebSockets",
     "tryhackme/screenshots",
-    "tryhackme",
-    "Portswigger/Clickjacking/screenshots",
-    "Portswigger/Clickjacking",
-    "Portswigger/CORS/screenshots",
-    "Portswigger/CORS"
+    "tryhackme"
   ]
 }
