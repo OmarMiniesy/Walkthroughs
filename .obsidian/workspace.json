@@ -4,15 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "ffac6761196987cb",
+        "id": "0c1a477498bd2f91",
         "type": "tabs",
         "children": [
           {
-            "id": "18baf5fe1e7682c8",
+            "id": "831fdb37702e25a6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "overthewire/natas/natas12.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "880f3caa002c4fcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "overthewire/natas/natas13.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "overthewire/natas/natas12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "overthewire/natas/natas12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "overthewire/natas/natas12.md"
+              }
             }
           },
           {
@@ -148,14 +168,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "18baf5fe1e7682c8",
+  "active": "831fdb37702e25a6",
   "lastOpenFiles": [
+    "overthewire/natas/natas13.md",
+    "overthewire/natas/screenshots/natas13_5.png.~tmp",
+    "overthewire/natas/screenshots/natas13_5.png",
+    "overthewire/natas/screenshots/natas13_4.png",
     "overthewire/natas/natas12.md",
+    "overthewire/natas/screenshots/natas13_3.png",
+    "overthewire/natas/screenshots/natas13_2.png",
+    "overthewire/natas/screenshots/natas13_1.png",
     "overthewire/natas/natas11.md",
-    "overthewire/natas/screenshots/decoder.png",
-    "overthewire/natas/screenshots/decode.png",
-    "overthewire/natas/screenshots/code-1.png",
-    "overthewire/natas/screenshots/code.png",
+    "overthewire/natas/screenshots/12-6.png",
+    "overthewire/natas/screenshots/12-5.png",
+    "overthewire/natas/screenshots/12-4.png",
+    "overthewire/natas/screenshots/12-3.png",
+    "overthewire/natas/screenshots/12-2.png",
     "overthewire/natas/screenshots",
     "overthewire/natas/New folder",
     "overthewire/natas",
@@ -176,25 +204,16 @@
     "Portswigger/Authentication/Lab 1.md",
     "Portswigger/SQL Injection/Lab 18.md",
     "Portswigger/SQL Injection/Lab 17.md",
-    "Portswigger/SQL Injection/screenshots/lab18-1.png",
-    "Portswigger/SQL Injection/screenshots/lab17-2.png",
-    "Pasted image 20230814194944.png",
-    "Portswigger/SQL Injection/screenshots/lab17-1.png",
     "Portswigger/SQL Injection/Lab 16.md",
     "Portswigger/SQL Injection/Lab 3.md",
     "Portswigger/SQL Injection/Lab 1.md",
     "Portswigger/SQL Injection/Lab 2.md",
     "Portswigger/SQL Injection/Lab 15.md",
     "Portswigger/SQL Injection/Lab 14.md",
-    "Portswigger/SQL Injection/Lab 13.md",
-    "Portswigger/SQL Injection/Lab 12.md",
-    "Portswigger/SQL Injection/screenshots/lab9-2.png",
-    "Portswigger/SQL Injection/screenshots/lab9-1.png",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
     "Portswigger/WebSockets/screenshots",
     "Portswigger/WebSockets",
-    "tryhackme/screenshots",
-    "tryhackme"
+    "tryhackme/screenshots"
   ]
 }

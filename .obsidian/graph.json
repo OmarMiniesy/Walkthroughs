@@ -132,6 +132,13 @@
         "a": 1,
         "rgb": 5395026
       }
+    },
+    {
+      "query": "path:overthewire/natas",
+      "color": {
+        "a": 1,
+        "rgb": 16766474
+      }
     }
   ],
   "collapse-display": true,
@@ -144,6 +151,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.20375592427683212,
+  "scale": 0.13356167287825252,
   "close": true
 }
