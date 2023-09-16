@@ -73,7 +73,7 @@ while len(password) < 32:
 
 > What this does is that uses regular expressions with `^` to look for characters at the beginning of an entry.
 > If the substituted command, which is `grep ^character /etc/natas_webpass/natas17` finds a correct character at the beginning, it will try this same character and concatenate to it the next character to try, now looking for 2 characters, and so on.
-> We stop when the password has 31 characters, since that is the length of the password.
+> We stop when the password has 32 characters, since that is the length of the password.
 
 > Running this script, we get the password.
 
