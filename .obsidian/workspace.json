@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "739a663059617d74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "overthewire/natas/natas18.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ea48ed68b912d7d4",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,6 +168,7 @@
   },
   "active": "ea48ed68b912d7d4",
   "lastOpenFiles": [
+    "overthewire/natas/screenshots/19-1.png",
     "overthewire/natas/natas18.md",
     "overthewire/natas/natas19.md",
     "Portswigger/CORS/Lab 3.md",
@@ -221,7 +209,6 @@
     "Portswigger/Authentication/Lab 10.md",
     "Portswigger/Authentication/Lab 9.md",
     "Portswigger/Authentication/Lab 8.md",
-    "Portswigger/Authentication/Lab 7.md",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
     "Portswigger/WebSockets/screenshots",
