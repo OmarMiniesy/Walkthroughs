@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "45899975145e83f5",
+        "id": "a36a0a0aa6847afc",
         "type": "tabs",
         "children": [
           {
-            "id": "03a049073ea775d0",
+            "id": "3fa048da078a9a91",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "picoCTF/Cookies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7868fcf979d6e366",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "picoCTF/Includes.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Includes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Includes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "picoCTF/Includes.md"
-              }
+              "state": {}
             }
           },
           {
@@ -179,26 +158,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7868fcf979d6e366",
+  "active": "3fa048da078a9a91",
   "lastOpenFiles": [
+    "Portswigger/Command Injection/Lab 4.md",
+    "README.md",
+    "Portswigger/Command Injection/Lab 5.md",
+    "Portswigger/Command Injection/screenshots/colab-1.png",
+    "Portswigger/Command Injection/screenshots/post-1.png",
+    "Portswigger/Command Injection/screenshots/colab.png",
+    "Portswigger/Command Injection/screenshots/post.png",
+    "Pasted image 20231009103613.png",
+    "Portswigger/Command Injection/screenshots/submit.png",
+    "Portswigger/Command Injection/Lab 3.md",
+    "Portswigger/Command Injection/Lab 2.md",
+    "Portswigger/Command Injection/Lab 1.md",
+    "tryhackme/Picke Rick.md",
+    "tryhackme/OhSINT.md",
+    "picoCTF/Includes.md",
     "picoCTF/screenshots/includes-1.png",
     "picoCTF/Cookies.md",
-    "picoCTF/Includes.md",
-    "README.md",
     "hackinghub/VulnBegin.md",
     "overthewire/natas/natas19.md",
     "hackinghub",
     "overthewire/natas/screenshots/19-1.png",
     "overthewire/natas/natas18.md",
     "Portswigger/CORS/Lab 3.md",
-    "Portswigger/Command Injection/Lab 4.md",
     "Pasted image 20230910174325.png",
     "overthewire/natas/screenshots/18-3.png",
     "overthewire/natas/natas17.md",
-    "overthewire/natas/screenshots/18-2.png",
-    "overthewire/natas/screenshots/18-1.png",
     "tryhackme/Overpass.md",
-    "tryhackme/OhSINT.md",
     "tryhackme/Crack the Hash.md",
     "tryhackme/Bounty Hacker.md",
     "tryhackme/Basic Pentesting.md",
@@ -206,23 +194,13 @@
     "tryhackme/Simple CTF.md",
     "tryhackme/RootMe.md",
     "overthewire/natas/natas16.md",
-    "overthewire/natas/screenshots/17-1.png",
     "overthewire/natas/natas12.md",
     "overthewire/natas/natas13.md",
-    "overthewire/natas/natas14.md",
-    "overthewire/natas/natas15.md",
-    "overthewire/natas/screenshots/16-1.png",
-    "overthewire/natas/natas11.md",
-    "overthewire/natas/screenshots/15-9.png",
-    "overthewire/natas/screenshots/15-8.png",
-    "overthewire/natas/screenshots/15-7.png",
     "overthewire/natas/screenshots/natas13_5.png.~tmp",
     "overthewire/natas/screenshots",
     "overthewire/natas/New folder",
     "overthewire/natas",
     "overthewire",
-    "Portswigger/Command Injection/Lab 3.md",
-    "Portswigger/Authentication/Lab 11.md",
     "Portswigger/DOM-Based Vulnerabilities/screenshots",
     "Portswigger/DOM-Based Vulnerabilities",
     "Portswigger/WebSockets/screenshots",

