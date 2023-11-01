@@ -139,18 +139,25 @@
         "a": 1,
         "rgb": 16766474
       }
+    },
+    {
+      "query": "path:huntress.ctf  ",
+      "color": {
+        "a": 1,
+        "rgb": 9178381
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.13356167287825257,
-  "close": true
+  "scale": 0.08217490221066406,
+  "close": false
 }

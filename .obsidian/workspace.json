@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a36a0a0aa6847afc",
+        "id": "49107c8dc8f42aaf",
         "type": "tabs",
         "children": [
           {
-            "id": "3fa048da078a9a91",
+            "id": "1de7a1f81c019c4d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/WebSockets/Lab 3.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5
+    "width": 249.5,
+    "collapsed": true
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Portswigger/WebSockets/Lab 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Portswigger/WebSockets/Lab 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Portswigger/WebSockets/Lab 3.md"
+              }
             }
           },
           {
@@ -158,52 +167,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3fa048da078a9a91",
+  "active": "1de7a1f81c019c4d",
   "lastOpenFiles": [
-    "Portswigger/Command Injection/Lab 4.md",
+    "Portswigger/WebSockets/Lab 2.md",
+    "Portswigger/WebSockets/Lab 3.md",
+    "Portswigger/WebSockets/screenshots/lab3-3.png",
+    "Portswigger/WebSockets/screenshots/lab3-2.png",
+    "Portswigger/WebSockets/screenshots/lab3-1.png",
+    "Portswigger/WebSockets/Lab 1.md",
     "README.md",
+    "Portswigger/CORS/Lab 1.md",
+    "overthewire/natas/natas21.md",
+    "overthewire/natas/natas20.md",
+    "overthewire/natas/screenshots/21-1.png",
+    "overthewire/natas/natas19.md",
+    "overthewire/natas/screenshots/20-6.png",
+    "overthewire/natas/screenshots/20-5.png",
+    "huntress.ctf/Layered Security.md",
+    "huntress.ctf/Notepad.md",
+    "huntress.ctf/screenshots/layered.png",
+    "huntress.ctf/screenshots",
+    "huntress.ctf/New folder",
+    "huntress.ctf",
+    "overthewire/natas/screenshots/20-4.png",
+    "overthewire/natas/screenshots/20-3.png",
+    "overthewire/natas/natas16.md",
+    "overthewire/natas/natas17.md",
+    "overthewire/natas/natas18.md",
+    "overthewire/natas/screenshots/20-2.png",
+    "Portswigger/Command Injection/Lab 4.md",
     "Portswigger/Command Injection/Lab 5.md",
-    "Portswigger/Command Injection/screenshots/colab-1.png",
-    "Portswigger/Command Injection/screenshots/post-1.png",
-    "Portswigger/Command Injection/screenshots/colab.png",
-    "Portswigger/Command Injection/screenshots/post.png",
-    "Pasted image 20231009103613.png",
-    "Portswigger/Command Injection/screenshots/submit.png",
     "Portswigger/Command Injection/Lab 3.md",
     "Portswigger/Command Injection/Lab 2.md",
     "Portswigger/Command Injection/Lab 1.md",
     "tryhackme/Picke Rick.md",
     "tryhackme/OhSINT.md",
     "picoCTF/Includes.md",
-    "picoCTF/screenshots/includes-1.png",
     "picoCTF/Cookies.md",
     "hackinghub/VulnBegin.md",
-    "overthewire/natas/natas19.md",
     "hackinghub",
-    "overthewire/natas/screenshots/19-1.png",
-    "overthewire/natas/natas18.md",
     "Portswigger/CORS/Lab 3.md",
-    "Pasted image 20230910174325.png",
-    "overthewire/natas/screenshots/18-3.png",
-    "overthewire/natas/natas17.md",
     "tryhackme/Overpass.md",
-    "tryhackme/Crack the Hash.md",
-    "tryhackme/Bounty Hacker.md",
-    "tryhackme/Basic Pentesting.md",
-    "tryhackme/Agent Sudo.md",
-    "tryhackme/Simple CTF.md",
-    "tryhackme/RootMe.md",
-    "overthewire/natas/natas16.md",
-    "overthewire/natas/natas12.md",
-    "overthewire/natas/natas13.md",
     "overthewire/natas/screenshots/natas13_5.png.~tmp",
     "overthewire/natas/screenshots",
     "overthewire/natas/New folder",
     "overthewire/natas",
     "overthewire",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots",
-    "Portswigger/DOM-Based Vulnerabilities",
-    "Portswigger/WebSockets/screenshots",
-    "Portswigger/WebSockets"
+    "Portswigger/DOM-Based Vulnerabilities/screenshots"
   ]
 }
