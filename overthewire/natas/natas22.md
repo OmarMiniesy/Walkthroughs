@@ -38,6 +38,6 @@ However, the second portion simply checks if `revelio` query parameter exists. I
 > We see that the credentials are printed, and we see that there is a follow redirection button above. If we click it, we are taken to the home page and the admin credentials disappear.
 > Therefore, we can snag the credentials from the next level simply by stopping the redirect.
 
-`natas23-qjA8cOoKFTzJhtV0Fzvt92fgvxVnVRBj`
+`natas23:qjA8cOoKFTzJhtV0Fzvt92fgvxVnVRBj`
 
 ---
