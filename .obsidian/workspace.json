@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "54d19bf3ae6e9eeb",
+        "id": "55861ed13deef02a",
         "type": "tabs",
         "children": [
           {
-            "id": "0864eee1546e16d4",
+            "id": "ca6b576ef8a71a14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "overthewire/natas/natas24.md",
+                "file": "overthewire/natas/natas25.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 200
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "overthewire/natas/natas24.md",
+                "file": "overthewire/natas/natas25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "overthewire/natas/natas24.md",
+                "file": "overthewire/natas/natas25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "overthewire/natas/natas24.md"
+                "file": "overthewire/natas/natas25.md"
               }
             }
           },
@@ -166,27 +166,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0864eee1546e16d4",
+  "active": "ca6b576ef8a71a14",
   "lastOpenFiles": [
+    "picoCTF/logon.md",
+    "picoCTF/Scavenger Hunt.md",
+    "picoCTF/Insp3ct0r.md",
+    "picoCTF/GET aHEAD.md",
+    "huntress.ctf/Notepad.md",
+    "huntress.ctf/Layered Security.md",
+    "hackinghub/VulnBegin.md",
+    "overthewire/natas/natas25.md",
+    "overthewire/natas/natas24.md",
+    "overthewire/natas/screenshots/25-1.png",
+    "overthewire/natas/natas16.md",
+    "overthewire/natas/natas15.md",
     "Pasted image 20231113111450.png",
     "Pasted image 20231113111446.png",
     "overthewire/natas/screenshots/24-2.png",
     "overthewire/natas/screenshots/24-1.png",
     "overthewire/natas/natas23.md",
-    "overthewire/natas/natas24.md",
     "overthewire/natas/natas22.md",
     "overthewire/natas/screenshots/23-2.png",
     "Pasted image 20231113103725.png",
     "overthewire/natas/screenshots/23-1.png",
     "overthewire/natas/natas21.md",
-    "hackinghub/VulnBegin.md",
-    "huntress.ctf/Notepad.md",
-    "huntress.ctf/Layered Security.md",
     "tryhackme/Picke Rick.md",
     "overthewire/natas/screenshots/22-3.png",
     "overthewire/natas/screenshots/22-2.png",
-    "overthewire/natas/screenshots/22-1.png",
-    "overthewire/natas/screenshots/21-5.png",
     "overthewire/natas/natas20.md",
     "README.md",
     "Portswigger/WebSockets/Lab 3.md",
@@ -197,16 +203,10 @@
     "huntress.ctf/screenshots",
     "huntress.ctf/New folder",
     "huntress.ctf",
-    "overthewire/natas/natas16.md",
     "overthewire/natas/natas17.md",
     "overthewire/natas/natas18.md",
     "Portswigger/Command Injection/Lab 4.md",
     "Portswigger/Command Injection/Lab 5.md",
-    "Portswigger/Command Injection/Lab 3.md",
-    "Portswigger/Command Injection/Lab 2.md",
-    "Portswigger/Command Injection/Lab 1.md",
-    "tryhackme/OhSINT.md",
-    "picoCTF/Includes.md",
     "hackinghub",
     "overthewire/natas/screenshots/natas13_5.png.~tmp",
     "overthewire/natas/screenshots",
