@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "55861ed13deef02a",
+        "id": "b348090970029e00",
         "type": "tabs",
         "children": [
           {
-            "id": "ca6b576ef8a71a14",
+            "id": "3d87ca45fa48cfd9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tryhackme/Agent Sudo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "73c690de8034b5fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tryhackme/LazyAdmin.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbb3df47f3deb53e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tryhackme/Picke Rick.md",
+                "file": "tryhackme/LazyAdmin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tryhackme/Picke Rick.md",
+                "file": "tryhackme/LazyAdmin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tryhackme/Picke Rick.md"
+                "file": "tryhackme/LazyAdmin.md"
               }
             }
           },
@@ -166,23 +191,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca6b576ef8a71a14",
+  "active": "73c690de8034b5fa",
   "lastOpenFiles": [
+    "tryhackme/screenshots/lazy-6.png",
+    "tryhackme/screenshots/lazy-5.png",
+    "tryhackme/Picke Rick.md",
+    "tryhackme/LazyAdmin.md",
+    "tryhackme/screenshots/lazy-4.png",
+    "tryhackme/screenshots/lazy-3.png",
+    "tryhackme/Crack the Hash.md",
+    "tryhackme/screenshots/lazy-2.png.~tmp",
+    "tryhackme/screenshots/lazy-2.png",
+    "tryhackme/screenshots/lazy-1.png",
+    "tryhackme/Overpass.md",
+    "tryhackme/OhSINT.md",
+    "tryhackme/Agent Sudo.md",
+    "tryhackme/Basic Pentesting.md",
+    "tryhackme/Bounty Hacker.md",
+    "tryhackme/Simple CTF.md",
+    "tryhackme/RootMe.md",
     "tryhackme/screenshots/rick-12.png",
     "tryhackme/screenshots/rick-11.png",
     "tryhackme/screenshots/rick-10.png",
     "tryhackme/screenshots/rick-9.png",
     "tryhackme/screenshots/rick-8.png",
-    "tryhackme/OhSINT.md",
-    "tryhackme/Picke Rick.md",
-    "tryhackme/screenshots/rick-7.png",
-    "tryhackme/screenshots/rick-6.png",
-    "tryhackme/screenshots/rick-.png",
-    "tryhackme/screenshots/rick-5.png",
-    "tryhackme/screenshots/rick-4.png",
-    "tryhackme/screenshots/rick-3.png",
-    "tryhackme/RootMe.md",
-    "tryhackme/Crack the Hash.md",
     "hackinghub/VulnBegin.md",
     "overthewire/natas/natas25.md",
     "overthewire/natas/natas24.md",
@@ -198,12 +230,6 @@
     "overthewire/natas/natas22.md",
     "overthewire/natas/natas21.md",
     "overthewire/natas/natas20.md",
-    "README.md",
-    "Portswigger/WebSockets/Lab 3.md",
-    "Portswigger/WebSockets/Lab 2.md",
-    "Portswigger/WebSockets/Lab 1.md",
-    "Portswigger/CORS/Lab 1.md",
-    "overthewire/natas/natas19.md",
     "huntress.ctf/screenshots",
     "huntress.ctf/New folder",
     "huntress.ctf",
@@ -212,7 +238,6 @@
     "overthewire/natas/screenshots",
     "overthewire/natas/New folder",
     "overthewire/natas",
-    "overthewire",
-    "Portswigger/DOM-Based Vulnerabilities/screenshots"
+    "overthewire"
   ]
 }
