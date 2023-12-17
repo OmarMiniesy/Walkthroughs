@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "overthewire/natas/natas25.md",
+                "file": "tryhackme/Picke Rick.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "overthewire/natas/natas25.md",
+                "file": "tryhackme/Picke Rick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "overthewire/natas/natas25.md",
+                "file": "tryhackme/Picke Rick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "overthewire/natas/natas25.md"
+                "file": "tryhackme/Picke Rick.md"
               }
             }
           },
@@ -168,31 +168,35 @@
   },
   "active": "ca6b576ef8a71a14",
   "lastOpenFiles": [
+    "tryhackme/screenshots/rick-12.png",
+    "tryhackme/screenshots/rick-11.png",
+    "tryhackme/screenshots/rick-10.png",
+    "tryhackme/screenshots/rick-9.png",
+    "tryhackme/screenshots/rick-8.png",
+    "tryhackme/OhSINT.md",
+    "tryhackme/Picke Rick.md",
+    "tryhackme/screenshots/rick-7.png",
+    "tryhackme/screenshots/rick-6.png",
+    "tryhackme/screenshots/rick-.png",
+    "tryhackme/screenshots/rick-5.png",
+    "tryhackme/screenshots/rick-4.png",
+    "tryhackme/screenshots/rick-3.png",
+    "tryhackme/RootMe.md",
+    "tryhackme/Crack the Hash.md",
+    "hackinghub/VulnBegin.md",
+    "overthewire/natas/natas25.md",
+    "overthewire/natas/natas24.md",
+    "overthewire/natas/natas23.md",
     "picoCTF/logon.md",
     "picoCTF/Scavenger Hunt.md",
     "picoCTF/Insp3ct0r.md",
     "picoCTF/GET aHEAD.md",
     "huntress.ctf/Notepad.md",
     "huntress.ctf/Layered Security.md",
-    "hackinghub/VulnBegin.md",
-    "overthewire/natas/natas25.md",
-    "overthewire/natas/natas24.md",
-    "overthewire/natas/screenshots/25-1.png",
     "overthewire/natas/natas16.md",
     "overthewire/natas/natas15.md",
-    "Pasted image 20231113111450.png",
-    "Pasted image 20231113111446.png",
-    "overthewire/natas/screenshots/24-2.png",
-    "overthewire/natas/screenshots/24-1.png",
-    "overthewire/natas/natas23.md",
     "overthewire/natas/natas22.md",
-    "overthewire/natas/screenshots/23-2.png",
-    "Pasted image 20231113103725.png",
-    "overthewire/natas/screenshots/23-1.png",
     "overthewire/natas/natas21.md",
-    "tryhackme/Picke Rick.md",
-    "overthewire/natas/screenshots/22-3.png",
-    "overthewire/natas/screenshots/22-2.png",
     "overthewire/natas/natas20.md",
     "README.md",
     "Portswigger/WebSockets/Lab 3.md",
@@ -203,10 +207,6 @@
     "huntress.ctf/screenshots",
     "huntress.ctf/New folder",
     "huntress.ctf",
-    "overthewire/natas/natas17.md",
-    "overthewire/natas/natas18.md",
-    "Portswigger/Command Injection/Lab 4.md",
-    "Portswigger/Command Injection/Lab 5.md",
     "hackinghub",
     "overthewire/natas/screenshots/natas13_5.png.~tmp",
     "overthewire/natas/screenshots",

@@ -60,6 +60,17 @@ Viewing the source code:
         fclose($fd);
     }
 ?>
+
+// in the viewed HTMl portion
+
+<?php  
+    session_start();
+    setLanguage();
+    
+    echo "<h2>$__GREETING</h2>";
+    echo "<p align=\"justify\">$__MSG";
+    echo "<div align=\"right\"><h6>$__FOOTER</h6><div>";
+?>
 ```
 
 We see that the vulnerability is some type of file traversal due to the defenses in place to protect against this attack.

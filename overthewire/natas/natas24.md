@@ -37,6 +37,6 @@ Sending this request we see the password for the next level.
 
 ![](./screenshots/24-2.png)
 
-`natas25:cc`
+`natas25:O9QD9DZBDq1YpswiTM5oqMDaOtuZtAcx`
 
 ---
