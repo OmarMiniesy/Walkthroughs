@@ -231,7 +231,7 @@ Testing our attack, we can now turn off IP forwarding on host M so that the pack
 ```bash
 sysctl net.ipv4.ip_forward=0
 ```
-> On host M.****
+> On host M.
 
 Now, we can try and ping B from A, while opening `tcpdump` on all 3 machines.
 
