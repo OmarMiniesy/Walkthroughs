@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "09a9f787e4035d13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 225.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -167,25 +180,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81c4c14936c9773b",
+  "active": "09a9f787e4035d13",
   "lastOpenFiles": [
+    "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
+    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
+    "Pasted image 20240314222131.png",
+    "Pasted image 20240314222242.png",
+    "SEED Labs/Network Security/screenshots/sniff-5.png",
+    "SEED Labs/Network Security/screenshots/sniff-4.png",
+    "SEED Labs/Network Security/screenshots/sniff-3.png",
+    "SEED Labs/Network Security/screenshots/sniff-2.png",
+    "SEED Labs/Network Security/screenshots/sniff-1.png",
+    "overthewire/natas/natas15.md",
+    "overthewire/natas/natas17.md",
+    "overthewire/natas/natas25.md",
+    "overthewire/natas/natas11.md",
+    "README.md",
+    "hackinghub/VulnBegin.md",
+    "huntress.ctf/Notepad.md",
+    "huntress.ctf/Layered Security.md",
     "SEED Labs/Network Security/screenshots/arp-12.png",
     "SEED Labs/Network Security/screenshots/arp-11.png",
     "SEED Labs/Network Security/screenshots/arp-10.png",
-    "SEED Labs/Network Security/screenshots/arp-9.png",
-    "SEED Labs/Network Security/screenshots/arp-8.png",
-    "SEED Labs/Network Security/screenshots/arp-7.png",
-    "SEED Labs/Network Security/screenshots/arp-6.png",
-    "SEED Labs/Network Security/screenshots/arp-5.png",
-    "SEED Labs/Network Security/screenshots/arp-4.png",
-    "SEED Labs/Network Security/screenshots/arp-3.png",
-    "SEED Labs/Network Security/screenshots/arp-2.png",
-    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
-    "README.md",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
     "SEED Labs",
-    "overthewire/natas/natas11.md",
     "tryhackme/LazyAdmin.md",
     "tryhackme/Picke Rick.md",
     "tryhackme/Crack the Hash.md",
@@ -197,18 +216,11 @@
     "tryhackme/Bounty Hacker.md",
     "tryhackme/Simple CTF.md",
     "tryhackme/RootMe.md",
-    "hackinghub/VulnBegin.md",
-    "overthewire/natas/natas25.md",
     "overthewire/natas/natas24.md",
     "overthewire/natas/natas23.md",
     "picoCTF/logon.md",
     "picoCTF/Scavenger Hunt.md",
     "picoCTF/Insp3ct0r.md",
-    "picoCTF/GET aHEAD.md",
-    "huntress.ctf/Notepad.md",
-    "huntress.ctf/Layered Security.md",
-    "overthewire/natas/natas16.md",
-    "overthewire/natas/natas15.md",
     "huntress.ctf/screenshots",
     "huntress.ctf/New folder",
     "huntress.ctf",

