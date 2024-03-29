@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09a9f787e4035d13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
+                "file": "tryhackme/tomghost.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#privesc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 200
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
+                "file": "tryhackme/tomghost.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
+                "file": "tryhackme/tomghost.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md"
+                "file": "tryhackme/tomghost.md"
               }
             }
           },
@@ -180,10 +167,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09a9f787e4035d13",
+  "active": "81c4c14936c9773b",
   "lastOpenFiles": [
-    "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
+    "tryhackme/screenshots/merlin.png",
+    "tryhackme/Simple CTF.md",
+    "tryhackme/RootMe.md",
+    "tryhackme/tomghost.md",
+    "tryhackme/screenshots/ajp-1.png",
+    "overthewire/natas/natas25.md",
     "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
+    "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
     "Pasted image 20240314222131.png",
     "Pasted image 20240314222242.png",
     "SEED Labs/Network Security/screenshots/sniff-5.png",
@@ -193,7 +186,6 @@
     "SEED Labs/Network Security/screenshots/sniff-1.png",
     "overthewire/natas/natas15.md",
     "overthewire/natas/natas17.md",
-    "overthewire/natas/natas25.md",
     "overthewire/natas/natas11.md",
     "README.md",
     "hackinghub/VulnBegin.md",
@@ -201,7 +193,6 @@
     "huntress.ctf/Layered Security.md",
     "SEED Labs/Network Security/screenshots/arp-12.png",
     "SEED Labs/Network Security/screenshots/arp-11.png",
-    "SEED Labs/Network Security/screenshots/arp-10.png",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
     "SEED Labs",
@@ -214,13 +205,10 @@
     "tryhackme/Agent Sudo.md",
     "tryhackme/Basic Pentesting.md",
     "tryhackme/Bounty Hacker.md",
-    "tryhackme/Simple CTF.md",
-    "tryhackme/RootMe.md",
     "overthewire/natas/natas24.md",
     "overthewire/natas/natas23.md",
     "picoCTF/logon.md",
     "picoCTF/Scavenger Hunt.md",
-    "picoCTF/Insp3ct0r.md",
     "huntress.ctf/screenshots",
     "huntress.ctf/New folder",
     "huntress.ctf",

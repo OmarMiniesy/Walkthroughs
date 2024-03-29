@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "spellcheck": false,
+  "spellcheck": true,
   "alwaysUpdateLinks": true,
   "livePreview": true,
   "pdfExportSettings": {
