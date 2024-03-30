@@ -169,8 +169,6 @@ After running them, we are taken to a root shell. We can now read the contents o
 cat /root/root.txt
 ```
 
-###### Escalate privileges and obtain root.txt : `THM{Z1P_1S_FAKE}
+###### Escalate privileges and obtain root.txt : `THM{Z1P_1S_FAKE}`
 
 ---
-
-`
