@@ -68,7 +68,7 @@ Now, if we try and ping host B from host A, the packets are all sent to host M, 
 
 ### Task 1.B: ARP Reply
 
-> We need to posion the ARP cache of host A.
+> We need to poison the ARP cache of host A.
 
 Similar to the above task, we send an ARP reply message with SRC IP of B and SRC MAC of M. This spoofed data will poison the ARP cache of host A.
 
