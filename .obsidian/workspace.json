@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.5,
-    "collapsed": true
+    "width": 221.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -171,6 +170,9 @@
   },
   "active": "5c0250ee88947cc9",
   "lastOpenFiles": [
+    "SEED Labs/Network Security/screenshots/tcp-15.png",
+    "SEED Labs/Network Security/screenshots/tcp-14.png",
+    "SEED Labs/Network Security/screenshots/tcp-13.png",
     "SEED Labs/Network Security/screenshots/tcp-12.png",
     "SEED Labs/Network Security/TCP Attacks Lab.md",
     "SEED Labs/Network Security/screenshots/tcp-11.png",
@@ -183,9 +185,6 @@
     "SEED Labs/Network Security/screenshots/tcp-7.png",
     "SEED Labs/Network Security/screenshots/tcp-6.png",
     "SEED Labs/Network Security/screenshots/tcp-5.png",
-    "SEED Labs/Network Security/screenshots/tcp-4.png",
-    "SEED Labs/Network Security/screenshots/tcp-3.png",
-    "SEED Labs/Network Security/screenshots/tcp-2.png",
     "tryhackme/Mr Robot CTF.md",
     "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
     "tryhackme/Crack the Hash.md",
