@@ -73,4 +73,84 @@ Viewing the source code:
 ?>
 ```
 
-We see that the vulnerability is some type of file traversal due to the defenses in place to protect against this attack.
+> We see that the vulnerability is some type of file traversal due to the defenses in place to protect against this attack.
+
+#### `setLanguage()`
+Analyzing this code, we see that the first function that gets called is the `setLanguage()` function. This function checks if there is a query parameter called `lang` present.
+- If it is present, it calls another function called `safeInclude()` with the`/language/` + the value of the `lang` parameter.
+- If it isn't present, it calls the `safeInclude()` function with the default value `/language/en`.
+
+If we try adding the `lang` parameter with random sanitary values, we see that the page returns the English version as it calls `safeInclude("language/en")`.
+
+> Heading to that file: `http://natas25.natas.labs.overthewire.org/language/en` and opening the source code:
+
+![](./screenshots/25-2.png)
+- It is a PHP file that has the variables that are used by the source code to display the data.
+
+If we try adding an actual value of a language that exists, such as either `en` or `de`, we see that the page reloads with the set language, and the `safeInclude()` function is called appropriately.
+- There is also a file for the `de` language as for the `en` language.
+
+#### `safeInclude()`
+Now, we need to analyze the `safeInclude()` function, as we see that anything we enter in the `lang` parameter, I'm guessing this is our entry point, is checked there.
+- The first `if` replaces occurrences of `../` with an empty string, and then calls the `logRequest()` function, and continues with the function. (Seems vulnerable!!)
+- The second `if` checks if `natas_webpass` exists in the file name, and if it does, it calls `logRequest()` function and exits.
+- Finally, if the filename after all of these checks exists, it is displayed.
+
+#### `logRequest()`
+Finally, the `logRequest()` function writes in the `"/var/www/natas/natas25/logs/natas25_" . session_id() .".log"` file some information such as date, time, and the HTTP header value for the `USER_AGENT`.
+- This also seems vulnerable as we can insert the data of our choice into this header value and see if it is reflected in the log file.
+- The `session_id()` is the value of the `PHPSESSID` cookie.
+
+> Combining all of this together, we realize that we cannot enter the file that contains the password in the `lang=` parameter as the `safeInclude()` function filters this out in the second if statement.
+
+> Moreover, we see that the `logRequest()` function writes information into a file that we can control through the `USER_AGENT` header, but we need to get to that file first.
+
+So for the first step, we try to reach the `log` file through the `lang` parameter by playing with the directory traversal check in the first `if` statement.
+- Since the `strstr()` function linearly searches through the input string and replaces any `../` with nothing, we can craft a string that can bypass this check:
+```
+....//
+123456
+```
+- The third, fourth, and fifth character forming `../` are removed, leaving the first, second, and sixth character: `../`.
+
+We can also obtain the `PHPSESSID` cookie after observing any request made in BurpSuite:
+
+![](./screenshots/25-3.png)
+
+Now all that is remaining is to navigate to the following folder:
+```
+/var/www/natas/natas25/logs/natas25_0l0demrcuqn86ueo63apjpv83k.log
+```
+
+Since we can move back 1 step using this `....//`, we can move back 5 steps to navigate to the above file using:
+```
+....//....//....//....//....//var/www/natas/natas25/logs/natas25_0l0demrcuqn86ueo63apjpv83k.log
+```
+
+> This file if we put in the `lang` parameter will not be stopped by the `safeInclude()` function, and its content will be displayed.
+
+![](./screenshots/25-4.png)
+
+We see that it works! Now we can try manipulating the `USER_AGENT` header to see if we can display the `/etc/natas_webpass/natas26` file to see the password:
+
+```
+User-Agent: echo '/etc/natas_webpass/natas26'
+```
+
+This doesn't work, it gets echoed exactly as is in the log file.
+
+![](./screenshots/25-5.png)
+
+We need to execute the contents of the header as code, so we can try writing a PHP script that echoes the contents of the file for us:
+
+```PHP
+User-Agent: <?php echo file_get_contents("/etc/natas_webpass/natas26"); ?>
+```
+
+Sending this request works, and the contents of the file is output in the log file.
+
+![](./screenshots/25-6.png)
+
+`natas26:8A506rfIAXbKKk68yJeuTuRq4UfcK70k`
+
+---

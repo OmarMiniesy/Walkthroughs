@@ -6,7 +6,7 @@
 
 > We see also that the password gets printed when the query returns at least 1 row.
 
-> Noticing that the query uses `"`, double qoutes not single qoutes, then the payload we use should also use these qoutes.
+> Noticing that the query uses `"`, double quotes not single quotes, then the payload we use should also use these quotes.
 > Using the basic payload:
 
 ```

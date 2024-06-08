@@ -23,7 +23,7 @@ http://127.0.0.1/
 > We see that the URL must include the host `stock.weliketoshop.net`.
 > So we try to play with the URL parser that takes as input the URL.
 
-> We try adding user credentials to see if the URL parser takes whats on the left of the `@` sign.
+> We try adding user credentials to see if the URL parser takes what's on the left of the `@` sign.
 ```
 http://mins@stock.weliketoshop.net/
 ```
@@ -31,7 +31,7 @@ http://mins@stock.weliketoshop.net/
 ![](./screenshots/lab4-2.png)
 
 > We see that we bypassed the input filter.
-> Now, we need to try and see if the URL is trying to access the part we place before the `@`. If it does, we can place `localhost` insteaf of `mins` and access the page from the server.
+> Now, we need to try and see if the URL is trying to access the part we place before the `@`. If it does, we can place `localhost` instead of `mins` and access the page from the server.
 
 > To do that, we must place the `#` character.
 ```
