@@ -49,7 +49,7 @@ v64hss83.vulnbegin.co.uk
 > Trying `v64hss83` subdomain, we get the flag.
 
 ```
-http://v64hss83.430radn5.vulnbegin.ctfio.com/
+https://v64hss83.jupiter.ctfio.com/
 
 [^FLAG^047524FE61AE6B5FD1D184994C7322FC^FLAG^] 
 ```
@@ -60,7 +60,7 @@ http://v64hss83.430radn5.vulnbegin.ctfio.com/
 > Check the `robots.txt` directory.
 
 ```
-http://430radn5.vulnbegin.ctfio.com/robots.txt
+https://jupiter.ctfio.com/robots.txt
 ```
 
 > Found a disallowed directory
@@ -72,10 +72,37 @@ Disallow: /secret_d1rect0y/
 > Accessing that directory gets a flag.
 
 ```
-http://430radn5.vulnbegin.ctfio.com/secret_d1rect0y/
+https://jupiter.ctfio.com/secret_d1rect0y/
 
 [^FLAG^2B22E2CB70E218510802B0359488F6A2^FLAG^]
 ```
 
 ---
+## Flag 5
 
+Performing a fuzzing attack to see if there are any other directories:
+
+```
+ffuf -u https://jupiter.ctfio.com/FUZZ -w ./content.txt -t 200
+```
+
+> We get this directory: `cpadmin`.
+
+Visiting `https://jupiter.ctfio.com/cpadmin` we are redirected to `https://jupiter.ctfio.com/cpadmin/login`.
+
+![](./screenshots/vulnbegin-1.png)
+
+> Trying a few combinations, it seems that it tells us when the username is invalid and when the password is invalid. 
+>  This calls for a brute force attack first on the username to find the right username, and then a brute force attack on the password to find the correct combination.
+
+Using portswigger intruder with a sniper attack to brute force the username, we get that `admin` gets us the only response that has `invalid password`, meaning that the username is correct but the password is not correct. 
+
+Now, we brute force for the password with the `admin` username until it works, this can be seen from the response with a different size than all others.
+- We get the password `159753` that works.
+
+We get the flag: 
+```
+[^FLAG^93D7491FB4B054FB5C5AC3E0292BE41C^FLAG^]
+```
+
+---
