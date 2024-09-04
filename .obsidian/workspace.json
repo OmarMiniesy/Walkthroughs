@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/Untitled.md",
+                "file": "picoCTF/Java Code Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Untitled.md",
+                "file": "picoCTF/Java Code Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Untitled.md",
+                "file": "picoCTF/Java Code Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "picoCTF/Untitled.md"
+                "file": "picoCTF/Java Code Analysis.md"
               }
             }
           },
@@ -170,11 +170,23 @@
   },
   "active": "0407428b0de7ff63",
   "lastOpenFiles": [
+    "picoCTF/screenshots/java-16.png",
+    "picoCTF/screenshots/java-15.png",
+    "picoCTF/screenshots/java-14.png",
+    "picoCTF/screenshots/java-13.png",
+    "picoCTF/screenshots/java-12.png",
+    "SCHEDULE.md",
+    "picoCTF/Java Code Analysis.md",
+    "picoCTF/screenshots/java-11.png",
+    "picoCTF/screenshots/java-10.png",
+    "picoCTF/screenshots/java-9.png",
+    "picoCTF/screenshots/java-8.png",
+    "picoCTF/screenshots/java-7.png",
+    "picoCTF/screenshots/java-6.png",
     "picoCTF/Trickster.md",
     "picoCTF/SOAP.md",
     "Portswigger/CORS/Lab 2.md",
     "Portswigger/CORS/Lab 1.md",
-    "picoCTF/Untitled.md",
     "picoCTF/Cookies.md",
     "picoCTF/Includes.md",
     "picoCTF/Insp3ct0r.md",
@@ -185,17 +197,7 @@
     "picoCTF/dont-use-client-side.md",
     "picoCTF/Bookmarklet.md",
     "picoCTF/MatchTheRegex.md",
-    "picoCTF/screenshots/match-2.png",
-    "picoCTF/screenshots/match-1.png",
     "picoCTF/More SQLi.md",
-    "picoCTF/screenshots/more-2.png",
-    "picoCTF/screenshots/more-1.png",
-    "picoCTF/screenshots/soap-5.png",
-    "picoCTF/screenshots/soap-4.png",
-    "picoCTF/screenshots/soap-3.png",
-    "picoCTF/screenshots/soap-2.png",
-    "picoCTF/screenshots/soap-1.png",
-    "picoCTF/screenshots/trick-5.png",
     "picoCTF/Scavenger Hunt.md",
     "picoCTF/logon.md",
     "picoCTF/Unminify.md",
@@ -204,8 +206,6 @@
     "picoCTF/where are the robots.md",
     "Portswigger/XXE Injection/Lab 1.md",
     "README.md",
-    "overthewire/natas/natas25.md",
-    "hackinghub/VulnBegin.md",
     "hackinghub/screenshots",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
