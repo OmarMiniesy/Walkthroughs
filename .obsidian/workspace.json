@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/Java Code Analysis.md",
+                "file": "picoCTF/findme.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Java Code Analysis.md",
+                "file": "picoCTF/findme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Java Code Analysis.md",
+                "file": "picoCTF/findme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "picoCTF/Java Code Analysis.md"
+                "file": "picoCTF/findme.md"
               }
             }
           },
@@ -170,19 +170,21 @@
   },
   "active": "0407428b0de7ff63",
   "lastOpenFiles": [
+    "picoCTF/screenshots/find-3.png",
+    "picoCTF/screenshots/find-2.png",
+    "picoCTF/screenshots/find-1.png",
+    "picoCTF/IntroToBurp.md",
+    "picoCTF/findme.md",
+    "picoCTF/Java Code Analysis.md",
     "picoCTF/screenshots/java-16.png",
     "picoCTF/screenshots/java-15.png",
     "picoCTF/screenshots/java-14.png",
     "picoCTF/screenshots/java-13.png",
     "picoCTF/screenshots/java-12.png",
     "SCHEDULE.md",
-    "picoCTF/Java Code Analysis.md",
     "picoCTF/screenshots/java-11.png",
     "picoCTF/screenshots/java-10.png",
     "picoCTF/screenshots/java-9.png",
-    "picoCTF/screenshots/java-8.png",
-    "picoCTF/screenshots/java-7.png",
-    "picoCTF/screenshots/java-6.png",
     "picoCTF/Trickster.md",
     "picoCTF/SOAP.md",
     "Portswigger/CORS/Lab 2.md",
@@ -191,7 +193,6 @@
     "picoCTF/Includes.md",
     "picoCTF/Insp3ct0r.md",
     "picoCTF/Local Authority.md",
-    "picoCTF/IntroToBurp.md",
     "picoCTF/Inspect HTML.md",
     "picoCTF/GET aHEAD.md",
     "picoCTF/dont-use-client-side.md",
@@ -205,7 +206,6 @@
     "picoCTF/Verify.md",
     "picoCTF/where are the robots.md",
     "Portswigger/XXE Injection/Lab 1.md",
-    "README.md",
     "hackinghub/screenshots",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
