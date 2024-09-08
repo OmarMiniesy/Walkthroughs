@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/Roboto Sans.md",
+                "file": "picoCTF/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Roboto Sans.md",
+                "file": "picoCTF/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Roboto Sans.md",
+                "file": "picoCTF/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "picoCTF/Roboto Sans.md"
+                "file": "picoCTF/Untitled.md"
               }
             }
           },
@@ -170,22 +170,24 @@
   },
   "active": "0407428b0de7ff63",
   "lastOpenFiles": [
+    "picoCTF/Forbidden Paths.md",
+    "picoCTF/Untitled.md",
+    "picoCTF/screenshots/forbidden-2.png",
+    "picoCTF/screenshots/forbidden-1.png",
+    "picoCTF/Power Cookie.md",
+    "picoCTF/screenshots/guest-2.png",
+    "picoCTF/screenshots/guest-1.png",
+    "picoCTF/Roboto Sans.md",
     "picoCTF/screenshots/roboto-1.png",
     "picoCTF/Search Source.md",
-    "picoCTF/Roboto Sans.md",
     "picoCTF/Secrets.md",
     "picoCTF/screenshots/secret-7.png",
     "picoCTF/screenshots/secret-6.png",
     "picoCTF/screenshots/secret-5.png",
     "picoCTF/screenshots/secret-4.png",
     "picoCTF/screenshots/secret-3.png",
-    "picoCTF/screenshots/secret-2.png",
-    "picoCTF/screenshots/secret-1.png",
     "picoCTF/SQL Direct.md",
-    "picoCTF/screenshots/post-2.png",
-    "picoCTF/screenshots/post-1.png",
     "picoCTF/SQLiLite.md",
-    "picoCTF/screenshots/sql-4.png",
     "picoCTF/More SQLi.md",
     "SCHEDULE.md",
     "picoCTF/findme.md",
@@ -204,8 +206,6 @@
     "picoCTF/dont-use-client-side.md",
     "picoCTF/Bookmarklet.md",
     "picoCTF/MatchTheRegex.md",
-    "picoCTF/Scavenger Hunt.md",
-    "picoCTF/logon.md",
     "hackinghub/screenshots",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
