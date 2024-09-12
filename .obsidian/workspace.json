@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/Super Serial.md",
+                "file": "picoCTF/Some Assembly Required 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Super Serial.md",
+                "file": "picoCTF/Some Assembly Required 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Super Serial.md",
+                "file": "picoCTF/Some Assembly Required 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "picoCTF/Super Serial.md"
+                "file": "picoCTF/Some Assembly Required 1.md"
               }
             }
           },
@@ -170,21 +170,22 @@
   },
   "active": "592f77c715237607",
   "lastOpenFiles": [
+    "picoCTF/Most Cookies.md",
+    "picoCTF/Some Assembly Required 1.md",
+    "picoCTF/screenshots/most-1.png",
+    "picoCTF/Super Serial.md",
+    "picoCTF/screenshots/super-6.png",
+    "picoCTF/screenshots/super-5.png",
+    "picoCTF/screenshots/super-4.png",
+    "picoCTF/screenshots/super-3.png",
     "picoCTF/screenshots/super-2.png",
     "picoCTF/screenshots/super-1.png",
     "picoCTF/login.md",
-    "picoCTF/Super Serial.md",
     "picoCTF/screenshots/login-2.png",
     "picoCTF/screenshots/login-1.png",
     "picoCTF/caas.md",
     "picoCTF/screenshots/caas-4.png",
-    "picoCTF/screenshots/caas-3.png",
-    "picoCTF/screenshots/caas-2.png",
-    "picoCTF/screenshots/caas-1.png",
     "picoCTF/JAuth.md",
-    "picoCTF/screenshots/jauth-5.png",
-    "Pasted image 20240909120607.png",
-    "picoCTF/screenshots/jauth-4.png",
     "picoCTF/Forbidden Paths.md",
     "picoCTF/Power Cookie.md",
     "picoCTF/Roboto Sans.md",
@@ -205,7 +206,6 @@
     "picoCTF/Includes.md",
     "picoCTF/Insp3ct0r.md",
     "picoCTF/Local Authority.md",
-    "picoCTF/Inspect HTML.md",
     "hackinghub/screenshots",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
