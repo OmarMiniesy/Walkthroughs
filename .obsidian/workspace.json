@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4c7ea71e198e8a02",
+        "id": "263d08fa7e54d0c3",
         "type": "tabs",
         "children": [
           {
-            "id": "1cd51b791d1626c5",
+            "id": "f0dbb9191f8670e1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "picoCTF/Web Gauntlet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "picoCTF/Web Gauntlet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "picoCTF/Web Gauntlet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "picoCTF/Web Gauntlet.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,8 +160,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cd51b791d1626c5",
+  "active": "936c5cb4780564e1",
   "lastOpenFiles": [
+    "picoCTF/Web Gauntlet 2 and 3.md",
+    "picoCTF/Web Gauntlet.md",
+    "picoCTF/screenshots/web-12.png",
+    "picoCTF/screenshots/web-11.png",
+    "SEED Labs/Network Security/Local DNS Attack Lab.md",
+    "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
+    "SEED Labs/Network Security/TCP Attacks Lab.md",
+    "SEED Labs/Network Security/ICMP Redirect Attack Lab.md",
+    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
     "picoCTF/screenshots/web-9.png",
     "picoCTF/screenshots/web-8.png",
     "picoCTF/screenshots/web-7.png",
@@ -178,14 +179,10 @@
     "picoCTF/screenshots/web-4.png",
     "picoCTF/screenshots/web-3.png",
     "picoCTF/screenshots/web-2.png",
-    "picoCTF/screenshots/web-1.png",
-    "picoCTF/Web Gauntlet.md",
     "overthewire/natas/natas11.md",
     "overthewire/natas/natas14.md",
     "overthewire/natas/natas25.md",
     "picoCTF/Irish-Name-Repo 3.md",
-    "picoCTF/screenshots/irish-10.png",
-    "picoCTF/screenshots/irish-9.png",
     "picoCTF/Irish-Name-Repo 1.md",
     "picoCTF/Irish-Name-Repo 2.md",
     "picoCTF/JAuth.md",
@@ -200,12 +197,6 @@
     "picoCTF/caas.md",
     "picoCTF/Forbidden Paths.md",
     "picoCTF/Power Cookie.md",
-    "picoCTF/Roboto Sans.md",
-    "picoCTF/Search Source.md",
-    "picoCTF/Secrets.md",
-    "picoCTF/SQL Direct.md",
-    "picoCTF/SQLiLite.md",
-    "picoCTF/More SQLi.md",
     "hackinghub/screenshots",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
