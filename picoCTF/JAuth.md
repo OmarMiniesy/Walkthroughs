@@ -24,7 +24,7 @@ We see that it has multiple fields of information, but one important one is the 
 
 > One known attack to conduct against JWT tokens is to completely remove the signature and the algorithm used to produce the signature, and keep the extra full stop at the end, as there have to be 2 full stops in the token.
 
-To be able to remove the algorithm, I went to a website called [token.dev](token.dev):
+To be able to remove the algorithm, I went to a website called [token.dev](https://token.dev/):
 
 ![](./screenshots/jauth-4.png)
 
