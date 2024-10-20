@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "40fbe1dafe10c183",
+        "id": "7920e0693e4c00d7",
         "type": "tabs",
         "children": [
           {
-            "id": "1d8d576203832e12",
+            "id": "f393d023dd4e6ca8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Insecure Deserialization/Lab 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a0c33b7a80b5481",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Portswigger/Insecure Deserialization/Lab 2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
-    "collapsed": true
+    "width": 289.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -99,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Portswigger/Insecure Deserialization/Lab 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Portswigger/Insecure Deserialization/Lab 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Portswigger/Insecure Deserialization/Lab 2.md"
-              }
+              "state": {}
             }
           },
           {
@@ -182,45 +160,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a0c33b7a80b5481",
+  "active": "f393d023dd4e6ca8",
   "lastOpenFiles": [
-    "Portswigger/Insecure Deserialization/Lab 1.md",
     "Portswigger/Insecure Deserialization/Lab 2.md",
+    "Portswigger/Insecure Deserialization/Lab 1.md",
+    "Portswigger/Insecure Deserialization/Lab 3.md",
+    "Portswigger/Insecure Deserialization/Screenshots/3-3.png",
+    "Portswigger/Insecure Deserialization/Screenshots/3-2.png",
+    "Portswigger/Insecure Deserialization/Screenshots/3-1.png",
+    "picoCTF/Web Gauntlet 2 and 3.md",
+    "picoCTF/Web Gauntlet.md",
+    "picoCTF/Irish-Name-Repo 3.md",
+    "picoCTF/Irish-Name-Repo 2.md",
+    "picoCTF/Irish-Name-Repo 1.md",
+    "Portswigger/Authentication/Lab 8.md",
+    "Portswigger/Authentication/Lab 7.md",
+    "Portswigger/Authentication/Lab 6.md",
+    "Portswigger/Authentication/Lab 5.md",
+    "Portswigger/Authentication/Lab 4.md",
+    "Portswigger/Authentication/Lab 3.md",
+    "Portswigger/Authentication/Lab 2.md",
+    "Portswigger/Authentication/Lab 1.md",
+    "Portswigger/Access Control/Lab 13.md",
+    "Portswigger/Access Control/Lab 12.md",
+    "Portswigger/Access Control/Lab 11.md",
+    "Portswigger/Access Control/Lab 10.md",
+    "Portswigger/Access Control/Lab 9.md",
+    "Portswigger/Access Control/Lab 8.md",
+    "Portswigger/Access Control/Lab 7.md",
+    "Portswigger/Access Control/Lab 6.md",
+    "Portswigger/Access Control/Lab 5.md",
     "Portswigger/Insecure Deserialization/Screenshots/2-1.png",
-    "Portswigger/File Upload Vulnerabilities/Lab 1.md",
     "Portswigger/Insecure Deserialization/Screenshots/1-4.png",
     "Portswigger/Insecure Deserialization/Screenshots/1-3.png",
     "Portswigger/Insecure Deserialization/Screenshots/1-2.png",
     "Portswigger/Insecure Deserialization/Screenshots/1-1.png",
-    "Portswigger/CSRF/Lab 1.md",
-    "Portswigger/Information Disclosure/Lab 2.md",
     "Portswigger/Insecure Deserialization/Screenshots",
     "Portswigger/Insecure Deserialization",
-    "tryhackme/Bounty Hacker.md",
-    "tryhackme/Basic Pentesting.md",
-    "picoCTF/JaWT Scratchpad.md",
-    "picoCTF/JAuth.md",
-    "www.token.dev.md",
-    "token.dev.md",
-    "picoCTF/Client-side-again.md",
     "picoCTF/screenshots/client-2.png",
     "picoCTF/screenshots/client-1.png",
-    "picoCTF/Web Gauntlet 2 and 3.md",
-    "picoCTF/Web Gauntlet.md",
-    "picoCTF/screenshots/web-12.png",
-    "picoCTF/screenshots/web-11.png",
-    "SEED Labs/Network Security/Local DNS Attack Lab.md",
-    "SEED Labs/Network Security/Packet Sniffing and Spoofing Lab.md",
-    "SEED Labs/Network Security/TCP Attacks Lab.md",
-    "SEED Labs/Network Security/ICMP Redirect Attack Lab.md",
-    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
-    "picoCTF/screenshots/web-9.png",
-    "overthewire/natas/natas11.md",
-    "overthewire/natas/natas14.md",
-    "overthewire/natas/natas25.md",
-    "picoCTF/Irish-Name-Repo 3.md",
-    "picoCTF/Irish-Name-Repo 1.md",
-    "picoCTF/Irish-Name-Repo 2.md",
     "hackinghub/screenshots",
     "SEED Labs/Network Security/screenshots",
     "SEED Labs/Network Security",
