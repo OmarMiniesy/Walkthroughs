@@ -1,49 +1,32 @@
-### Visible error-based SQL injection : PRACTITIONER
+
+### SQL injection attack, querying the database type and version on Oracle : PRACTITIONER
 
 ---
 
-> Try injecting a `'` in the TrackingId cookie.
-> See an error message.
+Category parameter is vulnerable to SQL injection. 
 
-![error](./screenshots/err.png)
-
-> This states that the `'` causes an error. Try adding another one to close of the opened string.
-> The error disappears and the application works normally.
-
-> Try adding a comment after the single qoute, and observe that the website works normally.
+First thing to do is get the number of columns. This is an oracle database, so must add `FROM DUAL` at the end of the query.
 ```
-ye4d0aqqHSSKqYvy'--
+' UNION SELECT NULL, NULL FROM DUAL--
 ```
+- Keep adding `NULL`s until an error is faced, the number right before is the number of columns.
+- The number of columns is 2.
 
-> Since there are visible error messages, we can try to use the `CAST()` function.
+Find out the column data types, and we need text to display the banner of the database.
 ```
-ye4d0aqqHSSKqYvy' AND CAST((SELECT 1) AS INT)--
+' UNION SELECT 'a', NULl FROM DUAL--
 ```
 
-![error1](./screenshots/err1.png)
+![](./screenshots/lab8-1.png)
 
-> Type boolean, so try to add an equality.
+We see that it doesn't produce an error and outputs the letter `a` confirming that this column is of type text.
+- We can use the first column to display the database version.
+
+Change the first column to display the banner of the oracle database as requested, and change the table to `v$version`.
 ```
-ye4d0aqqHSSKqYvy' AND CAST((SELECT 1) AS INT) = 1--
-```
-> It works properly. Now we know the syntax of the CAST expression and how to make it work, lets try to obtain the administrator username and password from the users table.
-```
-ye4d0aqqHSSKqYvy'AND CAST((SELECT username FROM users LIMIT 1) AS INT) = 1--
-```
->This doesn't work as the last couple of characters aren't read by the query, so we remove the cookie and check.
-```
-'AND CAST((SELECT username FROM users LIMIT 1) AS INT) = 1--
+' UNION SELECT BANNER, NULL FROM v$version--
 ```
 
-![err2](./screenshots/err2.png)
-
-> The error message displays the required data. What happens is that what we need is of type string, but we are casting it to integer. So the error message displays where our errors are. We exploit this again by trying to obtain the password.
-```
-'AND CAST((SELECT password FROM users LIMIT 1) AS INT) = 1--
-```
-
-![err3](./screenshots/err3.png)
-
-> Now login as admin with the given password and complete the lab.
+This shows the database banner and version.
 
 ---

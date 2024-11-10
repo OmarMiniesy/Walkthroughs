@@ -1,51 +1,33 @@
 
-### SQL injection with filter bypass via XML encoding : PRACTITIONER
+### SQL injection UNION attack, determining the number of columns returned by the query : PRACTITIONER
 
 ---
 
-> Use burpsuite to intercept request for the second item, there is a `productId` parameter. 
-> There is also a parameter for `storeId` after pressing on check stock button.
-> The request is in XML and has UTF-8 encoding.
+Open different categories and see that there is a category parameter.
 
-![config](./screenshots/req.png)
+![](./screenshots/lab1-1.png)
 
+We know that it is vulnerable to UNION based injection, but we need to figure out the number of columns that are in the original query.
+- We use the adding `NULL` technique.
 
-> Adding a `'` after the 2 in both productId and storeId does nothing and the burpsuite repeater indicates that an attack was detected. We care for the stockId.
+Try the exploit by adding it to the query parameter `category` that is vulnerable to SQLi.
 
-![attackDetected](./screenshots/attackDetected.png)
-
-
-> Use the hackvertor extension to encode the sql injection to not be detected by the web application firewall.
-
-> Try normal payloads and see that the "attack detected" message is no longer there.
-
-> Try the payload in the storeId parameter to get usernames and passwords.
 ```
-<@hex_entities>4 union select username, password from users<@/hex_entities>
-```
-> Doesn't work, maybe number of fields isnt matching.
-
-> Need to figure out the number of output columns. If an NULL or empty string is output after a value, then the number of columns matches. Otherwise, keep adding ,NULL until it works.
-```
-<@hex_entities>1 union select null <@/hex_entities>
+Accessories' UNION SELECT NULL --
 ```
 
-> The output field has 1 column only as the output is as stated.
+![](./screenshots/lab4-1.png)
 
-![numColumns](./screenshots/numcols.png)
+> Doesn't work, so keep adding `NULL,` until it clicks.
 
-> So we have to change the query such that it fits the output data in 1 column using the concatenation `||` tool.
+Works at 3 `NULL`s added, so there are 3 columns in the query.
+
 ```
-<@hex_entities>
-
- 1 union select username || ':' || password from users
-
-<@/hex_entities>
+Accessories' UNION SELECT NULL, NULL, NULL--
 ```
 
-![resultingData](./screenshots/output.png)
+![](./screenshots/lab4-2.png)
 
-
-> Now we can login as admin and the lab is complete.
+We see an extra row of null values, meaning that our UNION attack works, as the other query we appended to the original one returns NULL data.
 
 ---
