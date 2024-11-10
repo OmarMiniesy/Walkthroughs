@@ -19,8 +19,7 @@ This is the request we will be playing with, and mainly by changing the value of
 Now, to detect blind vulnerabilities, we can use the COLLABORATOR server.
 - Right clicking on the value of the `referer` header field, and then pressing on `insert collaborator payload` will place the URL of the server.
 
-> Sending this request and then opening the collaborator tab will show us some requests being made. 
-> These requests are coming from the backend server that tried to fetch the collaborator server domain, hence, completing the lab.
+> Sending this request and then opening the collaborator tab will show us some requests being made. These requests are coming from the backend server that tried to fetch the collaborator server domain, hence, completing the lab.
 
 ---
 

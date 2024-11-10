@@ -3,48 +3,23 @@
 
 ---
 
-> Burpsuite doesn't show images and filters their requests. This is a turnaround. 
-> If your burpsuite shows the image requests, then simple navigate to one of the `GET` requests to get an image.
-> Continue with this walkthrough at the `GET` request image.
+Opening the website and having Burp Suite HTTP History tab open, we do not see any images being loaded.
+- To show images, we can press on the Filter and show images.
 
-##### Burpsuite Filtering Image Requests.
-> Open developer tools and choose one of the images.
+![](./screenshots/1-1.png)
 
-![lab1-img-src](./screenshots/lab1-img-src.png)
+Now, we can see all the images being fetched.
+- Opening a request for any image, we see the following:
 
-> The path after the question mark could be possibly changed.
-> To check, right click on that src and choose open in new tab.
-
-![lab1-newtab](./screenshots/lab1-newtab.png)
-
-> This opens the image in a new tab. Open that request in BURPSUITE PROXY through the HTTP history tab.
-
-##### CONTINUE HERE
 ![lab1-get-req](./screenshots/get-req.png)
 
-> Now that we have the `GET` request, we can modify the value of the `filename` parameter to see if we can navigate through the file system.
-> This can be done by sending that request to BURPSUITE REPEATER.
+Now, we can try to read the `/etc/passwd` file by jumping back 3 times to get to the root directory:
 
-> We try going up 1 directory and looking for `/etc/passwd`.
-```
-../etc/passwd
-```
-
-![err-400](./screenshots/err-400.png)
-
-> Doesn't work, so trying another upward jump.
-```
-../../etc/passwd
-```
-
-![err-400](./screenshots/err-400.png)
-
-> Doesn't work, so trying another jump.
 ```
 ../../../etc/passwd
 ```
 
-![/etc/passwd](./screenshots/etc-passwd.png)
+![](./screenshots/1-2.png)
 
 > It works, and we get the `/etc/passwd` file, completing the lab.
 

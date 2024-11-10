@@ -4,11 +4,11 @@
 ---
 
 
-> We visit any item and check its stock with BURPSUITE PROXY HTTP history on.
+We visit any item and check its stock with BURPSUITE PROXY HTTP history on.
 
 ![](./screenshots/checkstock.png)
 
-> There is a `POST` request sent.
+There is a `POST` request sent.
 
 ![](./screenshots/lab5-1.png)
 
@@ -18,7 +18,7 @@
 
 ![](./screenshots/lab5-2.png)
 
-> We see there is a `GET` request sent to fetch the next page.
+We see there is a `GET` request sent to fetch the next page.
 
 ![](./screenshots/lab5-3.png)
 
@@ -26,18 +26,19 @@
 
 ![](./screenshots/lab5-4.png)
 
-> We will try to play with the value of the `path` parameter and see if it can fetch an arbitrary URL.
+We will try to play with the value of the `path` parameter and see if it can fetch an arbitrary URL.
 ```
 path=https://www.googe.com/
 ```
 
 > We see that it works.
-> So if we modify our `stockApi` parameter to fetch a page using the path we supply by using the path present in the `GET` request that has the `path` parameter present.
+
+So if we modify our `stockApi` parameter to fetch a page using the path we supply by using the path present in the `GET` request that has the `path` parameter present.
 ```
 stockApi=/product/nextProduct?currentProductId=2&path=https://www.google.com/
 ```
-> Instead of google, we now add the page we need to visit.
 
+Instead of google, we now add the page we need to visit.
 ```
 stockApi=/product/nextProduct?currentProductId=2&path=http://192.168.0.12:8080/admin
 ```
