@@ -1,4 +1,3 @@
-
 ### DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded : PRACTITIONER
 
 ---
@@ -14,7 +13,7 @@
 > There are some functions that are in scope that can be used to call the constructor function.
 > We can check them out if we enter the developer console and enter
 ```
-anular.element(document.getElementById('academyLabHeader')).scope()
+angular.element(document.getElementById('academyLabHeader')).scope()
 ```
 >and head down to the prototype section.
 

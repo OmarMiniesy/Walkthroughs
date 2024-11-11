@@ -3,11 +3,11 @@
 
 ---
 
-> Login via the given credentials `wiener:peter`.
+Login via the given credentials `wiener:peter`.
 
 ![wiener-login](./screenshots/wiener-login.png)
 
-> Then head to the required item `Lightweight "l33t" leather jacket`.
+Then head to the required item `Lightweight "l33t" leather jacket`.
 
 ![jacket](./screenshots/jacker.png)
 

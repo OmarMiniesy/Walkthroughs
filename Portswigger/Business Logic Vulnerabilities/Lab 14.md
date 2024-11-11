@@ -3,26 +3,26 @@
 
 ---
 
-> Given credentials `wiener:peter`.
-> Need to access admin panel and delete the user `carlos`.
+Given credentials `wiener:peter`.
+- Need to access admin panel and delete the user `carlos`.
 
-> Loggin in with the stay logged in option.
+Logging in with the stay logged in option.
 
 ![lab14-login](./screenshots/lab14-login.png)
 
-> Observing the `POST` request to login and its response, we see that the `stay-logged-in` cookie is encrypted.
+Observing the `POST` request to login and its response, we see that the `stay-logged-in` cookie is encrypted.
 
 ![lab14-cookie](./screenshots/lab14-cookie.png)
 
-> Going to post a comment with the BURPSUITE PROXY HTTP history open.
+Going to post a comment with the BURPSUITE PROXY HTTP history open.
 
 ![lab14-comment](./screenshots/lab14-comment.png)
 
-> We get 2 requests, as well as see a message regarding the invalid email address.
+We get 2 requests, as well as see a message regarding the invalid email address.
 
 ![lab14-invalid](./screenshots/lab14-inavlid.png)
 
-> The first `POST` request: 
+The first `POST` request: 
 
 ![lab14-post](./screenshots/lab14-post.png)
 

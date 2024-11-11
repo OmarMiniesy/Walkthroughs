@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9cc5ee0ab88625e8",
+        "id": "cd8faca449df5cf0",
         "type": "tabs",
         "children": [
           {
-            "id": "783d21ce7464d100",
+            "id": "41a91fb0c7320d47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Business Logic Vulnerabilities/Lab 1.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 1"
+              "title": "README"
             }
           }
         ]
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
-    "collapsed": true
+    "width": 289.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -189,44 +188,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "783d21ce7464d100",
+  "active": "41a91fb0c7320d47",
   "lastOpenFiles": [
-    "Portswigger/File Upload Vulnerabilities/Lab 7.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 6.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 5.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 4.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 3.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 2.md",
-    "Portswigger/File Upload Vulnerabilities/Lab 1.md",
-    "Portswigger/SSRF/Lab 7.md",
-    "Portswigger/SSRF/Lab 6.md",
-    "Portswigger/SSRF/Lab 5.md",
-    "Portswigger/SSRF/Lab 4.md",
-    "Portswigger/SSRF/Lab 3.md",
-    "Portswigger/SSRF/Lab 2.md",
-    "Portswigger/SSRF/Lab 1.md",
-    "Portswigger/Command Injection/Lab 5.md",
-    "Portswigger/Command Injection/Lab 4.md",
-    "Portswigger/Command Injection/Lab 3.md",
-    "Portswigger/Command Injection/Lab 2.md",
-    "Portswigger/Command Injection/Lab 1.md",
-    "Portswigger/Directory Traversal/Lab 6.md",
-    "Portswigger/Directory Traversal/Lab 5.md",
-    "Portswigger/Directory Traversal/Lab 4.md",
-    "Portswigger/Directory Traversal/Lab 3.md",
-    "Portswigger/Directory Traversal/Lab 2.md",
-    "Portswigger/Directory Traversal/Lab 1.md",
+    "Portswigger/XSS/Lab 27.md",
+    "Portswigger/XSS/screenshots/27-1.png",
+    "Portswigger/XSS/Lab 26.md",
+    "Portswigger/XSS/screenshots/26-1.png",
+    "Portswigger/XSS/screenshots/Screenshot 2024-11-11 220403.png",
+    "Portswigger/XSS/Lab 25.md",
+    "Portswigger/XSS/Lab 30.md",
+    "Portswigger/XSS/Lab 24.md",
+    "Portswigger/XSS/Lab 22.md",
+    "Portswigger/XSS/Lab 21.md",
+    "Portswigger/XSS/Lab 20.md",
+    "Portswigger/XSS/Lab 23.md",
+    "Portswigger/XSS/Lab 19.md",
+    "Portswigger/XSS/Lab 18.md",
+    "Portswigger/XSS/Lab 17.md",
+    "Portswigger/XSS/Lab 16.md",
+    "Portswigger/XSS/Lab 6.md",
+    "Portswigger/XSS/Lab 7.md",
+    "Portswigger/XSS/Lab 8.md",
+    "Portswigger/XSS/Lab 9.md",
+    "Portswigger/XSS/Lab 10.md",
+    "Portswigger/XSS/Lab 11.md",
+    "Portswigger/XSS/Lab 12.md",
+    "Portswigger/XSS/Lab 15.md",
+    "Portswigger/XSS/Lab 13.md",
+    "Portswigger/XSS/Lab 14.md",
+    "Portswigger/XSS/Lab 1.md",
+    "Portswigger/XSS/Lab 2.md",
+    "tryhackme/screenshots/lazy-1.png",
     "Portswigger/Directory Traversal/screenshots/1-2.png",
     "Portswigger/Directory Traversal/screenshots/1-1.png",
-    "Portswigger/SQL Injection/Lab 18.md",
     "Portswigger/SQL Injection/screenshots/18-2.png",
     "Portswigger/SQL Injection/screenshots/18-1.png",
     "Portswigger/SQL Injection/screenshots/5-1.png",
     "Portswigger/SQL Injection/screenshots/4-1.png",
-    "Portswigger/Insecure Deserialization/Screenshots/3-3.png",
-    "Portswigger/Insecure Deserialization/Screenshots/3-2.png",
-    "Portswigger/Insecure Deserialization/Screenshots/3-1.png",
-    "Portswigger/Insecure Deserialization/Screenshots/2-1.png",
     "Portswigger/Insecure Deserialization/Screenshots",
     "Portswigger/Insecure Deserialization",
     "hackinghub/screenshots",

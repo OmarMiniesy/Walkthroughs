@@ -3,50 +3,49 @@
 
 ---
 
-> My credentials `wiener:peter`.
-> Need to buy the item `Lightweight l33t leather jacket`.
+My credentials `wiener:peter`.
+- Need to buy the item `Lightweight l33t leather jacket`.
 
-
-> Login via the given credentials `wiener:peter`.
+Login via the given credentials `wiener:peter`.
 
 ![wiener-login](./screenshots/wiener-login.png)
 
-> Signing in to the newsletter at the bottom of the home page.
+Signing in to the newsletter at the bottom of the home page.
 
 ![lab12-email](./screenshots/lab12-email.png)
 
-> Gives coupon code.
+Gives coupon code.
 
 ![lab12-new-coupon](./screenshots/lab12-new-coupon.png)
 
-> Moreover, there is a `gift card` item in the home page.
+Moreover, there is a `gift card` item in the home page.
 
 ![gift-card](./screenshots/gift-card.png)
 
-> Viewing its details and adding to cart.
+Viewing its details and adding to cart.
 
 ![add-to-cart](./screenshots/add-to-cart.png)
 
-> Heading to the cart page and placing the coupon code `SIGNUP30`.
+Heading to the cart page and placing the coupon code `SIGNUP30`.
 
 ![lab13-cart](./screenshots/lab13-cart.png)
 
-> Results in:
+Results in:
 
 ![lab13-cart-1](./screenshots/lab13-cart-1.png)
 
-> Placing the order.
+Placing the order.
 
 ![lab13-conf](./screenshots/lab13-conf.png)
 
-> Our store credit is now 93.
-> And we have a gift card code `g57dFPvCHA`.
+Our store credit is now 93.
+- And we have a gift card code `g57dFPvCHA`.
 
-> We can apply this gift card in the my account page.
+We can apply this gift card in the my account page.
 
 ![lab13-myacc](./screenshots/lab13-my-acc.png)
 
-> Redeeming the code, we see our store credit is now 103 in total.
+Redeeming the code, we see our store credit is now 103 in total.
 
 ![lab13-conf-1](./screenshots/lab13-conf-1.png)
 
@@ -54,7 +53,7 @@
 
 ![jacket](./screenshots/jacker.png)
 
-> Taking note of the HTTP requests that are important using BURPSUITE PROXY HTTP history.
+Taking note of the HTTP requests that are important using BURPSUITE PROXY HTTP history.
 
 ![lab13-history](./screenshots/lab13-http.png)
 
@@ -65,10 +64,8 @@
 5. `POST /gift-card` : Redeeming the gift card code. 
 
 > Since we need to automate these 5 requests, we are going to use a macro.
-> This macro will work alongside BURPSUITE INTRUDER in each attack to perform these requests.
 
-> Creating the macro.
-
+This macro will work alongside BURPSUITE INTRUDER in each attack to perform these requests.
 
 1. Go to settings and then Sessions.
 
@@ -104,24 +101,25 @@
 
 ![lab13-der](./screenshots/lab13-der.png)
 
-> To test that the macro works, press on test macro and check that the gift-card in the last response is the same as that in the previous response.
-> Also make sure that all requests are either 200 or 302 resp codes.
+To test that the macro works, press on test macro and check that the gift-card in the last response is the same as that in the previous response.
+- Also make sure that all requests are either 200 or 302 resp codes.
 
-> Now that we created the macro, we use BURPSUITE ITNRUDER to generate indefinite requests, and with each request the macro is run, until we have enough store credit to buy the required item.
-> Sending a dummy request to intruder and adding empty payload for a sniper attack.
+> Now that we created the macro, we use BURPSUITE INTRUDER to generate indefinite requests, and with each request the macro is run, until we have enough store credit to buy the required item.
+
+ Sending a dummy request to intruder and adding empty payload for a sniper attack.
 
 ![lab13-int](./screenshots/lab13-int.png)
 
-> Choosing the payloads as null payloads and making it indefinite.
+Choosing the payloads as null payloads and making it indefinite.
 
 ![lab13-payload](./screenshots/lab13-payload.png)
 
-> We also need to make sure that these requests are carried out in order, so we make the max concurrent requests equal to 1.
+We also need to make sure that these requests are carried out in order, so we make the max concurrent requests equal to 1.
 
 ![lab13-max](./screenshots/lab13-max.png)
 
-> Finally, we run the attack and keep refreshing the my-account page to observe the store credit.
-> Once i have enough credit, go to the required item and add it to cart.
+Finally, we run the attack and keep refreshing the my-account page to observe the store credit.
+- Once i have enough credit, go to the required item and add it to cart.
 
 ![jacket](./screenshots/jacker.png)
 
@@ -129,6 +127,6 @@
 
 ![lab13-final](./screenshots/lab13-final.png)
 
-> Placing order completes the lab.
+Placing order completes the lab.
 
 ---
