@@ -1,3 +1,4 @@
+
 ### 2FA broken logic : PRACTITIONER
 
 ---
@@ -7,7 +8,7 @@
 
 > Studying the website and how the login/verification steps work.
 
-> First, attempting to login on the login page with the credentials `wiener:peter`.
+First, attempting to login on the login page with the credentials `wiener:peter`.
 
 ![login](./screenshots/login.png)
 
@@ -43,7 +44,9 @@
 > Now that we know the sequence of GET/POST requests, we need to check if we can change some of the cookies and parameters to login as `carlos`.
 
 > Since the second `GET` request of the login phase, the `GET /login2` request is responsible for fetching the verification page and sending the code, we can change the `verify` cookie to the username `carlos`.
-> This will generate a code for the user `carlos`. 
+
+This will generate a code for the user `carlos`. 
+
 > We can then play with the `POST` request in the verification page and brute force the code. However, we must also make the `verify` cookie in that request for `carlos`.
 
 1. Generate an OTP for `carlos`.
@@ -56,17 +59,17 @@
 
 > Now we need to brute force the `mfa-code` value. This `POST` request as understood, if contains the correct OTP, will generate the `GET` request responsible for fetching the account for the desired username.
 
-> Install the `turbo intruder` extension for a faster brute force attack from the Extensions > BApp store tab.
-> Once installed, right click on the `mfa-code` parameter and then choose extensions, Turbo Intruder, and then send to Turbo Intruder.
+Install the `turbo intruder` extension for a faster brute force attack from the Extensions > BApp store tab.
+- Once installed, right click on the `mfa-code` parameter and then choose extensions, Turbo Intruder, and then send to Turbo Intruder.
 
 ![lab8-intruder](./screenshots/lab8-intruder.png)
 
-> This opens the turbo intruder interface, containing a python script and the request, and the area that will be injected replaced with a `%s`.
+This opens the turbo intruder interface, containing a python script and the request, and the area that will be injected replaced with a `%s`.
 
 ![lab8-turbo](./screenshots/lab8-turbo.png)
 
-> We need to insert all possible payloads into a txt file, and then use that file for the attack.
-> To do that, use the `crunch` tool to generate all 4 digit number permutations into a file called `list.txt`.
+We need to insert all possible payloads into a txt file, and then use that file for the attack.
+- To do that, use the `crunch` tool to generate all 4 digit number permutations into a file called `list.txt`.
 ```
 crunch 4 4 0123456789 -o list.txt
 ```
@@ -75,20 +78,18 @@ crunch 4 4 0123456789 -o list.txt
 
 ![lab8-opts](./screenshots/lab8-otps.png)
 
-> Then modify the script to point to that list.
+Then modify the script to point to that list.
 
 ![lab8-modified-script](./screenshots/lab8-modified-script.png)
 
-> Start the attack and find the response with a 302 status code.
+Start the attack and find the response with a 302 status code.
 
 ![lab8-correct-otp](./screenshots/lab8-correct-otp.png)
 
-> Therefore, the OTP is `0670`.
-> Right click on that response to view in browser, and copy the URL.
-> Turn on burp proxy to be able to paste that URL into your browser.
+> Therefore, the OTP is `0670`. Right click on that response to view in browser, and copy the URL. Turn on burp proxy to be able to paste that URL into your browser.
 
 ![carlos-account](./screenshots/carlos-account.png)
 
-> Click on `my account` to complete the lab.
+Click on `my account` to complete the lab.
 
 ---

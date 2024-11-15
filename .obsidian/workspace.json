@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "41a91fb0c7320d47",
+            "id": "6d00e5574476c073",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Portswigger/Authentication/Lab 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Lab 13"
+            }
+          },
+          {
+            "id": "8a374b18858f8941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Authentication/Lab 14.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lab 14"
             }
           }
         ]
@@ -52,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hashchange",
+                "query": "broken logic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -188,36 +202,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41a91fb0c7320d47",
+  "active": "6d00e5574476c073",
   "lastOpenFiles": [
-    "Portswigger/XSS/Lab 27.md",
+    "Portswigger/Authentication/Lab 14.md",
+    "Portswigger/Authentication/Lab 13.md",
+    "Portswigger/Authentication/Lab 11.md",
+    "Portswigger/Authentication/Lab 12.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 8.md",
+    "Portswigger/Authentication/Lab 10.md",
+    "Portswigger/Authentication/Lab 9.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 13.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 12.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 11.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 10.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 9.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 7.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 6.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 5.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 4.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 3.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 2.md",
+    "Portswigger/Authentication/Lab 8.md",
+    "Portswigger/Authentication/Lab 7.md",
+    "Portswigger/Authentication/Lab 6.md",
+    "Portswigger/Authentication/Lab 4.md",
+    "Portswigger/Authentication/Lab 3.md",
+    "Portswigger/Authentication/Lab 2.md",
+    "Portswigger/Business Logic Vulnerabilities/Lab 1.md",
     "Portswigger/XSS/screenshots/27-1.png",
-    "Portswigger/XSS/Lab 26.md",
     "Portswigger/XSS/screenshots/26-1.png",
     "Portswigger/XSS/screenshots/Screenshot 2024-11-11 220403.png",
-    "Portswigger/XSS/Lab 25.md",
-    "Portswigger/XSS/Lab 30.md",
-    "Portswigger/XSS/Lab 24.md",
-    "Portswigger/XSS/Lab 22.md",
-    "Portswigger/XSS/Lab 21.md",
-    "Portswigger/XSS/Lab 20.md",
-    "Portswigger/XSS/Lab 23.md",
-    "Portswigger/XSS/Lab 19.md",
-    "Portswigger/XSS/Lab 18.md",
-    "Portswigger/XSS/Lab 17.md",
-    "Portswigger/XSS/Lab 16.md",
-    "Portswigger/XSS/Lab 6.md",
-    "Portswigger/XSS/Lab 7.md",
-    "Portswigger/XSS/Lab 8.md",
-    "Portswigger/XSS/Lab 9.md",
-    "Portswigger/XSS/Lab 10.md",
-    "Portswigger/XSS/Lab 11.md",
-    "Portswigger/XSS/Lab 12.md",
-    "Portswigger/XSS/Lab 15.md",
-    "Portswigger/XSS/Lab 13.md",
-    "Portswigger/XSS/Lab 14.md",
-    "Portswigger/XSS/Lab 1.md",
-    "Portswigger/XSS/Lab 2.md",
     "tryhackme/screenshots/lazy-1.png",
     "Portswigger/Directory Traversal/screenshots/1-2.png",
     "Portswigger/Directory Traversal/screenshots/1-1.png",
