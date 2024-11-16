@@ -3,34 +3,31 @@
 
 ---
 
-> Given credentials `wiener:peter`.
-
-
-> Logging in as wiener.
+Given credentials `wiener:peter`.
+- Logging in as wiener.
 
 ![](./screenshots/lab3-login.png)
 
-> Notice in the URL a parameter `id=wiener`.
+Notice in the URL a parameter `id=wiener`.
 
 ![](./screenshots/lab7-url.png)
 
-> Changing the `id` parameter value to carlos.
-> Monitoring the response using BURPSUITE INTERCEPT HTTP history.
+Changing the `id` parameter value to carlos.
+- Monitoring the response using BURPSUITE INTERCEPT HTTP history.
 
 ![](./screenshots/lab9-redirect.png)
 
-> We can see the account page for carlos, but viewing the response's source code, we see that we are actually on the `/login` page.
+We can see the account page for carlos, but viewing the response's source code, we see that we are actually on the `/login` page.
 
 ![](./screenshots/lab9-login.png)
 
 > Hence, we were redirected to the `/login` page, but the data we needed was still output.
-> Copying the API key to submit in the submit solution box.
+
+Copying the API key to submit in the submit solution box.
 ```
 VbCJXHqxj6hO8IWuNs9WrGFtXfreqnNh
 ```
 
 ![](./screenshots/lab9-submit.png)
-
-> Completes the lab.
 
 ---
