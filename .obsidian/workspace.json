@@ -11,10 +11,14 @@
             "id": "a6b5bc4b0251e47a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Portswigger/Information Disclosure/Lab 5.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Lab 5"
             }
           }
         ]
@@ -184,8 +188,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "936c5cb4780564e1",
+  "active": "a6b5bc4b0251e47a",
   "lastOpenFiles": [
+    "Portswigger/Information Disclosure/Lab 4.md",
+    "Portswigger/Information Disclosure/Lab 3.md",
+    "Portswigger/Information Disclosure/Lab 2.md",
+    "Portswigger/Information Disclosure/Lab 1.md",
+    "Portswigger/SQL Injection/Lab 7.md",
+    "Portswigger/SQL Injection/Lab 6.md",
+    "hackinghub/VulnBegin.md",
+    "overthewire/natas/natas13.md",
+    "overthewire/natas/natas12.md",
+    "overthewire/natas/natas11.md",
     "Portswigger/Access Control/Lab 13.md",
     "Portswigger/Access Control/Lab 12.md",
     "Portswigger/Access Control/Lab 11.md",
@@ -202,16 +216,6 @@
     "Portswigger/Authentication/Lab 13.md",
     "Portswigger/Authentication/Lab 14.md",
     "Portswigger/Authentication/Lab 11.md",
-    "Portswigger/Authentication/Lab 12.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 8.md",
-    "Portswigger/Authentication/Lab 10.md",
-    "Portswigger/Authentication/Lab 9.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 14.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 13.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 12.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 11.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 10.md",
-    "Portswigger/Business Logic Vulnerabilities/Lab 9.md",
     "Portswigger/XSS/screenshots/27-1.png",
     "Portswigger/XSS/screenshots/26-1.png",
     "Portswigger/XSS/screenshots/Screenshot 2024-11-11 220403.png",
