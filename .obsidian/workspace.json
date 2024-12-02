@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9506c1eda8ece69f",
+        "id": "f3354d2a375c2a61",
         "type": "tabs",
         "children": [
           {
-            "id": "a6b5bc4b0251e47a",
+            "id": "9d93d1b21b8368eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/Information Disclosure/Lab 5.md",
+                "file": "Portswigger/NoSQL Injections/Lab 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 5"
+              "title": "Lab 4"
             }
           }
         ]
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 289.5,
+    "collapsed": true
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -188,8 +189,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6b5bc4b0251e47a",
+  "active": "9d93d1b21b8368eb",
   "lastOpenFiles": [
+    "Portswigger/NoSQL Injections/screenshots/4-13.png",
+    "Portswigger/NoSQL Injections/screenshots/4-12.png",
+    "Portswigger/NoSQL Injections/Lab 3.md",
+    "tryhackme/Agent Sudo.md",
+    "Portswigger/NoSQL Injections/Lab 4.md",
+    "Portswigger/NoSQL Injections/screenshots/4-11.png",
+    "Portswigger/NoSQL Injections/screenshots/4-10.png",
+    "Portswigger/NoSQL Injections/screenshots/4-9.png",
+    "Portswigger/NoSQL Injections/screenshots/4-8.png",
+    "Portswigger/NoSQL Injections/screenshots/4-7.png",
+    "Portswigger/NoSQL Injections/screenshots/4-6.png",
+    "Portswigger/NoSQL Injections/screenshots/4-5.png",
+    "Portswigger/NoSQL Injections/screenshots/4-4.png",
+    "Portswigger/NoSQL Injections/screenshots/4-3.png",
+    "Portswigger/NoSQL Injections/Lab 2.md",
+    "Portswigger/NoSQL Injections/Lab 1.md",
+    "Portswigger/CSRF/Lab 1.md",
+    "Portswigger/Command Injection/Lab 5.md",
+    "Portswigger/NoSQL Injections/screenshots",
+    "Portswigger/NoSQL Injections",
+    "Portswigger/Command Injection/Lab 4.md",
+    "Portswigger/Command Injection/Lab 3.md",
+    "Portswigger/Command Injection/Lab 2.md",
+    "Portswigger/Command Injection/Lab 1.md",
+    "Portswigger/Insecure Deserialization/Lab 4.md",
+    "Portswigger/Insecure Deserialization/Lab 3.md",
+    "Portswigger/Information Disclosure/Lab 5.md",
     "Portswigger/Information Disclosure/Lab 4.md",
     "Portswigger/Information Disclosure/Lab 3.md",
     "Portswigger/Information Disclosure/Lab 2.md",
@@ -201,31 +229,6 @@
     "overthewire/natas/natas12.md",
     "overthewire/natas/natas11.md",
     "Portswigger/Access Control/Lab 13.md",
-    "Portswigger/Access Control/Lab 12.md",
-    "Portswigger/Access Control/Lab 11.md",
-    "Portswigger/Access Control/Lab 10.md",
-    "Portswigger/Access Control/Lab 9.md",
-    "Portswigger/Access Control/Lab 8.md",
-    "Portswigger/Access Control/Lab 7.md",
-    "Portswigger/Access Control/Lab 6.md",
-    "Portswigger/Access Control/Lab 5.md",
-    "Portswigger/Access Control/Lab 4.md",
-    "Portswigger/Access Control/Lab 1.md",
-    "Portswigger/Access Control/Lab 2.md",
-    "Portswigger/Access Control/Lab 3.md",
-    "Portswigger/Authentication/Lab 13.md",
-    "Portswigger/Authentication/Lab 14.md",
-    "Portswigger/Authentication/Lab 11.md",
-    "Portswigger/XSS/screenshots/27-1.png",
-    "Portswigger/XSS/screenshots/26-1.png",
-    "Portswigger/XSS/screenshots/Screenshot 2024-11-11 220403.png",
-    "tryhackme/screenshots/lazy-1.png",
-    "Portswigger/Directory Traversal/screenshots/1-2.png",
-    "Portswigger/Directory Traversal/screenshots/1-1.png",
-    "Portswigger/SQL Injection/screenshots/18-2.png",
-    "Portswigger/SQL Injection/screenshots/18-1.png",
-    "Portswigger/SQL Injection/screenshots/5-1.png",
-    "Portswigger/SQL Injection/screenshots/4-1.png",
     "Portswigger/Insecure Deserialization/Screenshots",
     "Portswigger/Insecure Deserialization",
     "hackinghub/screenshots",
@@ -233,8 +236,6 @@
     "SEED Labs/Network Security",
     "SEED Labs",
     "tryhackme/screenshots/lazy-2.png.~tmp",
-    "huntress.ctf/screenshots",
-    "huntress.ctf/New folder",
-    "huntress.ctf"
+    "huntress.ctf/screenshots"
   ]
 }

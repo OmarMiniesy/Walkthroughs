@@ -9,7 +9,7 @@ Browsing to `/.git/` reveals that a version control was used.
 ``` bash
 wget -r https://0a84007a041db86c801bc6b600a10034.web-security-academy.net/.git/
 ```
-- The `-r` flag is for recurisve downloads to download everything.
+- The `-r` flag is for recursive downloads to download everything.
 
 To view the versions and history of the files, download `git-cola`.
 ``` bash
