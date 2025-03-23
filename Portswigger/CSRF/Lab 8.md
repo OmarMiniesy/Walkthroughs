@@ -1,8 +1,6 @@
-
 ### SameSite Strict bypass via client-side redirect : PRACTITIONER
 
 ---
-
 
 > Given credentials `wiener:peter`.
 

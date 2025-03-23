@@ -7,7 +7,7 @@
 
 1. `xor_encrypt`: This function takes an input plain text, and then uses a hidden key (we should find it) to `xor` it with the plain text to produce cypher text.
 2. `load_data`: This function loads the value of the `data` cookie and decodes it using `base64_decode`, then `xor_encrypt`, then `json_decode`.
-3. `store_data`: This function stores data inside the `data` cookie by encoding the data in the opposite direction.
+3. `save_data`: This function stores data inside the `data` cookie by encoding the data in the opposite direction.
 4. The `defaultdata` array contains 2 elements, and we want to change the value of the first element `showpassword` to `yes` as this will show the password.
 
 ![](./screenshots/code-1.png)

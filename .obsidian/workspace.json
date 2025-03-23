@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f3354d2a375c2a61",
+        "id": "783344fae8573967",
         "type": "tabs",
         "children": [
           {
-            "id": "9d93d1b21b8368eb",
+            "id": "a7ba88a52fddfc5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Portswigger/NoSQL Injections/Lab 4.md",
+                "file": "HackTheBox/Sherlocks/Brutus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 4"
+              "title": "Brutus"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -77,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
+    "width": 288.5,
     "collapsed": true
   },
   "right": {
@@ -189,53 +190,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d93d1b21b8368eb",
+  "active": "a7ba88a52fddfc5f",
   "lastOpenFiles": [
+    "HackTheBox/Sherlocks/pics/brutus-8.png",
+    "HackTheBox/Sherlocks/pics/brutus-7.png",
+    "HackTheBox/Sherlocks/pics/brutus-6.png",
+    "HackTheBox/Sherlocks/pics/brutus-5.png",
+    "HackTheBox/Sherlocks/pics/brutus-4.png",
+    "HackTheBox/Sherlocks/pics/brutus-3.png",
+    "hackinghub/VulnBegin.md",
+    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
+    "overthewire/natas/natas12.md",
+    "HackTheBox/Sherlocks/Brutus.md",
+    "HackTheBox/Sherlocks/pics/brutus-2.png",
+    "HackTheBox/Sherlocks/pics/brutus-1.png",
+    "HackTheBox/Sherlocks/pics",
+    "Pasted image 20250204212952.png",
+    "overthewire/natas/natas11.md",
+    "HackTheBox/Sherlocks",
+    "HackTheBox",
+    "Portswigger/Insecure Deserialization/Lab 4.md",
+    "README.md",
+    "overthewire/natas/natas25.md",
+    "Portswigger/XXE Injection/Lab 1.md",
+    "Portswigger/Clickjacking/Lab 5.md",
+    "Portswigger/Clickjacking/Lab 4.md",
+    "Portswigger/Clickjacking/Lab 3.md",
+    "Portswigger/Clickjacking/Lab 2.md",
+    "Portswigger/Clickjacking/Lab 1.md",
+    "Portswigger/CORS/Lab 3.md",
+    "Portswigger/CORS/Lab 2.md",
+    "Portswigger/CORS/Lab 1.md",
+    "Portswigger/CSRF/Lab 12.md",
+    "Portswigger/CSRF/Lab 11.md",
+    "Portswigger/CSRF/Lab 10.md",
+    "Portswigger/CSRF/Lab 8.md",
+    "Portswigger/CSRF/Lab 7.md",
+    "Portswigger/CSRF/Lab 6.md",
+    "Portswigger/CSRF/Lab 3.md",
+    "Portswigger/CSRF/Lab 5.md",
+    "Portswigger/Race Conditions",
     "Portswigger/NoSQL Injections/screenshots/4-13.png",
     "Portswigger/NoSQL Injections/screenshots/4-12.png",
-    "Portswigger/NoSQL Injections/Lab 3.md",
-    "tryhackme/Agent Sudo.md",
-    "Portswigger/NoSQL Injections/Lab 4.md",
-    "Portswigger/NoSQL Injections/screenshots/4-11.png",
-    "Portswigger/NoSQL Injections/screenshots/4-10.png",
-    "Portswigger/NoSQL Injections/screenshots/4-9.png",
-    "Portswigger/NoSQL Injections/screenshots/4-8.png",
-    "Portswigger/NoSQL Injections/screenshots/4-7.png",
-    "Portswigger/NoSQL Injections/screenshots/4-6.png",
-    "Portswigger/NoSQL Injections/screenshots/4-5.png",
-    "Portswigger/NoSQL Injections/screenshots/4-4.png",
-    "Portswigger/NoSQL Injections/screenshots/4-3.png",
-    "Portswigger/NoSQL Injections/Lab 2.md",
-    "Portswigger/NoSQL Injections/Lab 1.md",
-    "Portswigger/CSRF/Lab 1.md",
-    "Portswigger/Command Injection/Lab 5.md",
     "Portswigger/NoSQL Injections/screenshots",
     "Portswigger/NoSQL Injections",
-    "Portswigger/Command Injection/Lab 4.md",
-    "Portswigger/Command Injection/Lab 3.md",
-    "Portswigger/Command Injection/Lab 2.md",
-    "Portswigger/Command Injection/Lab 1.md",
-    "Portswigger/Insecure Deserialization/Lab 4.md",
-    "Portswigger/Insecure Deserialization/Lab 3.md",
-    "Portswigger/Information Disclosure/Lab 5.md",
-    "Portswigger/Information Disclosure/Lab 4.md",
-    "Portswigger/Information Disclosure/Lab 3.md",
-    "Portswigger/Information Disclosure/Lab 2.md",
-    "Portswigger/Information Disclosure/Lab 1.md",
-    "Portswigger/SQL Injection/Lab 7.md",
-    "Portswigger/SQL Injection/Lab 6.md",
-    "hackinghub/VulnBegin.md",
-    "overthewire/natas/natas13.md",
-    "overthewire/natas/natas12.md",
-    "overthewire/natas/natas11.md",
-    "Portswigger/Access Control/Lab 13.md",
     "Portswigger/Insecure Deserialization/Screenshots",
     "Portswigger/Insecure Deserialization",
     "hackinghub/screenshots",
-    "SEED Labs/Network Security/screenshots",
-    "SEED Labs/Network Security",
-    "SEED Labs",
-    "tryhackme/screenshots/lazy-2.png.~tmp",
-    "huntress.ctf/screenshots"
+    "SEED Labs/Network Security/screenshots"
   ]
 }

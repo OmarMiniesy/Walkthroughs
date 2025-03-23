@@ -7,7 +7,6 @@
 
 > Given credentials `wiener:peter`.
 
-
 > Login via the given credentials and head to the my-account page.
 
 ![](./screenshots/lab2-1.png)
