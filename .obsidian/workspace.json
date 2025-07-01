@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "783344fae8573967",
+        "id": "f73250c6cddc9dff",
         "type": "tabs",
         "children": [
           {
-            "id": "a7ba88a52fddfc5f",
+            "id": "353674703eef44d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HackTheBox/Sherlocks/Brutus.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Brutus"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5,
-    "collapsed": true
+    "width": 288.5
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -190,22 +185,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a7ba88a52fddfc5f",
+  "active": "353674703eef44d2",
   "lastOpenFiles": [
+    "tryhackme/ItsyBitsy.md",
+    "tryhackme/screenshots/itsy-5.png",
+    "tryhackme/screenshots/itsy-4.png",
+    "tryhackme/screenshots/itsy-3.png",
+    "tryhackme/screenshots/itsy-2.png",
+    "tryhackme/OhSINT.md",
+    "tryhackme/LazyAdmin.md",
+    "tryhackme/Crack the Hash.md",
+    "tryhackme/screenshots/itsy-1.png",
+    "tryhackme/Basic Pentesting.md",
+    "Challenges/Memory Challenge.md",
+    "Challenges/PCAP Challenge.md",
+    "Pasted image 20250517190235.png",
+    "Challenges/Bonus Challenge.md",
+    "Challenges/Silk Challenge.md",
+    "Challenges",
+    "HackTheBox/Sherlocks/Meerkat.md",
+    "HackTheBox/Sherlocks/Brutus.md",
     "HackTheBox/Sherlocks/pics/brutus-8.png",
     "HackTheBox/Sherlocks/pics/brutus-7.png",
     "HackTheBox/Sherlocks/pics/brutus-6.png",
     "HackTheBox/Sherlocks/pics/brutus-5.png",
-    "HackTheBox/Sherlocks/pics/brutus-4.png",
-    "HackTheBox/Sherlocks/pics/brutus-3.png",
     "hackinghub/VulnBegin.md",
     "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
     "overthewire/natas/natas12.md",
-    "HackTheBox/Sherlocks/Brutus.md",
-    "HackTheBox/Sherlocks/pics/brutus-2.png",
-    "HackTheBox/Sherlocks/pics/brutus-1.png",
     "HackTheBox/Sherlocks/pics",
-    "Pasted image 20250204212952.png",
     "overthewire/natas/natas11.md",
     "HackTheBox/Sherlocks",
     "HackTheBox",
@@ -219,24 +226,11 @@
     "Portswigger/Clickjacking/Lab 2.md",
     "Portswigger/Clickjacking/Lab 1.md",
     "Portswigger/CORS/Lab 3.md",
-    "Portswigger/CORS/Lab 2.md",
-    "Portswigger/CORS/Lab 1.md",
-    "Portswigger/CSRF/Lab 12.md",
-    "Portswigger/CSRF/Lab 11.md",
-    "Portswigger/CSRF/Lab 10.md",
-    "Portswigger/CSRF/Lab 8.md",
-    "Portswigger/CSRF/Lab 7.md",
-    "Portswigger/CSRF/Lab 6.md",
-    "Portswigger/CSRF/Lab 3.md",
-    "Portswigger/CSRF/Lab 5.md",
     "Portswigger/Race Conditions",
-    "Portswigger/NoSQL Injections/screenshots/4-13.png",
-    "Portswigger/NoSQL Injections/screenshots/4-12.png",
     "Portswigger/NoSQL Injections/screenshots",
     "Portswigger/NoSQL Injections",
     "Portswigger/Insecure Deserialization/Screenshots",
     "Portswigger/Insecure Deserialization",
-    "hackinghub/screenshots",
-    "SEED Labs/Network Security/screenshots"
+    "hackinghub/screenshots"
   ]
 }
