@@ -11,10 +11,14 @@
             "id": "353674703eef44d2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "tryhackme/Investigating With Splunk.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Investigating With Splunk"
             }
           }
         ]
@@ -187,6 +191,17 @@
   },
   "active": "353674703eef44d2",
   "lastOpenFiles": [
+    "tryhackme/screenshots/splunk-7.png",
+    "tryhackme/Mr Robot CTF.md",
+    "tryhackme/Investigating With Splunk.md",
+    "tryhackme/screenshots/splunk-6.png",
+    "tryhackme/screenshots/splunk-5.png",
+    "tryhackme/screenshots/splunk-4.png",
+    "tryhackme/screenshots/splunk-3.png",
+    "tryhackme/screenshots/splunk-2.png",
+    "tryhackme/screenshots/splunk-1.png",
+    "tryhackme/Agent Sudo.md",
+    "tryhackme/Bounty Hacker.md",
     "tryhackme/ItsyBitsy.md",
     "tryhackme/screenshots/itsy-5.png",
     "tryhackme/screenshots/itsy-4.png",
@@ -195,20 +210,14 @@
     "tryhackme/OhSINT.md",
     "tryhackme/LazyAdmin.md",
     "tryhackme/Crack the Hash.md",
-    "tryhackme/screenshots/itsy-1.png",
     "tryhackme/Basic Pentesting.md",
     "Challenges/Memory Challenge.md",
     "Challenges/PCAP Challenge.md",
-    "Pasted image 20250517190235.png",
     "Challenges/Bonus Challenge.md",
     "Challenges/Silk Challenge.md",
     "Challenges",
     "HackTheBox/Sherlocks/Meerkat.md",
     "HackTheBox/Sherlocks/Brutus.md",
-    "HackTheBox/Sherlocks/pics/brutus-8.png",
-    "HackTheBox/Sherlocks/pics/brutus-7.png",
-    "HackTheBox/Sherlocks/pics/brutus-6.png",
-    "HackTheBox/Sherlocks/pics/brutus-5.png",
     "hackinghub/VulnBegin.md",
     "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
     "overthewire/natas/natas12.md",
@@ -222,10 +231,6 @@
     "Portswigger/XXE Injection/Lab 1.md",
     "Portswigger/Clickjacking/Lab 5.md",
     "Portswigger/Clickjacking/Lab 4.md",
-    "Portswigger/Clickjacking/Lab 3.md",
-    "Portswigger/Clickjacking/Lab 2.md",
-    "Portswigger/Clickjacking/Lab 1.md",
-    "Portswigger/CORS/Lab 3.md",
     "Portswigger/Race Conditions",
     "Portswigger/NoSQL Injections/screenshots",
     "Portswigger/NoSQL Injections",
