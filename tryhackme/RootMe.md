@@ -41,6 +41,7 @@ gobuster dir -u http://10.10.242.178 -w /usr/share/wordlists/dirb/common.txt
 > We need to upload a reverse shell through `/panel`.
 > Heading to `/usr/share/webshells/php` and opening the `php-reverse-shell.php` reverse shell.
 > Edit the `ip` address of your machine on which the listener will start.
+
 ![](./screenshots/rev.png)
 
 > Try uploading this file in the `/panel` page.

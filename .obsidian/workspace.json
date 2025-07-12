@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Investigating With Splunk.md",
+                "file": "tryhackme/Benign.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Investigating With Splunk"
+              "title": "Benign"
             }
           }
         ]
@@ -192,19 +192,21 @@
   },
   "active": "353674703eef44d2",
   "lastOpenFiles": [
+    "tryhackme/screenshots/b-7.png",
+    "tryhackme/Benign.md",
+    "tryhackme/screenshots/b-6.png",
+    "tryhackme/screenshots/b-5.png",
+    "tryhackme/RootMe.md",
+    "tryhackme/screenshots/b-4.png",
+    "tryhackme/screenshots/b-3.png",
+    "tryhackme/screenshots/b-2.png",
+    "tryhackme/screenshots/b-1.png",
+    "tryhackme/Investigating With Splunk.md",
     "tryhackme/screenshots/Splunk-14.png",
     "tryhackme/screenshots/Splunk-13.png",
     "tryhackme/screenshots/Splunk-12.png",
     "tryhackme/screenshots/Splunk-11.png",
-    "tryhackme/screenshots/Splunk-9.png",
-    "Pasted image 20250711120909.png",
-    "tryhackme/screenshots/Splunk-10.png",
-    "tryhackme/screenshots/Splunk-8.png",
-    "tryhackme/screenshots/splunk-7.png",
     "tryhackme/Mr Robot CTF.md",
-    "tryhackme/Investigating With Splunk.md",
-    "tryhackme/screenshots/splunk-6.png",
-    "tryhackme/screenshots/splunk-5.png",
     "tryhackme/Agent Sudo.md",
     "tryhackme/Bounty Hacker.md",
     "tryhackme/ItsyBitsy.md",
@@ -230,8 +232,6 @@
     "README.md",
     "overthewire/natas/natas25.md",
     "Portswigger/XXE Injection/Lab 1.md",
-    "Portswigger/Clickjacking/Lab 5.md",
-    "Portswigger/Clickjacking/Lab 4.md",
     "Portswigger/Race Conditions",
     "Portswigger/NoSQL Injections/screenshots",
     "Portswigger/NoSQL Injections",
