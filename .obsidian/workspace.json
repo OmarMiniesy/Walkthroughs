@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "f73250c6cddc9dff",
+        "id": "f1fc7ef6e082f106",
         "type": "tabs",
         "children": [
           {
-            "id": "353674703eef44d2",
+            "id": "f476bddcc042af8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Benign.md",
+                "file": "HackTheBox/Sherlocks/Brutus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Benign"
+              "title": "Brutus"
+            }
+          },
+          {
+            "id": "63a8b7355d341e5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HackTheBox/Sherlocks/Meerkat.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Meerkat"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -190,22 +205,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "353674703eef44d2",
+  "active": "63a8b7355d341e5e",
   "lastOpenFiles": [
-    "tryhackme/screenshots/b-7.png",
+    "HackTheBox/Sherlocks/pics/meerkat-12.png",
+    "HackTheBox/Sherlocks/Brutus.md",
+    "HackTheBox/Sherlocks/Meerkat.md",
+    "HackTheBox/Sherlocks/pics/meerkat-11.png",
+    "HackTheBox/Sherlocks/pics/meerkat-10.png",
+    "HackTheBox/Sherlocks/pics/meerkat-9.png",
+    "HackTheBox/Sherlocks/pics/meerkat-8.png",
+    "HackTheBox/Sherlocks/pics/meerkat-7.png",
+    "HackTheBox/Sherlocks/pics/meerkat-6.png",
+    "HackTheBox/Sherlocks/pics/meerkat-5.png",
+    "HackTheBox/Sherlocks/pics/meerkat-4.png",
+    "HackTheBox/Sherlocks/pics/meerkat-3.png",
+    "HackTheBox/Sherlocks/pics/meerkat-2..png",
+    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
     "tryhackme/Benign.md",
-    "tryhackme/screenshots/b-6.png",
-    "tryhackme/screenshots/b-5.png",
     "tryhackme/RootMe.md",
-    "tryhackme/screenshots/b-4.png",
-    "tryhackme/screenshots/b-3.png",
-    "tryhackme/screenshots/b-2.png",
-    "tryhackme/screenshots/b-1.png",
     "tryhackme/Investigating With Splunk.md",
-    "tryhackme/screenshots/Splunk-14.png",
-    "tryhackme/screenshots/Splunk-13.png",
-    "tryhackme/screenshots/Splunk-12.png",
-    "tryhackme/screenshots/Splunk-11.png",
     "tryhackme/Mr Robot CTF.md",
     "tryhackme/Agent Sudo.md",
     "tryhackme/Bounty Hacker.md",
@@ -219,10 +237,7 @@
     "Challenges/Bonus Challenge.md",
     "Challenges/Silk Challenge.md",
     "Challenges",
-    "HackTheBox/Sherlocks/Meerkat.md",
-    "HackTheBox/Sherlocks/Brutus.md",
     "hackinghub/VulnBegin.md",
-    "SEED Labs/Network Security/ARP Cache Poisoning Attack Lab.md",
     "overthewire/natas/natas12.md",
     "HackTheBox/Sherlocks/pics",
     "overthewire/natas/natas11.md",
