@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "picoCTF/RED.md",
+                "file": "picoCTF/Ph4nt0m 1ntrud3r.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RED"
+              "title": "Ph4nt0m 1ntrud3r"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 288.5,
+    "collapsed": true
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -191,14 +192,19 @@
   },
   "active": "f1bfbac88604b398",
   "lastOpenFiles": [
+    "picoCTF/screenshots/phantom-3.png",
+    "picoCTF/screenshots/phantom-2.png",
+    "picoCTF/screenshots/phantom-1.png",
+    "picoCTF/findme.md",
+    "picoCTF/DISKO 1.md",
+    "picoCTF/caas.md",
+    "picoCTF/Ph4nt0m 1ntrud3r.md",
+    "picoCTF/RED.md",
     "picoCTF/screenshots/red-2.png",
     "picoCTF/screenshots/red-1.png",
-    "picoCTF/DISKO 1.md",
-    "picoCTF/RED.md",
     "picoCTF/Forbidden Paths.md",
     "picoCTF/GET aHEAD.md",
     "picoCTF/dont-use-client-side.md",
-    "picoCTF/findme.md",
     "README.md",
     "hackinghub/VulnBegin.md",
     "tryhackme/Investigating With Splunk.md",
@@ -216,17 +222,12 @@
     "overthewire/natas/natas13.md",
     "overthewire/natas/natas12.md",
     "overthewire/natas/natas11.md",
-    "HackTheBox/Sherlocks/Unit42.md",
     "HackTheBox/Sherlocks/pics/unit-13.png",
     "HackTheBox/Sherlocks/pics/unit-12.png",
     "HackTheBox/Sherlocks/pics/unit-11.png",
     "HackTheBox/Sherlocks/pics/unit-10.png",
     "HackTheBox/Sherlocks/pics/unit-9.png",
     "HackTheBox/Sherlocks/pics/unit-8.png",
-    "HackTheBox/Sherlocks/pics/unit-7.png",
-    "HackTheBox/Sherlocks/pics/unit-6.png",
-    "HackTheBox/Sherlocks/pics/unit-5.png",
-    "HackTheBox/Sherlocks/Brutus.md",
     "Challenges",
     "HackTheBox/Sherlocks/pics",
     "HackTheBox/Sherlocks",
