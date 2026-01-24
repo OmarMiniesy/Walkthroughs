@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackTheBox/Sherlocks/Campfire-1.md",
+                "file": "HackTheBox/Sherlocks/Noxious.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Campfire-1"
+              "title": "Noxious"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922,
-    "collapsed": true
+    "width": 305.5110321044922
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -193,21 +192,22 @@
   },
   "active": "97ca1a0907c657bc",
   "lastOpenFiles": [
+    "HackTheBox/Sherlocks/pics/n8.png",
+    "HackTheBox/Sherlocks/pics/n7.png",
+    "HackTheBox/Sherlocks/pics/n6.png",
+    "HackTheBox/Sherlocks/pics/n5.png",
+    "HackTheBox/Sherlocks/pics/n4.png",
+    "HackTheBox/Sherlocks/pics/n3.png",
+    "HackTheBox/Sherlocks/Meerkat.md",
+    "HackTheBox/Sherlocks/Noxious.md",
+    "HackTheBox/Sherlocks/pics/n2.png",
+    "HackTheBox/Sherlocks/pics/n1.png",
+    "HackTheBox/Sherlocks/Campfire-1.md",
     "HackTheBox/Sherlocks/pics/fire-10.png",
     "HackTheBox/Sherlocks/pics/fire-9.png",
     "HackTheBox/Sherlocks/pics/fire-8.png",
-    "HackTheBox/Sherlocks/pics/fire-7.png",
-    "HackTheBox/Sherlocks/pics/fire-6.png",
-    "HackTheBox/Sherlocks/pics/fire-5.png",
-    "HackTheBox/Sherlocks/pics/fire-4.png",
-    "HackTheBox/Sherlocks/pics/fire-3.png",
     "HackTheBox/Sherlocks/Unit42.md",
-    "HackTheBox/Sherlocks/Campfire-1.md",
-    "HackTheBox/Sherlocks/Meerkat.md",
-    "HackTheBox/Sherlocks/pics/fire-2.png",
-    "HackTheBox/Sherlocks/pics/fire-1.png",
     "picoCTF/MSB.md",
-    "picoCTF/screenshots/msb.png",
     "picoCTF/PcapPoisoning.md",
     "picoCTF/Ph4nt0m 1ntrud3r.md",
     "Untitled.md",
@@ -228,7 +228,6 @@
     "picoCTF/caas.md",
     "picoCTF/RED.md",
     "picoCTF/Forbidden Paths.md",
-    "picoCTF/GET aHEAD.md",
     "Challenges",
     "HackTheBox/Sherlocks/pics",
     "HackTheBox/Sherlocks",
