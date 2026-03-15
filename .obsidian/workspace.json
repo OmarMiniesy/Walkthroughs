@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -192,6 +193,12 @@
   },
   "active": "459e5823af8ccf01",
   "lastOpenFiles": [
+    "HackTheBox/Sherlocks/pics/Reaper-11.png",
+    "HackTheBox/Sherlocks/pics/Reaper-10.png",
+    "HackTheBox/Sherlocks/pics/Reaper-7.png",
+    "HackTheBox/Sherlocks/pics/Reaper-8.png",
+    "HackTheBox/Sherlocks/pics/Reaper-6.png",
+    "HackTheBox/Sherlocks/pics/Reaper-5.png",
     "HackTheBox/Sherlocks/pics/Reaper-04.png",
     "HackTheBox/Sherlocks/pics/Reaper-4.png",
     "HackTheBox/Sherlocks/pics/Reaper-3.png",
@@ -200,12 +207,6 @@
     "HackTheBox/Sherlocks/Campfire-2.md",
     "HackTheBox/Sherlocks/Reaper.md",
     "HackTheBox/Sherlocks/Dream Job-1.md",
-    "HackTheBox/Sherlocks/pics/Campfire-2, 5.png",
-    "HackTheBox/Sherlocks/pics/Campfire-2, 4.png",
-    "HackTheBox/Sherlocks/pics/Campfire-2, 3-1.png",
-    "HackTheBox/Sherlocks/pics/Pasted image 20260314153254.png",
-    "HackTheBox/Sherlocks/pics/Campfire-2, 3.png",
-    "HackTheBox/Sherlocks/pics/Campfire-2, 2.png",
     "HackTheBox/Sherlocks/Campfire-1.md",
     "HackTheBox/Sherlocks/Meerkat.md",
     "HackTheBox/Sherlocks/Unit42.md",
