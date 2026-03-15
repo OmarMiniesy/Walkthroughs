@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackTheBox/Sherlocks/Campfire-2.md",
+                "file": "HackTheBox/Sherlocks/Reaper.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Campfire-2"
+              "title": "Reaper"
             }
           }
         ]
@@ -192,25 +192,27 @@
   },
   "active": "459e5823af8ccf01",
   "lastOpenFiles": [
+    "HackTheBox/Sherlocks/pics/Reaper-04.png",
+    "HackTheBox/Sherlocks/pics/Reaper-4.png",
+    "HackTheBox/Sherlocks/pics/Reaper-3.png",
+    "HackTheBox/Sherlocks/pics/Reaper-2.png",
+    "HackTheBox/Sherlocks/pics/Reaper-1.png",
+    "HackTheBox/Sherlocks/Campfire-2.md",
+    "HackTheBox/Sherlocks/Reaper.md",
+    "HackTheBox/Sherlocks/Dream Job-1.md",
     "HackTheBox/Sherlocks/pics/Campfire-2, 5.png",
     "HackTheBox/Sherlocks/pics/Campfire-2, 4.png",
     "HackTheBox/Sherlocks/pics/Campfire-2, 3-1.png",
     "HackTheBox/Sherlocks/pics/Pasted image 20260314153254.png",
-    "HackTheBox/Sherlocks/Campfire-2.md",
     "HackTheBox/Sherlocks/pics/Campfire-2, 3.png",
     "HackTheBox/Sherlocks/pics/Campfire-2, 2.png",
     "HackTheBox/Sherlocks/Campfire-1.md",
     "HackTheBox/Sherlocks/Meerkat.md",
-    "HackTheBox/Sherlocks/pics/Campfire-2, 1.png",
-    "HackTheBox/Sherlocks/pics/cmp-2.png",
     "HackTheBox/Sherlocks/Unit42.md",
     "HackTheBox/Sherlocks/Noxious.md",
     "HackTheBox/Sherlocks/Brutus.md",
     "tryhackme/Investigating With Splunk.md",
     "tryhackme/Tempest.md",
-    "tryhackme/screenshots/Tempest.png",
-    "{{filename}}.png",
-    "Tempest.png",
     "tryhackme/ItsyBitsy.md",
     "tryhackme/Mr Robot CTF.md",
     "tryhackme/Overpass.md",
@@ -226,8 +228,6 @@
     "picoCTF/MSB.md",
     "picoCTF/PcapPoisoning.md",
     "picoCTF/Ph4nt0m 1ntrud3r.md",
-    "Untitled.md",
-    "picoCTF/Event-Viewing.md",
     "Challenges",
     "HackTheBox/Sherlocks/pics",
     "HackTheBox/Sherlocks",
