@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackTheBox/Sherlocks/Reaper.md",
+                "file": "HackTheBox/Sherlocks/BFT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reaper"
+              "title": "BFT"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5110321044922
+    "width": 305.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "83bcb63fb5d555a9",
@@ -192,19 +193,20 @@
   },
   "active": "459e5823af8ccf01",
   "lastOpenFiles": [
+    "HackTheBox/Sherlocks/pics/BFT-8.png",
+    "HackTheBox/Sherlocks/pics/Pasted image 20260317223303.png",
+    "HackTheBox/Sherlocks/pics/BFT-7.png",
+    "HackTheBox/Sherlocks/pics/BFT-5.png",
+    "HackTheBox/Sherlocks/pics/BFT-6.png",
+    "HackTheBox/Sherlocks/pics/BFT-4.png",
+    "HackTheBox/Sherlocks/pics/BFT-3.png",
+    "HackTheBox/Sherlocks/pics/BFT-2.png",
+    "HackTheBox/Sherlocks/pics/BFT-1.png",
+    "HackTheBox/Sherlocks/Reaper.md",
+    "HackTheBox/Sherlocks/BFT.md",
     "HackTheBox/Sherlocks/pics/Reaper-16-1.png",
     "HackTheBox/Sherlocks/pics/Reaper-16.png",
-    "HackTheBox/Sherlocks/pics/Reaper-15.png",
-    "HackTheBox/Sherlocks/pics/Pasted image 20260316144720.png",
     "HackTheBox/Sherlocks/Noxious.md",
-    "HackTheBox/Sherlocks/Reaper.md",
-    "HackTheBox/Sherlocks/pics/Reaper-14.png",
-    "HackTheBox/Sherlocks/pics/Reaper-13.png",
-    "HackTheBox/Sherlocks/pics/Reaper-12-1.png",
-    "HackTheBox/Sherlocks/pics/Reaper-12.png",
-    "HackTheBox/Sherlocks/pics/Reaper-11.png",
-    "HackTheBox/Sherlocks/pics/Reaper-10.png",
-    "HackTheBox/Sherlocks/pics/Reaper-7.png",
     "HackTheBox/Sherlocks/Campfire-2.md",
     "HackTheBox/Sherlocks/Dream Job-1.md",
     "HackTheBox/Sherlocks/Campfire-1.md",
@@ -227,7 +229,6 @@
     "tryhackme/LazyAdmin.md",
     "picoCTF/MSB.md",
     "picoCTF/PcapPoisoning.md",
-    "picoCTF/Ph4nt0m 1ntrud3r.md",
     "Challenges",
     "HackTheBox/Sherlocks/pics",
     "HackTheBox/Sherlocks",
