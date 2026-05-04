@@ -1,6 +1,4 @@
 
-
-
 ---
 
 Downloading the files and converting them to CSV using Eric Zimmerman's EvtxECmd.
