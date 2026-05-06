@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "add319ded3a1369b",
+        "id": "6649a785042bbf5e",
         "type": "tabs",
         "children": [
           {
-            "id": "0f8a3f1393f6ef4e",
+            "id": "7f709eb5b472226b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "overthewire/natas/natas25.md",
+                "file": "HackTheBox/Sherlocks/LogJammer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "natas25"
+              "title": "LogJammer"
             }
           },
           {
-            "id": "97c6f8378a7d5428",
+            "id": "be6bab9bb18e7aa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackTheBox/Sherlocks/Campfire-2.md",
+                "file": "HackTheBox/Sherlocks/Phantom Check.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Campfire-2"
+              "title": "Phantom Check"
             }
           }
         ]
@@ -204,21 +204,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f8a3f1393f6ef4e",
+  "active": "7f709eb5b472226b",
   "lastOpenFiles": [
-    "overthewire/natas/natas11.md",
+    "HackTheBox/Sherlocks/pics/LogJammer, 20.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 17.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 16.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 15.png",
     "HackTheBox/Sherlocks/Phantom Check.md",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 10.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 9-1.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 9.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 8.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check. 7.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 6.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 5.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 4.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 3.png",
-    "HackTheBox/Sherlocks/pics/Phantom Check, 2.png",
+    "HackTheBox/Sherlocks/LogJammer.md",
+    "HackTheBox/Sherlocks/pics/LogJammer, 14.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 13.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 12.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 11.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 10.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 9.png",
+    "HackTheBox/Sherlocks/pics/LogJammer, 8.png",
     "HackTheBox/Sherlocks/Campfire-2.md",
+    "overthewire/natas/natas25.md",
+    "overthewire/natas/natas11.md",
     "HackTheBox/Sherlocks/Campfire-1.md",
     "HackTheBox/Sherlocks/CrownJewel-2.md",
     "HackTheBox/Sherlocks/CrownJewel-1.md",
@@ -241,9 +244,6 @@
     "tryhackme/Tempest.md",
     "tryhackme/ItsyBitsy.md",
     "tryhackme/Mr Robot CTF.md",
-    "tryhackme/Overpass.md",
-    "tryhackme/Picke Rick.md",
-    "tryhackme/OhSINT.md",
     "Challenges",
     "HackTheBox/Sherlocks/pics",
     "HackTheBox/Sherlocks",
