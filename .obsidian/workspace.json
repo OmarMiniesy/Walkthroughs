@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6649a785042bbf5e",
+        "id": "cf7317afae126c44",
         "type": "tabs",
         "children": [
           {
-            "id": "7f709eb5b472226b",
+            "id": "45d872fe34b7230a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HackTheBox/Sherlocks/LogJammer.md",
+                "file": "PracticalMalwareAnalysis/Lab1-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LogJammer"
-            }
-          },
-          {
-            "id": "be6bab9bb18e7aa7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HackTheBox/Sherlocks/Phantom Check.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Phantom Check"
+              "title": "Lab1-1"
             }
           }
         ]
@@ -204,21 +190,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f709eb5b472226b",
+  "active": "45d872fe34b7230a",
   "lastOpenFiles": [
-    "HackTheBox/Sherlocks/pics/LogJammer, 20.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 17.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 16.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 15.png",
-    "HackTheBox/Sherlocks/Phantom Check.md",
+    "PracticalMalwareAnalysis/pics/Lab1-1, ws2.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, exe functions.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, p-5.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, p-4.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, p-3.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, packing-3.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, packing-2.png",
+    "PracticalMalwareAnalysis/pics/Lab1-1, packing-1.png",
+    "PracticalMalwareAnalysis/pics/Lab1, 4.png",
+    "PracticalMalwareAnalysis/pics/Pasted image 20260516180302.png",
+    "PracticalMalwareAnalysis/pics/Lab1, 3.png",
+    "PracticalMalwareAnalysis/Lab1-1.md",
+    "PracticalMalwareAnalysis/pics",
+    "PracticalMalwareAnalysis/Readme.md",
+    "README.md",
     "HackTheBox/Sherlocks/LogJammer.md",
-    "HackTheBox/Sherlocks/pics/LogJammer, 14.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 13.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 12.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 11.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 10.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 9.png",
-    "HackTheBox/Sherlocks/pics/LogJammer, 8.png",
+    "PracticalMalwareAnalysis",
+    "HackTheBox/Sherlocks/Phantom Check.md",
     "HackTheBox/Sherlocks/Campfire-2.md",
     "overthewire/natas/natas25.md",
     "overthewire/natas/natas11.md",
@@ -241,16 +232,11 @@
     "HackTheBox/Sherlocks/Unit42.md",
     "HackTheBox/Sherlocks/Brutus.md",
     "tryhackme/Investigating With Splunk.md",
-    "tryhackme/Tempest.md",
-    "tryhackme/ItsyBitsy.md",
-    "tryhackme/Mr Robot CTF.md",
     "Challenges",
     "HackTheBox/Sherlocks/pics",
     "HackTheBox/Sherlocks",
     "HackTheBox",
     "Portswigger/Race Conditions",
-    "Portswigger/NoSQL Injections/screenshots",
-    "Portswigger/NoSQL Injections",
-    "Portswigger/Insecure Deserialization/Screenshots"
+    "Portswigger/NoSQL Injections/screenshots"
   ]
 }
