@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PracticalMalwareAnalysis/Lab1-1.md",
+                "file": "PracticalMalwareAnalysis/Chapter 3/Lab 3-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab1-1"
+              "title": "Lab 3-1"
             }
           }
         ]
@@ -192,18 +192,24 @@
   },
   "active": "45d872fe34b7230a",
   "lastOpenFiles": [
+    "PracticalMalwareAnalysis/Chapter 3/pics/Lab 3-1, 1.png",
+    "PracticalMalwareAnalysis/Chapter 3/pics",
+    "PracticalMalwareAnalysis/Chapter 1/Lab1-1.md",
+    "PracticalMalwareAnalysis/Chapter 3/Lab 3-1.md",
+    "PracticalMalwareAnalysis/Chapter 1/Lab1-2.md",
+    "PracticalMalwareAnalysis/Chapter 3",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2, upx.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2-2.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2-1.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2, 3.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2, 2.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics/Lab1-2, 1.png",
+    "PracticalMalwareAnalysis/Chapter 1/pics",
+    "PracticalMalwareAnalysis/Chapter 1",
     "PracticalMalwareAnalysis/pics/Lab1-1, ws2.png",
     "PracticalMalwareAnalysis/pics/Lab1-1, exe functions.png",
     "PracticalMalwareAnalysis/pics/Lab1-1, p-5.png",
-    "PracticalMalwareAnalysis/pics/Lab1-1, p-4.png",
-    "PracticalMalwareAnalysis/pics/Lab1-1, p-3.png",
-    "PracticalMalwareAnalysis/pics/Lab1-1, packing-3.png",
-    "PracticalMalwareAnalysis/pics/Lab1-1, packing-2.png",
-    "PracticalMalwareAnalysis/pics/Lab1-1, packing-1.png",
-    "PracticalMalwareAnalysis/pics/Lab1, 4.png",
-    "PracticalMalwareAnalysis/pics/Pasted image 20260516180302.png",
-    "PracticalMalwareAnalysis/pics/Lab1, 3.png",
-    "PracticalMalwareAnalysis/Lab1-1.md",
     "PracticalMalwareAnalysis/pics",
     "PracticalMalwareAnalysis/Readme.md",
     "README.md",
@@ -230,13 +236,7 @@
     "HackTheBox/Sherlocks/Dream Job-1.md",
     "HackTheBox/Sherlocks/Meerkat.md",
     "HackTheBox/Sherlocks/Unit42.md",
-    "HackTheBox/Sherlocks/Brutus.md",
-    "tryhackme/Investigating With Splunk.md",
     "Challenges",
-    "HackTheBox/Sherlocks/pics",
-    "HackTheBox/Sherlocks",
-    "HackTheBox",
-    "Portswigger/Race Conditions",
-    "Portswigger/NoSQL Injections/screenshots"
+    "HackTheBox/Sherlocks/pics"
   ]
 }
