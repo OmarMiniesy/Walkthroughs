@@ -10,5 +10,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "attachmentFolderPath": "./pics"
+  "attachmentFolderPath": "./pics",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }

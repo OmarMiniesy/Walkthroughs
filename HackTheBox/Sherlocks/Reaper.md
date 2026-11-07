@@ -38,7 +38,7 @@ We also see scattered throughout the protocol `NBNS` protocol sending out *Refre
 
 Opening a packet from these and expanding the NBNS section, we see the following:
 
-![[Reaper-5.png]]
+![Reaper-5](./pics/Reaper-5.png)
 
 This shows that the name of the machine `FORELA-WKSTN-001` is refreshing its IP address of `172.17.79.129`. We see the following IPS:
 - `172.17.79.129` -> `FORELA-WKSTN-001`
@@ -49,18 +49,18 @@ This shows that the name of the machine `FORELA-WKSTN-001` is refreshing its IP 
 We also notice how in the `NBNS` packets, a few them are sent out by the `172.17.79.135` machine we though was suspicious for discovering the network, which had the name `D`.
 - We see that it sends out a few `NBNS` query packets to destination IPs, as if to determine their information:
 
-![[Reaper-6.png]]
+![Reaper-6](./pics/Reaper-6.png)
 
 If we open the first packet for example, we see that it sends a NBNS query to the `.1` IP address:
 - This query is of type `NBSTAT` which is a legitimate query type to retrieve the NetBIOS names registered on a host.
 - The query name consisting of the `*<00><00>...` is the NetBIOS wildcard name which returns the status of all the NetBIOS names registered on the host.
 - This means that the `.135` machine is asking the `.1` machine about all of the NetBIOS names it has and their status, which adds to the discovery of the network.
 
-![[Reaper-8.png]]
+![Reaper-8](./pics/Reaper-8.png)
 
 The response from the `.1` IP address is then:
 
-![[Reaper-7.png]]
+![Reaper-7](./pics/Reaper-7.png)
 
 This shows the name of the machine being `PK-DEV-JSTARK`, is part of a local windows `WORKGROUP`, and has the *SMB* service as shown by the `<20>` suffix. 
 
@@ -91,25 +91,25 @@ Knowing that the suspicious IP is this one `172.17.79.135` due to its weird acti
 
 Now, we can look through the `pcap` at the *SMB* conversations and look for our IP address.
 
-![[Reaper-10.png]]
+![Reaper-10](./pics/Reaper-10.png)
 
 We see here that the suspicious IP tries to connect to both `.136` and `.129` with the `FORELA\arthur.kyle` username, and then we scroll down a bit, we see both IPs are communicating via SMB with the `.135` machine, indicating the connection works.
 - Hence, the attacker has access to this user and is using it to connect to different workstations (WKSTN-1) and (WKSTN-2) and reading data.
 
-![[Reaper-11.png]]
+![Reaper-11](./pics/Reaper-11.png)
 
 > What is the username of the account whose hash was stolen by attacker? `arthur.kyle`.
 
 We can then navigate to the `evtx` file to check if the `.135` managed to successfully login using the `arthur.kyle` to either machines.
 - We can do that by filtering for the `4624` Event ID in Event Viewer, and navigating through the login events.
 
-![[Reaper-12-1.png]]
+![Reaper-12-1](./pics/Reaper-12-1.png)
 
 Scrolling through the logon events, we see one that stands out from all other events by having a different *Security ID* of *NULL SID*.
 - Going through it more we see that the *Account Name* is `arthur.kyle` and the Source Network Address is `172.17.79.135`, which is our attacker machine.
 - However, what's weird, is that the name of the workstation being used is `FORELA-WKSTN002`, and we know that it has a different IP address, that being `172.17.79.136`.
 
-![[Reaper-13.png]]
+![Reaper-13](./pics/Reaper-13.png)
 
 > We also notice that the method of login is *NTLM*, which is different than the other methods 
 
@@ -132,7 +132,7 @@ Going through the `pcap`, we see that the `.136` sends out DNS requests to the D
 - So what does the `.135` attacker machine do, it responds when `LLMNR` protocol is used, and spoofs a response, claiming to be the machine with name `D`. ***AHAAAAA***.
 - This is the attack that takes place here [[Noxious]].
 
-![[Reaper-14.png]]
+![Reaper-14](./pics/Reaper-14.png)
 
 So now, the `.136` machine, our victim, thinks that `.135` is the nonexistent domain it is searching for, meaning the attacker now acts as a man in the middle.
 - So when the `.136` tries to authenticate with the `.135` machine, the attacker manages to steal the credentials.
@@ -140,7 +140,7 @@ So now, the `.136` machine, our victim, thinks that `.135` is the nonexistent do
 If we dive deeper, we see here that the victim machine, `.136` tries to then authenticate to the `.135` machine, by requesting a TGS from the `.4` machine, our Domain Controller.
 - However, this fails! Because the `.135` machine, whose service name is `D`, doesn't actually exist!
 
-![[Reaper-15.png]]
+![Reaper-15](./pics/Reaper-15.png)
 
 - We see the `tgs-req` being sent, and then just the packet after it, we see an error, that the principal name is unknown.
 - If we expand the TGS-REQ packet, we will see the service being requested is D, and this doesn't exist in the directory.
@@ -173,7 +173,7 @@ We now know the victim is the machine with IP ending in `.136`.
 After following the `pcap`, we can then see that the `.136` manages to then connect with the `.4` Domain Controller, and then requests access to the `\DC01\Trip` file on the DC.
 - The attacker is not present here.
 
-![[Reaper-16.png]]
+![Reaper-16](./pics/Reaper-16.png)
 
 > What was the fileshare navigated by the victim user account?: `\\DC01\Trip`.
 
@@ -212,7 +212,7 @@ This can be found in the *details* section of the log under the *TimeCreated* re
 
 I went to the event log and filtered for event log `5140` which represents file share access.
 
-![[Reaper-16-1.png]]
+![Reaper-16-1](./pics/Reaper-16-1.png)
 
 > What is the share Name accessed as part of the authentication process by the malicious tool used by the attacker?: `\\*\IPC$`
 

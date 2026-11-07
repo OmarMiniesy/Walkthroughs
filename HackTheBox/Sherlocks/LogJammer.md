@@ -4,7 +4,7 @@
 
 Downloading the files, we see several `evtx` files that can be used:
 
-![[LogJammer 1.png]]
+![LogJammer 1](./pics/LogJammer%201.png)
 
 ---
 ### Task 1
@@ -24,7 +24,7 @@ Looking for successful logons, means we need to look for Event ID `4624` in the 
 - The third line is grepping for the `CyberJunkie` user.
 - The fourth line returns the timestamp needed.
 
-![[LogJammer, 2.png]]
+![LogJammer, 2](./pics/LogJammer,%202.png)
 
 From here we can see that the time of first login for that user is `27/03/2023 14:37:09`
 
@@ -45,7 +45,7 @@ To understand the firewall logs, i ran the below command using Chainsaw to figur
 - The second line returns only the Event IDs
 - The third line sorts and counts the Event IDs.
 
-![[LogJammer, 3.png]]
+![LogJammer, 3](./pics/LogJammer,%203.png)
 
 We see there are the following events:
 - `2004` - A firewall rule being added <- what we need. 
@@ -66,7 +66,7 @@ We need to obtain the SID of the CyberJunkie user when they first logged in.
 ../../Tools/chainsaw/target/release/chainsaw search "4624" ./Security.evtx --json | jq -c .[] | grep CyberJunkie | jq '.Event.EventData.TargetUserSid'
 ```
 
-![[LogJammer, 4.png]]
+![LogJammer, 4](./pics/LogJammer,%204.png)
 
 We see the SID is:
 ```
@@ -86,7 +86,7 @@ Fixing the query above to return the rule names, we see:
 ../../Tools/chainsaw/target/release/chainsaw search "2004" ./Windows\ Firewall-Firewall.evtx --json | jq .[] | jq -c | grep S-1-5-21-3393683511-3463148672-371912004-1001 | jq '.Event.EventData.RuleName' | sort | uniq -c | sort -rn
 ```
 
-![[LogJammer, 5.png]]
+![LogJammer, 5](./pics/LogJammer,%205.png)
 
 Notice the obviously malicious firewall rule being added.
 
@@ -102,7 +102,7 @@ To identify more details about this specific rule, we can filter on it:
 ```
 - The `select` statement can be used to match a field with a specific value.
 
-![[LogJammer, 6.png]]
+![LogJammer, 6](./pics/LogJammer,%206.png)
 
 We see that the Direction is 2, which is equivalent to *outbound*.
 
@@ -119,7 +119,7 @@ Changing the audit policy is logged using Event ID `4719` and is visible in the 
 | jq .[]
 ```
 
-![[LogJammer, 6-1.png]]
+![LogJammer, 6-1](./pics/LogJammer,%206-1.png)
 
 Opening the Microsoft documentation for the `4719` Event ID, we [see](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4719) that we can identify the subcategory using the `SubcategoryGuid` field.
 - `0CCE9227-69AE-11D9-BED3-505054503030`.
@@ -129,7 +129,7 @@ To identify its value, we can run this command on `cmd` or PowerShell as given i
 auditpol /list /subcategory:* /v | Select-String 0CCE9227-69AE-11D9-BED3-505054503030
 ```
 
-![[LogJammer, 7.png]]
+![LogJammer, 7](./pics/LogJammer,%207.png)
 
 We get the following subcategory.
 
@@ -146,7 +146,7 @@ To look for scheduled task creations, we can look for Event ID `4698` in the `se
 
 Running this, we get the output:
 
-![[LogJammer, 8.png]]
+![LogJammer, 8](./pics/LogJammer,%208.png)
 
 Scanning through, we see the user `CyberJunkie` is responsible and we see that it has the name `HTB-AUTOMATION`.
 
@@ -157,7 +157,7 @@ Scanning through, we see the user `CyberJunkie` is responsible and we see that i
 
 Further inspecting the `TaskContent` in the above screenshot, we see 
 
-![[LogJammer, 9.png]]
+![LogJammer, 9](./pics/LogJammer,%209.png)
 
 The file 
 
@@ -167,7 +167,7 @@ C:\Users\CyberJunkie\Desktop\Automation-HTB.ps1
 
 being run with the arguments of
 
-![[LogJammer, 10.png]]
+![LogJammer, 10](./pics/LogJammer,%2010.png)
 
 ```
 -A cyberjunkie@hackthebox.eu
@@ -186,7 +186,7 @@ Heading over to the `windows defender` logs and running the command we ran earli
  ../../Tools/chainsaw/target/release/chainsaw search "" ./Windows\ Defender-Operational.evtx --json 2> /dev/null | jq '.[] | .Event.System.EventID' | sort | uniq -c | sort -rn
 ```
 
-![[LogJammer, 11.png]]
+![LogJammer, 11](./pics/LogJammer,%2011.png)
 
 Doing some research, we identify that Event IDs:
 - `1116` - malware detected.
@@ -206,7 +206,7 @@ Running the following query to identify the exact file names and what was detect
 ../../Tools/chainsaw/target/release/chainsaw search "1116" ./Windows\ Defender-Operational.evtx --json | jq '.[].Event.EventData.Path'
 ```
 
-![[LogJammer, 12.png]]
+![LogJammer, 12](./pics/LogJammer,%2012.png)
 
 We directly spot `SharpHound`. the tool used for recon.
 
@@ -231,7 +231,7 @@ To identify the action taken, we can now filter for the `1117` Event ID and grep
 
 Skimming through the results, we see they are only 2 events, and we can spot the action taken in the `Action Name` field.
 
-![[LogJammer, 13.png]]
+![LogJammer, 13](./pics/LogJammer,%2013.png)
 
 > What action was taken by the antivirus?: `Quarantine`.
 
@@ -244,7 +244,7 @@ To view the powershell events, we can now use the `powershell operational` log f
  ../../Tools/chainsaw/target/release/chainsaw search "" ./Powershell-Operational.evtx --json 2> /dev/null | jq '.[] | .Event.System.EventID' | sort | uniq -c | sort -rn
 ```
 
-![[LogJammer, 14.png]]
+![LogJammer, 14](./pics/LogJammer,%2014.png)
 
 We know that Event IDs `4104` and `4103` are used to log commands and script blocks.
 - Checking `4103` for the commands run.
@@ -255,7 +255,7 @@ Get several results, trying to filter them by grepping on the `CyberJunkie` user
 ../../Tools/chainsaw/target/release/chainsaw search "4103" ./Powershell-Operational.evtx --json | jq -c | grep CyberJunkie | jq -c '.[].Event.EventData.Payload' | grep Automation-HTB | jq .
 ```
 
-![[LogJammer, 15.png]]
+![LogJammer, 15](./pics/LogJammer,%2015.png)
 
 From here, we see many commands, including:
 - `Resolve-Path`
@@ -269,7 +269,7 @@ Going over to the `4014` event ID and identifying the needed field to be `Event.
 ../../Tools/chainsaw/target/release/chainsaw search "4104" ./Powershell-Operational.evtx --json | jq .[] -c | grep Get-FileHash
 ```
 
-![[LogJammer, 16.png]]
+![LogJammer, 16](./pics/LogJammer,%2016.png)
 
 We see the command that was executed in full.
 
@@ -292,7 +292,7 @@ For the security log, the following is output:
 rrors --json | jq .
 ```
 
-![[LogJammer, 17.png]]
+![LogJammer, 17](./pics/LogJammer,%2017.png)
 - We see that a log file was cleared by the `CyberJunkie` user, but we don't see the log file name.
 - We also note down the timestamp is `2023-03-27T14:36:45.307731Z`.
 
@@ -309,7 +309,7 @@ For the system log, there are a lot of events, so we can filter based on the tim
 
 This returns exactly one event, that of the firewall logs, which match with the changes made to the firewall rules.
 
-![[LogJammer, 20.png]]
+![LogJammer, 20](./pics/LogJammer,%2020.png)
 
 
 > We suspect the user deleted some event logs. Which Event log file was cleared?: `Microsoft-Windows-Windows Firewall With Advanced Security/Firewall`.

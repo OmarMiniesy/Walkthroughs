@@ -29,11 +29,11 @@ Opening the `SYSTEM` logs using Timeline Explorer:
 
 We can then filter the `EventID` column for the `7036` ID.
 
-![[CrownJewel-1,1.png|393]]
+![CrownJewel-1,1|393](./pics/CrownJewel-1,1.png)
 
 We can then look at `Payload Data1` column and we will see the Volume Shadow Copy service name.
 
-![[CrownJewel-1,2.png]]
+![CrownJewel-1,2](./pics/CrownJewel-1,2.png)
 
 We see the time is `2024-05-14 03:42:16`, and that its status is currently `running`, therefore, it is the time it started.
 
@@ -49,7 +49,7 @@ Filtering for these Event IDs in the Security log in Timeline Explorer, we see o
 - Now, we have to identify the ones started by the process for Volume Shadow Copies, also called `VSSVC.exe`.
 
 
-![[CrownJewel-1,3.png]]
+![CrownJewel-1,3](./pics/CrownJewel-1,3.png)
 
 We see that the ones we need are the ones in the middle, and the two groups that were enumerated are:
 - `Backup Operators`
@@ -64,7 +64,7 @@ While the machine account responsible was the `DC01$` account.
 
 In the same Security log rows, we see the Caller Process ID but in hex, which we can then convert to decimal.
 
-![[CrownJewel-1,4.png]]
+![CrownJewel-1,4](./pics/CrownJewel-1,4.png)
 
 The process ID is `0x1190` and converting it to decimal using any website we get the value `4496`.
 
@@ -75,9 +75,9 @@ The process ID is `0x1190` and converting it to decimal using any website we get
 
 For this one, I navigated to the `NTFS` log as I felt it was the most necessary, then, I grouped by all the Event IDs in Timeline Explorer, and sent a screenshot to Claude to tell me the description of each Event ID.
 
-![[CrownJewel-1, 5.png]] 
+![CrownJewel-1, 5](./pics/CrownJewel-1,%205.png) 
 
-![[CrownJewel-1, 6.png]]
+![CrownJewel-1, 6](./pics/CrownJewel-1,%206.png)
 
 From here, we can see that the none of these are related to volume mounts ! 
 - Also, the view of the data is not friendly in Timeline Explorer, so I want to view it in a better format.
@@ -116,7 +116,7 @@ We note:
 - `DeviceGuid` is at: `Event.EventData.DeviceGuid` its all 0s??
 - `VolumeCorrelationId` is at: `Event.EventData.VolumeCorrelationId`
 
-![[CrownJewel-1, 7.png]]
+![CrownJewel-1, 7](./pics/CrownJewel-1,%207.png)
 
 Now, we can see all of the `DeviceName`s present, and locate the `DeviceName` we need, and then use that to get its `DeviceGuid`.
 
@@ -126,7 +126,7 @@ cat json-ntfs | jq '.[]' | jq '.Event.EventData.DeviceName' | sort | uniq -c | s
 
 We get this output:
 
-![[CrownJewel-1, 8.png]]
+![CrownJewel-1, 8](./pics/CrownJewel-1,%208.png)
 
 We see that the interesting device name is the first one, the `ShadowCopy1`.
 - Now, we need to see which EventIDs had this device name, to understand the attacker flow and what happened.
@@ -140,7 +140,7 @@ cat json-ntfs | jq '.[] | select(.Event.EventData.DeviceName == "\\Device\\Hardd
 
 I did this to identify which events contained this volume of ours in question:
 
-![[CrownJewel-1, 9.png]]
+![CrownJewel-1, 9](./pics/CrownJewel-1,%209.png)
 
 I then pasted the output of the 5 events to Claude understand what happened:
 
@@ -165,7 +165,7 @@ cat json-ntfs | jq '.[]' | jq '.Event.EventData.DeviceName' | sort | uniq -c | s
 
 We get this output:
 
-![[CrownJewel-1, 8.png]]
+![CrownJewel-1, 8](./pics/CrownJewel-1,%208.png)
 
 We also know that the attacker started the volume shadow copy service at `2024-05-14 03:42:16`.
 
@@ -177,7 +177,7 @@ cat json-ntfs | jq -c '.[] | select(.Event.EventData.DeviceName == "\\Device\\Ha
 : .Event.System.EventID, Time: .Event.System.TimeCreated_attributes.SystemTime}'
 ```
 
-![[CrownJewel-1, 11.png]]
+![CrownJewel-1, 11](./pics/CrownJewel-1,%2011.png)
 
 None of the events take place after our timestamp, so this volume is ruled out.
 
@@ -186,11 +186,11 @@ None of the events take place after our timestamp, so this volume is ruled out.
 cat json-ntfs | jq -c '.[] | select(.Event.EventData.DeviceName == "\\Device\\HarddiskVolume3") | {EventID: .Event.System.EventID, Time: .Event.System.TimeCreated_attributes.SystemTime}'
 ```
 
-![[CrownJewel-1, 12.png]]
+![CrownJewel-1, 12](./pics/CrownJewel-1,%2012.png)
 
 The same goes for this volume. Doing this for the `HarddiskVolumeShadowCopy1`, we get convincing event times!!
 
-![[CrownJewel-1, 13.png]]
+![CrownJewel-1, 13](./pics/CrownJewel-1,%2013.png)
 
 This is our culprit.
 - We need to obtain its ID.
@@ -219,7 +219,7 @@ To identify disk related artifacts, we need to parse the MFT.
 Now, we need to look for a dump of the `NTDS.dit` database.
 - we can easily do that by looking for files present with the `.dit` extension.
 
-![[CrownJewel-1, 13-1.png]]
+![CrownJewel-1, 13-1](./pics/CrownJewel-1,%2013-1.png)
 
 By filtering on the `Extension` column for `.dit` values, we get this odd file:
 ```
@@ -245,11 +245,11 @@ I see that the dump of the NTDS database was in the `backup_sync_dc` folder.
 
 By adding a filter in the Parent Path column:
 
-![[CrownJewel-1, f.png]]
+![CrownJewel-1, f](./pics/CrownJewel-1,%20f.png)
 
 We see:
 
-![[CrownJewel-1, x.png]]
+![CrownJewel-1, x](./pics/CrownJewel-1,%20x.png)
 
 The SYSTEM hive was dumped with a size of `17563648`.
 

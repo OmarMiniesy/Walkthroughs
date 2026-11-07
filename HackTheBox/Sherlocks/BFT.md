@@ -22,13 +22,13 @@ We need to look for a `.zip` file that was created in the timeframe of February 
 - We can do that by filtering the `Extension` column on `.zip`
 - Focusing our attention to the entries that pop up on this day.
 
-![[BFT-1.png]]
+![BFT-1](./pics/BFT-1.png)
 
 We see that we get 4 files only that have a parent path related to the `simon.stark` user.
 - Checking the file names, we see that we are only interested in `invoices.zip` and `Stage-20240213T093324Z-001.zip`.
 - So which one is the one downloaded?
 
-![[BFT-2.png]]
+![BFT-2](./pics/BFT-2.png)
 
 From here, we can see that the `Stage` file came before at `16:34`, and that the `invoices.zip` file comes after it by approx 1 hour, and is located inside the `Stage` folder.
 - This points out that the `stage.zip` file came before and *contains* inside it the `invoices.zip`.
@@ -45,7 +45,7 @@ The Zone Identifier is an alternate data stream (ADS) that is used to signify ho
 
 To look for this, we can directly search for this filename in the text search:
 
-![[BFT-3.png]]
+![BFT-3](./pics/BFT-3.png)
 
 We see the `HostUrl` that the download comes from.
 
@@ -60,7 +60,7 @@ Since a malicious zip file was downloaded, we can assume that it contains some o
 We identified the creation time of the `stage` zip file as `16:34`.
 - Adding a filter for the parent path to contain the `stage` folder and looking at the files that were created around the stated timestamp should prove useful.
 
-![[BFT-4.png]]
+![BFT-4](./pics/BFT-4.png)
 
 We see a `.bat` file found in the `stage` folder under the `\invoice\invoices\` folder, which stands out because `.bat` file is used to contain executable instructions.
 - We also know that the drive used is the `C` drive as the `$MFT` file was found inside the `C` drive in the downloaded question zip file for the sherlock.
@@ -69,7 +69,7 @@ We see a `.bat` file found in the `stage` folder under the `\invoice\invoices\` 
 
 ### Task 4
 
-![[BFT-6.png]]
+![BFT-6](./pics/BFT-6.png)
 
 > Analyze the $Created0x30 timestamp for the previously identified file. When was this file created on disk?: `2024-02-13 16:38:39`.
 
@@ -80,7 +80,7 @@ To get the *hex offset* of a file in the MFT record, we have to locate its **Ent
 - Since each entry has a size of 1024 bytes, we need to multiply the index we get with 1024 to get its actual address.
 - This number is the byte address of that MFT record. We simply need to convert it to hex using a hex converter to get the hex offset.
 
-![[BFT-5.png]]
+![BFT-5](./pics/BFT-5.png)
 
 We have the entry number of `23436`.
 - Multiply by 1024 to get `23998464`.
@@ -92,14 +92,14 @@ We have the entry number of `23436`.
 
 This file has a size of `286`, hence, it is stored directly in the MFT table, and is called a resident file.
 
-![[BFT-7.png]]
+![BFT-7](./pics/BFT-7.png)
 
 However, this is not visible in timeline explorer.
 - We need to utilize a hex viewer to view the actual `$MFT` table and locate this file using the hex address we found earlier of `16E3000`.
 
 Opening the HxD tool and pressing `CTRL+G` to jump to our address of `16E3000`, we can see the entry for our file.
 
-![[BFT-8.png]]
+![BFT-8](./pics/BFT-8.png)
 
 We see our file and we see that it communicates using `HTTP` to `43.204.110.203:6666`.
 

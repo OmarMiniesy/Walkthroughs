@@ -23,7 +23,7 @@ For the Microsoft Shadow Copy Service to enter a running state, an event will be
  - We can find this in the System log under Event ID `7036`. Adding a filter in Timeline Explorer for that EventID to only show these events.
 - Add a filter in the `Payload Data1` column for services that have the `Shadow` string.
 
-![[CrownJewel-2, a.png]]
+![CrownJewel-2, a](./pics/CrownJewel-2,%20a.png)
 
 We see that the first time it was ran it stopped 3 minutes later, and the second time, it ran without stopping.
 - The time here is `2024-05-15 05:39:55`.
@@ -46,13 +46,13 @@ We see that the `ntdsutil` process was used to enumerate the Administrators and 
 - This is the logon session of the attacker which we can use to trace with their actions.
 - We also see the process ID of the `ntdsutil` process is -> `0xF64`.
 
-![[CrownJewel-2, b.png]]
+![CrownJewel-2, b](./pics/CrownJewel-2,%20b.png)
 
-![[CrownJewel-2, c.png]]
+![CrownJewel-2, c](./pics/CrownJewel-2,%20c.png)
 
 Now, searching in the security logs for the attacker's `SubjectLogonId` to see their activity, we get this:
 
-![[CrownJewel-2, d.png]]
+![CrownJewel-2, d](./pics/CrownJewel-2,%20d.png)
 
 We see that this activity takes place before the volume shadow copy service runs, so we can assume this is how the attacker managed to obtain the credentials of the compromised domain admin account.
 - We see the persistence mechanism in place by the attacker (scheduled task).
@@ -61,11 +61,11 @@ We see that this activity takes place before the volume shadow copy service runs
 I jumped to the application logs we have open in Timeline Explorer and hit a `CTRL+F` for `ntds` to see if any of the logs have anything useful about it.
 - I also added a time filter on the Time Created column to see the events logged on the day the shadow service was created to view activity relevant to the attack.
 
-![[CrownJewel-2, e.png]]
+![CrownJewel-2, e](./pics/CrownJewel-2,%20e.png)
 
 And we hit a gold mine!
 
-![[CrownJewel-2, f.png]]
+![CrownJewel-2, f](./pics/CrownJewel-2,%20f.png)
 
 From these event IDs, the useful ones are the ones i have open.
 - By the way, I grouped by Event ID by dragging it to the top to be able to see this view.
@@ -101,7 +101,7 @@ We note the time here is `2024-05-15 05:39:58`.
 
 I usually hide the `provider` column in Timeline Explorer as it takes up space and I rarely need it, but it contains the answer to this question:
 
-![[CrownJewel-2, g.png]]
+![CrownJewel-2, g](./pics/CrownJewel-2,%20g.png)
 
 We see here the provider is `ESENT`.
 
@@ -114,9 +114,9 @@ We found this before while tracking the actions of the attacker in Task 3.
 - But since it is stated here outright, we can determine that the Event ID needed for group enumeration is `4799`.
 - Filtering the security logs in Timeline Explorer to `4799` and looking only at the events where the process responsible if `ntdsutil.exe`, we get the answer:
 
-![[CrownJewel-2, h.png]]
+![CrownJewel-2, h](./pics/CrownJewel-2,%20h.png)
 
-![[CrownJewel-2, i.png]]
+![CrownJewel-2, i](./pics/CrownJewel-2,%20i.png)
 
 We see that the 2 groups are:
 - Administrators
@@ -137,7 +137,7 @@ So I went to the system logs, and found that there is an Event ID `7001` for use
 
 CTRL+F in the system logs, we see 1 record show up:
 
-![[CrownJewel-2, j.png]]
+![CrownJewel-2, j](./pics/CrownJewel-2,%20j.png)
 
 Showing the logon time of : `2024-05-15 05:36:31`.
 

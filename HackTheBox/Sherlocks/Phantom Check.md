@@ -10,7 +10,7 @@ Before starting the analysis, I converted the `evtx` files to CSV to be easily p
 
 We see that the events present in the `powershell` logs are:
 
-![[Phantom Check, 1.png]]
+![Phantom Check, 1](./pics/Phantom%20Check,%201.png)
 - `400` - Start of PowerShell session
 - `403` - End of PowerShell session
 - `600` - PowerShell provider started.
@@ -21,7 +21,7 @@ We see that the events present in the `powershell` logs are:
  ../../Tools/EvtxECmd/EvtxECmd.exe -f ./Windows-Powershell-Operational.evtx --csv . --csvf "operational-csv"
 ```
 
-![[Phantom Check, 2.png]]
+![Phantom Check, 2](./pics/Phantom%20Check,%202.png)
 
 The interesting `operational` logs are:
 - `4103` - Contains the execution output and the commands.
@@ -33,16 +33,16 @@ The interesting `operational` logs are:
 By going through the `operational` logs in TimeLine Explorer and filtering by Event ID, we skim through the `4103` events.
 - We are looking for anything related to `WMI`
 
-![[Phantom Check, 3.png]]
+![Phantom Check, 3](./pics/Phantom%20Check,%203.png)
 
 We see there are multiple `Get-WmiObject` commands being executed.
 - Adding a filter on `Payload Data1` to be equal to that value to analyze in details:
 
-![[Phantom Check, 4.png]]
+![Phantom Check, 4](./pics/Phantom%20Check,%204.png)
 
 Analyzing the `Payload Data6` column, we see:
 
-![[Phantom Check, 5.png]]
+![Phantom Check, 5](./pics/Phantom%20Check,%205.png)
 
 - `Win32_ComputerSystem`
 - `SELECT * FROM MSAcpi_ThermalZoneTemperature`
@@ -62,7 +62,7 @@ Going through Event ID `4103`, nothing speaks out, however, note that the events
 - Jumping to Event ID `4104`, we see that actual scripts being run and its code.
 - Looking for the `function` keyword and jumping to the same time range.
 
-![[Phantom Check, 6.png]]
+![Phantom Check, 6](./pics/Phantom%20Check,%206.png)
 
 We see that only 1 event exists, and we see the function `Check-VM`, which is pretty suspicious.
 
@@ -75,7 +75,7 @@ Going through the script, we see that it is detecting several types of Virtualiz
 
 Scrolling through, we see:
 
-![[Phantom Check. 7.png]]
+![Phantom Check. 7](./pics/Phantom%20Check.%207.png)
 
 > Which registry key did the above script query to retrieve service details for virtualization detection?: `HKLM:\SYSTEM\ControlSet001\Services`.
 
@@ -84,7 +84,7 @@ Scrolling through, we see:
 
 Scrolling to the VirtualBox part of the script, we see:
 
-![[Phantom Check, 8.png]]
+![Phantom Check, 8](./pics/Phantom%20Check,%208.png)
 
 > The VM detection script can also identify VirtualBox. Which processes is it comparing to determine if the system is running VirtualBox?: `vboxservice.exe, vboxtray.exe`
 
@@ -94,11 +94,11 @@ Scrolling to the VirtualBox part of the script, we see:
 I remember seeing this in the `4013` events.
 - Skimming through again in `PayloadData 6` we see 1 event that stands out:
 
-![[Phantom Check, 9-1.png]]
+![Phantom Check, 9-1](./pics/Phantom%20Check,%209-1.png)
 
 Opening it, we see
 
-![[Phantom Check, 10.png]]
+![Phantom Check, 10](./pics/Phantom%20Check,%2010.png)
 
 > The VM detection script prints any detection with the prefix 'This is a'. Which two virtualization platforms did the script detect?: `hyper-v, vmware`.
 

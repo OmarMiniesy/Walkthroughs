@@ -13,12 +13,12 @@ So, running `EvtxECmd` on the file we have using this command:
 
 We get the following output which shows a summary of the Event IDs present and their counts, along with our output file that we can now parse using Timeline Explorer.
 
-![[cmp-2.png]]
+![cmp-2](./pics/cmp-2.png)
 
 Opening timeline explorer, i then dragged the **Event ID** column up so that we group by this column, making our analysis easier, so we can quickly jump and locate what type of event we need.
 - We can later drop this column again if we need to analyze by sequence of events or time after locating something interesting.
 
-![[Campfire-2, 1.png]]
+![Campfire-2, 1](./pics/Campfire-2,%201.png)
 
 > I think now, after doing this quick setup, we can start analyzing the Sherlock
 
@@ -45,14 +45,14 @@ To detect this, we need to look for the following:
 To locate when the attacker requested the Kerberos ticket for the vulnerable user, we need to look for the `4768` Event ID logs.
 - We can do this easily since we grouped by Event ID in timeline explorer:
 
-![[Campfire-2, 2.png]]
+![Campfire-2, 2](./pics/Campfire-2,%202.png)
 
 We see there are only 11 logs, what we can do next, is then look for hints of our attack based on the criteria mentioned [[#Detecting AS-REProasting|Above]].
 - Scrolling through we see one row with timestamp `2024-05-29 06:36:40` that stands out as it has `RC4-HMAC` encryption AND it has pre-authentication disabled. 
 	- Check out Payload Data4 column and Payload Data6 column.
 - Going to the last column and viewing the Payload, we see:
 
-![[Campfire-2, 3-1.png]]
+![Campfire-2, 3-1](./pics/Campfire-2,%203-1.png)
 
 Therefore, we can say that this is the event where the TGT was requested to perform the AS-REProasting attack.
 
@@ -81,13 +81,13 @@ Now that we know a TGT was obtained from the above IP, we need to check if this 
 
 We see that the next 4 logs after the TGT request are done by that same IP, and we see a user name in the User Name column:
 
- ![[Campfire-2, 4.png]]
+ ![Campfire-2, 4](./pics/Campfire-2,%204.png)
 
 If we open the event in line `75` that is of a TGS being requested, we see that the `TargetUserName` field, is actually representative of the user account that requests this `TGS`.
 - Connecting the dots, we see that the attacker performed AS-REP roasting against the account **arthur.kyle** to obtain a crackable AS-REP response. 
 - By correlating Kerberos activity from the same source IP, we can identify the user logged into the attacking workstation.
 
-![[Campfire-2, 5.png]]
+![Campfire-2, 5](./pics/Campfire-2,%205.png)
 
 Studying this further, we see the attacker is requesting a TGS for the Domain Controller  !!
 - The user `happy.grunwald` is requesting a TGS for the Domain Controller and it works! 
